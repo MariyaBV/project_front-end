@@ -30,5 +30,20 @@
     font-style: normal;
 }
 
+@font-face
+{
+    font-family: "SourceSansPro-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    src: url(../../fonts/SourceSansPro-Light.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: "SourceSansPro-Bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    src: url(../../fonts/SourceSansPro-Bold.ttf);
+    font-weight: 800;
+    font-style: normal;
+}
 
 //font-style: italic;

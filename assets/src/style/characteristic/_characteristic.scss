@@ -1,0 +1,126 @@
+.b-characteristic
+{
+    &:after
+    {
+        margin-top: 115px;
+        margin-bottom: 140px;
+        height: 1px;
+        content: '';
+        background: #e6e7eb;
+        display: block;
+        background-size: cover;
+    }
+
+    &__item
+    {
+        &:hover
+        {
+            cursor: pointer;            
+        }
+
+        &:hover .b-characteristic__icon
+        {
+            border-color: #e74c3c;
+            transform: rotate(45deg);
+        }
+
+        &:hover .b-characteristic__title
+        {
+            color: #e74c3c;
+        }
+    }
+
+    &__icon
+    {
+        border: 1px solid #e5e5e5;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        margin: 20px auto;
+        transition: all 0.5s;
+        margin-bottom: 30px;
+    }
+
+    &__separator
+    {
+        height: 2px;
+        width: 40px;
+        margin: 20px auto;
+        background: #888888;
+        display: block;
+        content: "";
+    }
+
+    &__title
+    {
+        text-align: center;
+        font: 700 18px/24px 'OpenSans-Semibold';
+        color: #6a6a6a;
+        position: relative;
+
+        &_heart
+        {
+            &:before
+            {
+                height: 35px;
+                left: 0px;
+                top: -80px;
+                background: url(../../img/heart.png) center center no-repeat;
+                position: absolute;
+                width: 100%;
+                content: '';
+            }
+        }
+
+        &_comment
+        {
+            &:before
+            {
+                height: 35px;
+                left: 0px;
+                top: -80px;
+                background: url(../../img/comment.png) center center no-repeat;
+                position: absolute;
+                width: 100%;
+                content: '';
+            }
+        }
+
+        &_lamp
+        {
+            &:before
+            {
+                height: 35px;
+                left: 0px;
+                top: -80px;
+                background: url(../../img/lamp.png) center center no-repeat;
+                position: absolute;
+                width: 100%;
+                content: '';
+            }
+        }
+
+        &_glasses
+        {
+            &:before
+            {
+                height: 35px;
+                left: 0px;
+                top: -80px;
+                background: url(../../img/glasses.png) center center no-repeat;
+                position: absolute;
+                width: 100%;
+                content: '';
+            }
+        }
+
+    }
+
+    &__description
+    {
+        text-align: center;
+        font: 400 12px/20px 'SourceSansPro-Light';
+        color: #999;
+    }
+
+}

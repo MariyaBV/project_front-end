@@ -1,0 +1,36 @@
+.b-our-history
+{
+    margin-bottom: 150px;
+    
+    &__title
+    {
+        font: 800 36px/40px 'SourceSansPro-Bold';
+        color: #6a6a6a;
+        margin-left: 35px;
+
+        &:before
+        {
+            height: 35px;
+            display: block;
+            position: absolute;
+            background: #e74c3c;
+            content: '';
+            width: 5px;
+            top: 0;
+            bottom: 0;
+            left: 15px;
+        }
+    }
+
+    &__description
+    {
+        margin-top: 50px;
+        color: #999;
+        font: 400 14px/29px 'SourceSansPro-Regular';
+
+        &_last
+        {
+            margin-bottom: 50px;
+        }
+    }
+}
