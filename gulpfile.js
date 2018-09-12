@@ -17,14 +17,14 @@ var path = {
         html:  'assets/build/',
         js:    'assets/build/js/',
         css:   'assets/build/css/',
-        //img:   'assets/build/img/',
+        img:   'assets/build/img/',
         fonts: 'assets/build/fonts/'
     },
     src: {
         html:  'assets/src/*.html',
         js:    'assets/src/js/main.js',
         style: 'assets/src/style/main.scss',
-        //img:   'assets/src/img/**/*.*',
+        img:   'assets/src/img/**/*.*',
         fonts: 'assets/src/fonts/**/*.*'
     },
     watch: {
@@ -109,21 +109,21 @@ gulp.task('fonts:build', function() {
         .pipe(gulp.dest(path.build.fonts));
 });
 
-// обработка картинок
-// gulp.task('image:build', function () {
-//     gulp.src(path.src.img) // путь с исходниками картинок
-//     .pipe(cache(imagemin([ // сжатие изображений
-// 		imagemin.gifsicle({interlaced: true}),
-// 		jpegrecompress({
-// 			progressive: true,
-// 			max: 90,
-// 			min: 80
-// 		}),
-// 		pngquant(),
-// 		imagemin.svgo({plugins: [{removeViewBox: false}]})
-// 	])))
-// 	.pipe(gulp.dest(path.build.img)); // выгрузка готовых файлов
-// });
+//обработка картинок
+gulp.task('image:build', function () {
+    gulp.src(path.src.img) // путь с исходниками картинок
+    // .pipe(cache(imagemin([ // сжатие изображений
+	// 	imagemin.gifsicle({interlaced: true}),
+	// 	jpegrecompress({
+	// 		progressive: true,
+	// 		max: 90,
+	// 		min: 80
+	// 	}),
+	// 	pngquant(),
+	// 	imagemin.svgo({plugins: [{removeViewBox: false}]})
+	// ])))
+	.pipe(gulp.dest(path.build.img)); // выгрузка готовых файлов
+});
 
 // удаление каталога build 
 gulp.task('clean:build', function () {
@@ -141,8 +141,8 @@ gulp.task('build', [
     'html:build',
     'css:build',
     'js:build',
-    'fonts:build'
-    //'image:build'
+    'fonts:build',
+    'image:build'
 ]);
 
 // запуск задач при изменении файлов
@@ -150,7 +150,7 @@ gulp.task('watch', function() {
     gulp.watch(path.watch.html, ['html:build']);
     gulp.watch(path.watch.css, ['css:build']);
     gulp.watch(path.watch.js, ['js:build']);
-    //gulp.watch(path.watch.img, ['image:build']);
+    gulp.watch(path.watch.img, ['image:build']);
     gulp.watch(path.watch.fonts, ['fonts:build']);
 });
 
