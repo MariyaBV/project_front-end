@@ -1,7 +1,7 @@
 @font-face
 {
     font-family: "OpenSans-Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    src: url(../../fonts/OpenSans-Regular.ttf);
+    src: url(../../../build/fonts/OpenSans-Regular.ttf);
     font-weight: 400;
     font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face
 {
     font-family: "OpenSans-Bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    src: url(../../fonts/OpenSans-Bold.ttf);
+    src: url(../../../build/fonts/OpenSans-Bold.ttf);
     font-weight: 800;
     font-style: normal;
 }
@@ -17,7 +17,7 @@
 @font-face
 {
     font-family: "OpenSans-SemiBold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    src: url(../../fonts/OpenSans-SemiBold.ttf);
+    src: url(../../../build/fonts/OpenSans-SemiBold.ttf);
     font-weight: 700;
     font-style: normal;
 }
@@ -25,7 +25,7 @@
 @font-face
 {
     font-family: "OpenSans-ExtraBold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    src: url(../../fonts/OpenSans-ExtraBold.ttf);
+    src: url(../../../build/fonts/OpenSans-ExtraBold.ttf);
     font-weight: 900;
     font-style: normal;
 }
@@ -33,7 +33,7 @@
 @font-face
 {
     font-family: "SourceSansPro-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    src: url(../../fonts/SourceSansPro-Light.ttf);
+    src: url(../../../build/fonts/SourceSansPro-Light.ttf);
     font-weight: 400;
     font-style: normal;
 }
@@ -41,9 +41,7 @@
 @font-face
 {
     font-family: "SourceSansPro-Bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    src: url(../../fonts/SourceSansPro-Bold.ttf);
+    src: url(../../../build/fonts/SourceSansPro-Bold.ttf);
     font-weight: 800;
     font-style: normal;
 }
-
-//font-style: italic;

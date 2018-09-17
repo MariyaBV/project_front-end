@@ -1,4 +1,39 @@
-.top-menu
+.b-top-menu
 {
     height: 132px;
+    font:400 14px/16px 'Open Sans', sans-serif;
+
+    &__nav-brand
+    {
+        margin-right: 250px;
+    }
+
+    &__nav-item
+    {
+        margin-left: 42px;
+    }
+
+    &__nav-link
+    {
+        color: #f4f5f9;
+        width: 137%;
+
+        &:hover
+        {
+            color: #e74c3c;
+            position: relative;
+
+            &:after
+            {
+                background-color: #e74c3c;
+                position: absolute;
+                content: '';
+                display: block;
+                height: 1px;
+                margin: 0 auto;
+                margin-top: 15px;
+            } 
+        }
+    }
+    
 }

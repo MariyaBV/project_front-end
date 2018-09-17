@@ -4,7 +4,7 @@
     
     &__title
     {
-        font: 800 36px/40px 'SourceSansPro-Bold';
+        font: 600 36px/40px 'Source Sans Pro', sans-serif;
         color: #6a6a6a;
         margin-left: 35px;
 
@@ -16,8 +16,8 @@
             background: #e74c3c;
             content: '';
             width: 5px;
-            top: 0;
-            bottom: 0;
+            top: 1px;
+            bottom: 1px;
             left: 15px;
         }
     }
@@ -26,7 +26,7 @@
     {
         margin-top: 50px;
         color: #999;
-        font: 400 14px/29px 'SourceSansPro-Regular';
+        font: 400 14px/29px 'Source Sans Pro', sans-serif;
 
         &_last
         {

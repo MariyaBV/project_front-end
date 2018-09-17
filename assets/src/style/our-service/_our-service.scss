@@ -1,0 +1,94 @@
+.b-our-service
+{
+    height: 765px;
+    background-color: #202020;
+    width: 100%;
+    text-align: right;
+
+    &__background-image
+    {
+        background: url(../../img/our-service-background.jpg) right center no-repeat;
+        height: 100%;
+    }
+
+    &__block
+    {
+        margin-right: 100px;
+        margin-top: 150px;
+    }
+
+    &__item
+    {
+        margin-top: 55px;
+        position: relative;
+
+        &_web
+        {
+            &:before
+            {
+                background: url(../../img/our-service-computer.png) no-repeat;
+            }
+        }
+
+        &_print
+        {
+            &:before
+            {
+                background: url(../../img/our-service-pepper.png) no-repeat;
+            }
+        }
+
+        &_photo
+        {
+            &:before
+            {
+                background: url(../../img/our-service-photo.png) no-repeat;
+            }
+        }
+
+        &:before
+        {
+            right: -125px;
+            height: 100%;
+            display: block;
+            position: absolute;
+            content: '';
+            width: 79px;
+            top: 10px;
+            bottom: 1px;
+        }
+    }
+
+    &__title
+    {
+        color: #f4f5f9;
+        position: relative;
+        margin-right: 30px;
+        font: 600 36px/40px 'Source Sans Pro', sans-serif;
+
+        &:before
+        {
+            right: -36px;
+            height: 35px;
+            display: block;
+            position: absolute;
+            background: #e74c3c;
+            content: '';
+            width: 7px;
+            top: 1px;
+            bottom: 1px;
+        }
+    }
+
+    &__subtitle
+    {
+        color: #e74c3c;
+        font: 600 18px/29px 'Open Sans', sans-serif;
+    }
+
+    &__description
+    {
+        font: 400 14px/28px 'Source Sans Pro', sans-serif;
+        color: #999999; 
+    }
+}
