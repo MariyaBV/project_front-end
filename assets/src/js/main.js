@@ -1,3 +1,5 @@
+//= my.js
+
 // Импортируем jQuery
 //= ../../../bower_components/jquery/dist/jquery.min.js
 

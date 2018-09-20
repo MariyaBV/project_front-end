@@ -1,6 +1,5 @@
 .b-our-service
 {
-    height: 765px;
     background-color: #202020;
     width: 100%;
     text-align: right;
@@ -8,13 +7,13 @@
     &__background-image
     {
         background: url(../../img/our-service-background.jpg) right center no-repeat;
-        height: 100%;
     }
 
     &__block
     {
         margin-right: 100px;
-        margin-top: 150px;
+        margin-top: 145px;
+        margin-bottom: 145px;
     }
 
     &__item

@@ -2,83 +2,81 @@
     <head>
         //= template/head.html
     </head>
-    <body>
+    <body class="reset-all">
+
+        <div class="container b-container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar fixed-top navbar-expand-lg b-top-menu b-top-menu__fixed-top" id="menu_nav_bar">
+                        <a class="navbar-brand b-top-menu__nav-brand" href="#">
+                            <img src="img/logo.png" alt="logo"/>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button> 
+                        <div class="collapse navbar-collapse" id="navbar1">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active b-top-menu__nav-item">
+                                    <a class="nav-link b-top-menu__nav-link" href="#">HOME</a>
+                                </li>
+                                <li class="nav-item b-top-menu__nav-item">
+                                    <a class="nav-link b-top-menu__nav-link" href="#">ABOUT US</a>
+                                </li>
+                                <li class="nav-item b-top-menu__nav-item">
+                                        <a class="nav-link b-top-menu__nav-link" href="#">PORTFOLIO</a>
+                                </li>
+                                <li class="nav-item b-top-menu__nav-item">
+                                    <a class="nav-link b-top-menu__nav-link" href="#">PRICING</a>
+                                </li>
+                                <li class="nav-item b-top-menu__nav-item">
+                                    <a class="nav-link b-top-menu__nav-link" href="#">TEAM</a>
+                                </li>
+                                <li class="nav-item b-top-menu__nav-item">
+                                        <a class="nav-link b-top-menu__nav-link" href="#">BLOCK</a>
+                                </li>
+                                <li class="nav-item b-top-menu__nav-item">
+                                    <a class="nav-link b-top-menu__nav-link" href="#">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
         <div class="b-top-block">
             <div class="b-top-block__arrow b-top-block__arrow_left">
                 <img alt="arrow-left" src="img/arrow-left.png"/>
             </div>
             <div class="b-top-block__arrow b-top-block__arrow_right">
-                    <img alt="arrow-left" src="img/arrow-right.png"/>
+                <img alt="arrow-left" src="img/arrow-right.png"/>
             </div>
-            <div class="container b-container">
-                <div class="row">
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-lg sticky-top b-top-menu">
-                            <a class="navbar-brand b-top-menu__nav-brand" href="#">
-                                <img src="img/logo.png" alt="logo"/>
-                            </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                                
-                            <div class="collapse navbar-collapse" id="navbar1">
-                                <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item active b-top-menu__nav-item">
-                                        <a class="nav-link b-top-menu__nav-link" href="#">HOME</a>
-                                    </li>
-                                    <li class="nav-item b-top-menu__nav-item">
-                                        <a class="nav-link b-top-menu__nav-link" href="#">ABOUT US</a>
-                                    </li>
-                                    <li class="nav-item b-top-menu__nav-item">
-                                            <a class="nav-link b-top-menu__nav-link" href="#">PORTFOLIO</a>
-                                    </li>
-                                    <li class="nav-item b-top-menu__nav-item">
-                                        <a class="nav-link b-top-menu__nav-link" href="#">PRICING</a>
-                                    </li>
-                                    <li class="nav-item b-top-menu__nav-item">
-                                        <a class="nav-link b-top-menu__nav-link" href="#">TEAM</a>
-                                    </li>
-                                    <li class="nav-item b-top-menu__nav-item">
-                                            <a class="nav-link b-top-menu__nav-link" href="#">BLOCK</a>
-                                    </li>
-                                    <li class="nav-item b-top-menu__nav-item">
-                                        <a class="nav-link b-top-menu__nav-link" href="#">CONTACT</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-
             <div class="container b-container">
                 <div class="row justify-content-center">
                     <div class="col-8">
                         <div class="b-top-block__content">
-                            <div class="b-top-block__content_subtitle">
+                            <span class="b-top-block__subtitle">
                                 Our Clients Are Our First Priority
-                            </div>
-                            <div>
-                                <h1 class="b-top-block__content_title">
-                                    WELCOME TO BINO
-                                </h1>
-                                <div class="b-top-block__content_circle"></div>
-                            </div>
-                            <p class="b-top-block__content_description">
+                            </span>
+                            <h1 class="b-top-block__title">
+                                WELCOME TO BINO
+                            </h1>
+                            <div class="b-top-block__circle"></div>
+                            <p class="b-top-block__description">
                                 Lorem Ipsum is simply dummy text of the printing 
                                 and typesetting industry. Lorem Ipsum has been the industry's 
                                 standard dummy text ever since the 1500s, when an unknown printer 
                                 took a galley of type and scrambled it to make a type specimen book.
                             </p>
                             <div class="b-top-block__buttons-block">
-                                <a href="#" class="b-top-block__button b-top-block__button_dark">GET STARTED NOW</a>
+                                <a href="#" class="b-top-block__button b-top-block__button_red">GET STARTED NOW</a>
                                 <a href="#" class="b-top-block__button b-top-block__button_light">LEARN MORE</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
 
         <div class="b-characteristic">
@@ -86,11 +84,10 @@
                 <div class="row">
                     <div class="col-sm-3">                      
                         <div class="b-characteristic__item">
-                            <div class="b-characteristic__icon">
-                            </div>
-                            <h2 class="b-characteristic__title b-characteristic__title_glasses">
+                            <div class="b-characteristic__icon"></div>
+                            <p class="b-characteristic__title b-characteristic__title_glasses">
                                 SLEEK DESIGN
-                            </h2>
+                            </p>
                             <div class="b-characteristic__separator"></div>
                             <div class="b-characteristic__description">
                                 Lorem Ipsum is simply 
@@ -101,11 +98,10 @@
                     </div>
                     <div class="col-sm-3">
                         <div class="b-characteristic__item">
-                            <div class="b-characteristic__icon">
-                            </div>
-                            <h2 class="b-characteristic__title b-characteristic__title_heart">
+                            <div class="b-characteristic__icon"></div>
+                            <p class="b-characteristic__title b-characteristic__title_heart">
                                 CLEAN CODE
-                            </h2>
+                            </p>
                             <div class="b-characteristic__separator"></div>
                             <div class="b-characteristic__description">
                                 Lorem Ipsum is simply 
@@ -118,9 +114,9 @@
                         <div class="b-characteristic__item">
                             <div class="b-characteristic__icon">
                             </div>
-                            <h2 class="b-characteristic__title b-characteristic__title_lamp">
+                            <p class="b-characteristic__title b-characteristic__title_lamp">
                                 CREATIVE IDEAS
-                            </h2>
+                            </p>
                             <div class="b-characteristic__separator"></div>
                             <div class="b-characteristic__description">
                                 Lorem Ipsum is simply 
@@ -133,9 +129,9 @@
                         <div class="b-characteristic__item">
                             <div class="b-characteristic__icon">
                             </div>
-                            <h2 class="b-characteristic__title b-characteristic__title_comment">
+                            <p class="b-characteristic__title b-characteristic__title_comment">
                                 FREE SUPPORT
-                            </h2>
+                            </p>
                             <div class="b-characteristic__separator"></div>
                             <div class="b-characteristic__description">
                                 Lorem Ipsum is simply 
@@ -147,6 +143,8 @@
                 </div>
             </div>
         </div>
+
+        <div class="grey-line"></div>
 
         <div class="b-our-history">
             <div class="container b-container">
@@ -155,7 +153,7 @@
                         <img alt="monitor" src="img/Monitor.jpg"/> 
                     </div>
                     <div class="col-md-6">  
-                        <h3 class="b-our-history__title">OUR HISTORY</h3>
+                        <h2 class="b-our-history__title">OUR HISTORY</h2>
                         <p class="b-our-history__description">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                             Lorem Ip sum has been the industry's standard dummy text ever since the 1500s, 
@@ -169,7 +167,7 @@
                             passages, and more recently with desktop 
                             publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>
-                        <a href="#" class="b-top-block__button b-top-block__button_dark">
+                        <a href="#" class="b-top-block__button b-top-block__button_red b-our-history__button">
                             BROWSE OUR WORK
                         </a>
                     </div>
@@ -208,13 +206,363 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-5">
+                        <div class="col-sm-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+        <div class="b-recent-work">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h2 class="b-recent-work__title">RECENT WORKS</h2>
+                        <p class="b-recent-work__description">
+                            It has survived not only five centuries, 
+                            but also the leap scrambled it to make a type.
+                        </p>
+                        <div class="b-top-block__circle b-recent-work__circle"></div>
+                        <div class="b-recent-work__menu">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#" class="b-recent-work__list-item">ALL</a>
+                                </li>
+                                <li class="list-inline-item">/</li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="b-recent-work__list-item">PRINT DESIGN</a>
+                                </li>
+                                <li class="list-inline-item">/</li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="b-recent-work__list-item">ANIMATION</a>
+                                </li>
+                                <li class="list-inline-item">/</li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="b-recent-work__list-item">ART</a>
+                                </li>
+                                <li class=" list-inline-item">/</li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="b-recent-work__list-item">WEB DESIGN</a>
+                                </li>
+                                <li class=" list-inline-item">/</li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="b-recent-work__list-item">PHOTOGRAPHY</a>
+                                </li>
+                                <li class="list-inline-item">/</li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="b-recent-work__list-item">VIDEO</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>  
+            <div class="container-fluid"> 
+                <div class="row">
+                    <div class="col item reset-padding">                        
+                        <img class="b-recent-work__img" alt="man" src="img/1.jpg"/>
+                        <a href="#"  alt="welcome to chomok">
+                            <div class="b-recent-work__item-img-link">
+                                <div class="b-recent-work__img-link-separator"></div>
+                                <h3 class="b-recent-work__img-link-title">T-SHIRT DESIGN</h3>
+                                <p class="b-recent-work__img-link-description">art / t-shirt</p>
+                            </div>
+                        </a>                                                
+                    </div>
+                    <div class="col item reset-padding">
+                        <img class="b-recent-work__img" alt="man" src="img/2.jpg"/>
+                        <a href="#"  alt="welcome to chomok">
+                            <div class="b-recent-work__item-img-link">
+                                <div class="b-recent-work__img-link-separator"></div>
+                                <h3 class="b-recent-work__img-link-title">T-SHIRT DESIGN</h3>
+                                <p class="b-recent-work__img-link-description">art / t-shirt</p>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="col item reset-padding">
+                        <img class="b-recent-work__img" alt="newspaper" src="img/3.jpg"/>
+                        <a href="#"  alt="welcome to chomok">
+                            <div class="b-recent-work__item-img-link">
+                                <div class="b-recent-work__img-link-separator"></div>
+                                <h3 class="b-recent-work__img-link-title">T-SHIRT DESIGN</h3>
+                                <p class="b-recent-work__img-link-description">art / t-shirt</p>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="col item reset-padding">
+                        <img class="b-recent-work__img" alt="notebook" src="img/4.jpg"/>
+                        <a href="#"  alt="welcome to chomok">
+                            <div class="b-recent-work__item-img-link">
+                                <div class="b-recent-work__img-link-separator"></div>
+                                <h3 class="b-recent-work__img-link-title">T-SHIRT DESIGN</h3>
+                                <p class="b-recent-work__img-link-description">art / t-shirt</p>
+                            </div>
+                        </a> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col item reset-padding">
+                        <img class="b-recent-work__img"  alt="truck transport" src="img/5.jpg"/>
+                        <a href="#"  alt="welcome to chomok">
+                            <div class="b-recent-work__item-img-link">
+                                <div class="b-recent-work__img-link-separator"></div>
+                                <h3 class="b-recent-work__img-link-title">T-SHIRT DESIGN</h3>
+                                <p class="b-recent-work__img-link-description">art / t-shirt</p>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="col item reset-padding">
+                        <img class="b-recent-work__img" alt="documents" src="img/6.jpg"/>
+                        <a href="#"  alt="welcome to chomok">
+                            <div class="b-recent-work__item-img-link">
+                                <div class="b-recent-work__img-link-separator"></div>
+                                <h3 class="b-recent-work__img-link-title">T-SHIRT DESIGN</h3>
+                                <p class="b-recent-work__img-link-description">art / t-shirt</p>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="col item reset-padding">
+                        <img class="b-recent-work__img" alt="telephones" src="img/7.jpg"/>
+                        <a href="#"  alt="welcome to chomok">
+                            <div class="b-recent-work__item-img-link">
+                                <div class="b-recent-work__img-link-separator"></div>
+                                <h3 class="b-recent-work__img-link-title">T-SHIRT DESIGN</h3>
+                                <p class="b-recent-work__img-link-description">art / t-shirt</p>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="col item reset-padding">
+                        <img class="b-recent-work__img" alt="monoblocks" src="img/8.jpg"/>
+                        <a href="#"  alt="welcome to chomok">
+                            <div class="b-recent-work__item-img-link">
+                                <div class="b-recent-work__img-link-separator"></div>
+                                <h3 class="b-recent-work__img-link-title">T-SHIRT DESIGN</h3>
+                                <p class="b-recent-work__img-link-description">art / t-shirt</p>
+                            </div>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-case-study">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="b-case-study__title">CASE STUDY</h2>
+                        <p class="b-case-study__description">
+                            A brief story about how this process works, 
+                            keep an eye till the end.
+                        </p>
+                        <div class="b-top-block__circle b-recent-work__circle"></div>
+                    </div>
+                </div>
+                <div class="b-case-study__block">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 p-0">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <ul class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                </ul>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="b-case-study__out-block">
+                                            <div class="b-case-study__carousel-block">
+                                                <div class="b-case-study__carousel-icon"></div>
+                                                <h3 class="b-case-study__carousel-title">ACCUMULATE CREATIVE IDEAS</h3>
+                                                <div class="b-case-study__carousel-separator"></div>
+                                                <p class="b-case-study__carousel-description">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting let. 
+                                                    Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text 
+                                                    of the printing and typesetting let. Lorem Ipsum has been the industry 
+                                                    Printing and typelorem Ipsum has been the setting let.
+                                                </p>
+                                                <a href="#" class="b-top-block__button b-top-block__button_red b-case-study__button">
+                                                    READ MORE
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="b-case-study__out-block">
+                                            <div class="b-case-study__carousel-block">
+                                                <div class="b-case-study__carousel-icon"></div>
+                                                <h3 class="b-case-study__carousel-title">ACCUMULATE CREATIVE IDEAS</h3>
+                                                <div class="b-case-study__carousel-separator"></div>
+                                                <p class="b-case-study__carousel-description">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting let. 
+                                                    Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text 
+                                                    of the printing and typesetting let. Lorem Ipsum has been the industry 
+                                                    Printing and typelorem Ipsum has been the setting let.
+                                                </p>
+                                                <a href="#" class="b-top-block__button b-top-block__button_red b-case-study__button">
+                                                    READ MORE
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="carousel-item">
+                                        <div class="b-case-study__out-block">
+                                            <div class="b-case-study__carousel-block">
+                                                <div class="b-case-study__carousel-icon"></div>
+                                                <h3 class="b-case-study__carousel-title">ACCUMULATE CREATIVE IDEAS</h3>
+                                                <div class="b-case-study__carousel-separator"></div>
+                                                <p class="b-case-study__carousel-description">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting let. 
+                                                    Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text 
+                                                    of the printing and typesetting let. Lorem Ipsum has been the industry 
+                                                    Printing and typelorem Ipsum has been the setting let.
+                                                </p>
+                                                <a href="#" class="b-top-block__button b-top-block__button_red b-case-study__button">
+                                                    READ MORE
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 p-0">
+                            <img src="img/case-study-img.jpg" alt="computer"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-amount">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 p-0">
+                        <div class="b-amount__item">
+                            <div class="b-amount__circle">
+                                <i class="b-amount__icon b-amount__icon_heart"></i>
+                            </div>
+                            <h3 class="b-amount__number">3891</h3>
+                            <p class="b-amount__description">User Favourites</p>
+                        </div>
+                        <div class="b-amount__item">
+                            <div class="b-amount__circle ">
+                                <i class="b-amount__icon b-amount__icon_chek"></i>
+                            </div>
+                            <h3 class="b-amount__number">281K</h3>
+                            <p class="b-amount__description">Posts Last 24 Hours</p>
+                        </div>
+                        <div class="b-amount__item">
+                            <div class="b-amount__circle">
+                                <i class="b-amount__icon b-amount__icon_ok"></i>
+                            </div>
+                            <h3 class="b-amount__number">618</h3>
+                            <p class="b-amount__description">Total Posts</p>
+                        </div>
+                        <div class="b-amount__item">
+                            <div class="b-amount__circle">
+                                <i class="b-amount__icon b-amount__icon_star"></i>
+                            </div>
+                            <h3 class="b-amount__number">178</h3>
+                            <p class="b-amount__description">Campaigns</p>
+                        </div>
+                        <div class="b-amount__item b-amount__item_last">
+                            <div class="b-amount__circle">
+                                <i class="b-amount__icon b-amount__icon_flag"></i>
+                            </div>
+                            <h3 class="b-amount__number">285</h3>
+                            <p class="b-amount__description"> Amazing Features</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
+
+        <div class="b-our-pricing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="b-case-study__title">OUR PRICING</h2>
+                        <p class="b-case-study__description">
+                            A 30 days free trial for all. A brief story about 
+                            how this process works, keep an eye till the end.
+                        </p>
+                        <div class="b-top-block__circle b-recent-work__circle"></div>
+                    </div>
+                </div>
+
+                <div class="b-our-pricing__block">
+                    <div class="row">
+                        <div class="col-md-4 p-0">
+                            <div class="b-our-pricing__main-background">
+                                <div class="b-our-pricing__inner-background b-our-pricing__inner-background_grey">
+                                    <h3 class="b-our-pricing__block-title">STARTER</h3>
+                                    <div class="b-our-pricing__circle">
+                                        <div class="b-our-pricing__circle-block">
+                                            <h4 class="b-our-pricing__circle-title">$19</h4>
+                                            <p class="b-our-pricing__circle-description reset-all">per month</p>
+                                        </div>
+                                    </div>
+                                    <div class="b-our-pricing__block-description">
+                                        <p class="reset-all">Competition Analysis Methods</p>
+                                        <p class="reset-all">All Ranked URLs</p>
+                                        <p class="reset-all">International Support System</p>
+                                        <p class="reset-all">Social Media Tracking</p>
+                                    </div>
+                                    <a href="#" class="b-top-block__button b-top-block__button_red b-case-study__button b-our-pricing__button_grey">
+                                        CHOOSE PLAN
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="b-our-pricing__main-background">
+                                <div class="b-our-pricing__inner-background b-our-pricing__inner-background_red">
+                                    <h3 class="b-our-pricing__block-title">PREMIUM</h3>
+                                    <div class="b-our-pricing__circle">
+                                        <div class="b-our-pricing__circle-block">
+                                            <h4 class="b-our-pricing__circle-title">$39</h4>
+                                            <p class="b-our-pricing__circle-description reset-all">per month</p>
+                                        </div>
+                                    </div>
+                                    <div class="b-our-pricing__block-description">
+                                        <p class="reset-all">Competition Analysis Methods</p>
+                                        <p class="reset-all">All Ranked URLs</p>
+                                        <p class="reset-all">International Support System</p>
+                                        <p class="reset-all">Social Media Tracking</p>
+                                    </div>
+                                    <a href="#" class="b-top-block__button b-top-block__button_red b-case-study__button b-our-pricing__button_red">
+                                        CHOOSE PLAN
+                                    </a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-md-4 p-0">
+                            <div class="b-our-pricing__main-background">
+                                <div class="b-our-pricing__inner-background b-our-pricing__inner-background_grey">
+                                    <h3 class="b-our-pricing__block-title">BUSINESS</h3>
+                                    <div class="b-our-pricing__circle">
+                                        <div class="b-our-pricing__circle-block">
+                                            <h4 class="b-our-pricing__circle-title">$99</h4>
+                                            <p class="b-our-pricing__circle-description reset-all">per month</p>
+                                        </div>
+                                    </div>
+                                    <div class="b-our-pricing__block-description">
+                                        <p class="reset-all">Competition Analysis Methods</p>
+                                        <p class="reset-all">All Ranked URLs</p>
+                                        <p class="reset-all">International Support System</p>
+                                        <p class="reset-all">Social Media Tracking</p>
+                                    </div>
+                                    <a href="#" class="b-top-block__button b-top-block__button_red b-case-study__button b-our-pricing__button_grey">
+                                        CHOOSE PLAN
+                                    </a>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         //= template/footer.html
     </body>
 </html>

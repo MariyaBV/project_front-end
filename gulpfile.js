@@ -53,6 +53,7 @@ var gulp = require('gulp'),  // подключаем Gulp
     sass = require('gulp-sass'), // модуль для компиляции SASS (SCSS) в CSS
     autoprefixer = require('gulp-autoprefixer'), // модуль для автоматической установки автопрефиксов
     cleanCSS = require('gulp-clean-css'), // плагин для минимизации CSS
+    babel = require('gulp-babel'),
     uglify = require('gulp-uglify'), // модуль для минимизации JavaScript
     cache = require('gulp-cache'), // модуль для кэширования
     //imagemin = require('gulp-imagemin'), // плагин для сжатия PNG, JPEG, GIF и SVG изображений
@@ -96,9 +97,12 @@ gulp.task('js:build', function () {
     gulp.src(path.src.js) // получим файл main.js
 	.pipe(plumber()) // для отслеживания ошибок
 	.pipe(rigger()) // импортируем все указанные файлы в main.js
-	.pipe(sourcemaps.init()) //инициализируем sourcemap
+    .pipe(sourcemaps.init()) //инициализируем sourcemap
+    .pipe(babel({
+        presets: ['@babel/env']
+    }))
 	.pipe(uglify()) // минимизируем js
-	.pipe(sourcemaps.write('./')) //  записываем sourcemap
+    .pipe(sourcemaps.write('./')) //  записываем sourcemap
 	.pipe(gulp.dest(path.build.js)) // положим готовый файл
 	.pipe(webserver.reload({stream: true})); // перезагрузим сервер
 });

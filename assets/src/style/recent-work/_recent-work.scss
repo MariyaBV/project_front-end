@@ -1,0 +1,112 @@
+.b-recent-work
+{
+    margin-top: 130px;
+    text-align: center;
+
+    &__title
+    {
+        font: 600 36px/40px 'Source Sans Pro', sans-serif;
+        color: #6a6a6a;
+        margin-bottom: 16px;
+    }
+
+    &__description
+    {
+        color: #999999;
+        font: 400 14px/18px 'Source Sans Pro', sans-serif;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    &__img
+    {
+        width: 100%;
+    }
+
+    &__menu
+    {
+        margin-top: 95px;
+        margin-bottom: 46px;
+        color: #999999;
+    }
+
+    &__list-item
+    {
+        padding: 0 9px;
+        color: #999999;
+
+        &:hover
+        {
+            color: #e74c3c;
+            text-decoration: none;
+        }
+    }
+
+    &__circle
+    {
+        margin-top: 25px;
+        height: 8px;
+        width: 8px;
+
+        &:before,
+        &:after
+        {
+            background-color: #cccccc;
+            height: 1px;
+        }
+
+        &:before
+        {
+            margin-top: 4px;
+        }
+
+        &:after
+        {
+            margin-top: -1px;
+            margin-left: -87px;
+        }
+    }
+
+    &__item-img-link
+    {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #e74c3c;
+        color: #fff;
+        opacity: 0;
+        transition: 0.6s;
+        z-index: 99;
+
+        &:hover
+        {
+            opacity: 0.8;
+        }
+    }
+
+    &__img-link-separator
+    {
+        margin-top: 70%;
+        margin-left: 10%;
+        height: 4px;
+        width: 44px;
+        background: #fff;
+        display: block;
+        content: "";
+    }
+
+    &__img-link-title,
+    &__img-link-description
+    {
+        margin-top: 4%;
+        text-align: left;
+        margin-left: 10%;
+    }
+
+    &__img-link-description
+    {
+        margin-top: 4%;
+    }
+}

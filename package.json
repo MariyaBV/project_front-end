@@ -9,10 +9,14 @@
   "author": "Marya Belyakova <mari.mv2008@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-core": "^6.26.3",
     "browser-sync": "^2.24.7",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-cache": "^1.0.2",
     "gulp-clean-css": "^3.10.0",
     "gulp-imagemin": "^4.1.0",
@@ -25,6 +29,7 @@
     "imagemin-pngquant": "^6.0.0"
   },
   "dependencies": {
-    "imagemin": "^5.1.1"
+    "imagemin": "^5.1.1",
+    "uglify-js": "^3.4.9"
   }
 }

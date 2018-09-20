@@ -1,6 +1,6 @@
 .b-our-history
 {
-    margin-bottom: 150px;
+    padding: 140px 0 150px;
     
     &__title
     {
@@ -24,13 +24,19 @@
 
     &__description
     {
-        margin-top: 50px;
+        margin-top: 37px;
         color: #999;
         font: 400 14px/29px 'Source Sans Pro', sans-serif;
 
         &_last
         {
-            margin-bottom: 50px;
+            margin-bottom: 40px;
         }
+    }
+
+    &__button
+    {
+        min-width: 225px;
+        padding: 21px 41px;
     }
 }

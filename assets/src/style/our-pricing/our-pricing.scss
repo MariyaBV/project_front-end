@@ -1,0 +1,101 @@
+.b-our-pricing
+{
+    padding: 148px 0 140px 0;
+    text-align: center;
+
+    &__block
+    {
+        margin-top: 95px;
+    }
+
+    &__main-background
+    {
+        background-color: #f4f5f9;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__inner-background
+    {
+        height: 30%;
+        margin-top: 0;
+        padding-top: 0;
+        width: 100%;
+        position: relative;
+
+        &_grey
+        {
+            background-color: #999999;
+        }
+
+        &_red
+        {
+            background-color: #e74c3c;
+        }
+    }
+
+    &__block-title
+    {
+        color: #fff;
+        font: 400 24px/28px 'Open Sans',sans-serif;
+        padding-top: 50px;
+    }
+
+    &__circle
+    {
+        background: url(../../img/circle-our-pricing.png) center center no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 190px;
+        width: 100%;
+        display: table;
+    }
+
+    &__circle-block
+    {
+        display: table-cell;
+        vertical-align: middle;
+        color: #999;
+        text-align: center;
+    }
+
+    &__circle-title
+    {
+        font: 600 36px/40px 'Source Sans Pro', sans-serif;
+    }
+
+    &__circle-description
+    {
+        font: 400 18px/24px 'Source Sans Pro', sans-serif;
+    }
+
+    &__block-description
+    {
+        color: #999;
+        font: 400 14px/40px 'Open Sans',sans-serif;
+        text-align: center;
+        margin: 225px 0 35px 0;
+    }
+
+    &__button
+    {
+        &_grey
+        {
+            background-color: #999;
+            border: 2px solid #999;
+            padding: 15px 28px;
+
+            &:hover
+            {
+                background-color: #656565;
+                border-color: #656565;
+            }
+        }
+
+        &_red
+        {
+            padding: 15px 28px; 
+        }
+    }
+}
