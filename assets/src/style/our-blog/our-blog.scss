@@ -1,0 +1,143 @@
+.b-our-blog
+{
+    text-align: center;
+    background: #f4f5f9;
+
+    &__block
+    {
+        margin-top: 100px;
+    }
+
+    &__item-img
+    {
+        height: 100%;
+        width: 50%;
+        display: block;
+        float: left;
+
+        &_coffe
+        {
+            background: url(../../img/our-blog-1.jpg) no-repeat;
+            background-size: cover;
+        }
+
+        &_watch
+        {
+            background: url(../../img/our-blog-2.jpg) no-repeat;
+            background-size: cover;
+        }
+
+        &_road
+        {
+            background: url(../../img/our-blog-3.jpg) no-repeat;
+            background-size: cover;
+        }
+        
+        &_car
+        {
+            background: url(../../img/our-blog-4.jpg) no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__separator
+    {
+        margin: 8px 0 30px;
+        width: 35px;
+    }
+
+    &__description
+    {
+        font: 400 14px/25px 'Open Sans', sans-serif;
+        margin: 0 0 30px 0;
+    }
+
+    &__title
+    {
+        font: 600 24px/28px 'Source Sans Pro', sans-serif;
+        margin: 0;
+    }
+
+    &__subtitle
+    {
+        margin: 0 0 10px 0;
+    }
+
+    &__link
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__link-block
+    {
+        font: 400 italic 14px/24px 'Open Sans', sans-serif;
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+
+        &:hover
+        {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    &__arrow
+    {
+        color: #fff;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 80px;
+        transition: all 0.3s ease;
+    }
+
+    &__description-left
+    {
+        &:before
+        {
+            z-index: 10;
+            content: '';
+            position: absolute;
+            left: -75px;
+            top: 37%;
+            border: 49px solid transparent;
+            border-right: 41px solid #e74e3e;
+        }
+    }
+
+    &__description-right
+    {
+        &:before
+        {
+            z-index: 10;
+            content: ''; 
+            position: absolute;
+            right: -75px; 
+            top:  37%;
+            border: 49px solid transparent;
+            border-left: 41px solid #e74e3e;
+        }
+    }
+
+    &__item-description
+    {
+        background: #e74e3e;
+        position: relative;
+        width: 50%; 
+        color: #fff;
+        display: block;
+        float: left;
+        padding: 50px 50px 70px 50px;
+        text-align: left;
+    }
+}
+
+.b-our-blog__link:hover ~ .b-our-blog__arrow
+{
+    left: 90px;
+}

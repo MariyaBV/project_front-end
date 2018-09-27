@@ -1,6 +1,6 @@
 .b-characteristic
 {
-    padding: 65px 0 106px;
+    padding: 125px 0 106px;
 
     // &:after
     // {
@@ -20,11 +20,16 @@
             cursor: pointer;            
         }
 
-        &:hover .b-characteristic__icon
+        &:hover .b-characteristic__square
         {
             border-color: #e74c3c;
             transform: rotate(45deg);
         }
+
+        // &:hover .b-characteristic__icon
+        // {
+        //     transform: rotate(-45deg);
+        // }
 
         &:hover .b-characteristic__title
         {
@@ -32,16 +37,64 @@
         }
     }
 
-    &__icon
+    &__square
     {
         border: 1px solid #e5e5e5;
         width: 70px;
         height: 70px;
-        line-height: 70px;
         margin: 0 auto;
-        transition: all 0.5s;
+        transition: all 0.3s;
         margin-bottom: 27px;
+        position: absolute;
+        top: -8px;
+        right: -25px;
+
+        &_glasses
+        {
+            right: -22px;
+        }
+
+        &_lamp
+        {
+            right: -27px;
+        }
     }
+
+    &__icon
+    {
+        position: relative;
+        padding-top: 55px;
+        margin: 0 auto 40px;
+
+        &_heart
+        {
+            height: 19px;
+            width: 22px;
+            background: url(../../img/heart.png) center center no-repeat;
+        }
+
+        &_comment
+        {
+            height: 22px;
+            width: 21px;
+            background: url(../../img/comment.png) center center no-repeat;
+        }
+
+        &_lamp
+        {
+            height: 27px;
+            width: 17px;
+            background: url(../../img/lamp.png) center center no-repeat;
+        }
+
+        &_glasses
+        {
+            height: 13px;
+            width: 27px;
+            background: url(../../img/glasses.png) center center no-repeat;
+        }
+    }
+    
 
     &__separator
     {
@@ -59,63 +112,6 @@
         font: 700 18px/24px 'Open Sans', sans-serif;
         color: #6a6a6a;
         position: relative;
-
-        &_heart
-        {
-            &:before
-            {
-                height: 35px;
-                left: 0px;
-                top: -80px;
-                background: url(../../img/heart.png) center center no-repeat;
-                position: absolute;
-                width: 100%;
-                content: '';
-            }
-        }
-
-        &_comment
-        {
-            &:before
-            {
-                height: 35px;
-                left: 0px;
-                top: -80px;
-                background: url(../../img/comment.png) center center no-repeat;
-                position: absolute;
-                width: 100%;
-                content: '';
-            }
-        }
-
-        &_lamp
-        {
-            &:before
-            {
-                height: 35px;
-                left: 0px;
-                top: -80px;
-                background: url(../../img/lamp.png) center center no-repeat;
-                position: absolute;
-                width: 100%;
-                content: '';
-            }
-        }
-
-        &_glasses
-        {
-            &:before
-            {
-                height: 35px;
-                left: 0px;
-                top: -80px;
-                background: url(../../img/glasses.png) center center no-repeat;
-                position: absolute;
-                width: 100%;
-                content: '';
-            }
-        }
-
     }
 
     &__description

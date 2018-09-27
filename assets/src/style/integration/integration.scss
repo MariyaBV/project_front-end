@@ -1,0 +1,124 @@
+.b-integration
+{
+    text-align: center;
+    padding: 142px 0 112px;
+    background: #f4f5f9;
+
+    &__item
+    {
+        width: 205px;
+        height: 105px;
+        background: #fff;
+        box-shadow: 0px 1px 3px 0px rgba(31, 31, 31, 0.09);
+        margin-bottom: 30px;
+        transition: 0.3s;
+
+        &:hover
+        {
+            background: #e74e3e;
+            cursor: pointer;
+        }
+
+        &:before
+        {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    &__logo
+    {
+            vertical-align: middle;
+            margin: 0 auto;
+            display: inline-block;
+
+        &_osha
+        {
+            background: url(../../img/osha-grey.png) no-repeat;
+            width: 155px;
+            height: 45px;
+        }
+
+        &_affiliations
+        {
+            background: url(../../img/affiliations.png) no-repeat;
+            width: 137px;
+            height: 38px;
+        }
+
+        &_nyc
+        {
+            background: url(../../img/nyc-grey.png) no-repeat;
+            width: 120px;
+            height: 57px;
+        }
+
+        &_bbb-logo
+        {
+            background: url(../../img/bbb-logo-accredited.png) no-repeat;
+            width: 157px;
+            height: 60px;
+        }
+
+        &_sefa
+        {
+            background: url(../../img/sefa.png) no-repeat;
+            width: 103px;
+            height: 79px;
+        }
+
+        &_dummy
+        {
+            background: url(../../img/dummy-logo.png) no-repeat;
+            width: 190px;
+            height: 85px;
+        }
+
+        &_logo-type
+        {
+            background: url(../../img/logo-type.png) no-repeat;
+            width: 101px;
+            height: 58px;
+        }
+
+        &_imaginarium
+        {
+            background: url(../../img/imaginarium.png) no-repeat;
+            width: 185px;
+            height: 82px;
+        }
+
+        &_random-brend
+        {
+            background: url(../../img/random-brend.png) no-repeat;
+            width: 155px;
+            height: 92px;
+        }
+
+        &_another-logo
+        {
+            background: url(../../img/another-logo.png) no-repeat;
+            width: 190px;
+            height: 82px;
+        }
+    }
+
+    &__all-block
+    {
+        margin-top: 105px;
+    }
+
+    &__circle
+    {
+        margin-top: 22px;
+
+        &:before,
+        &:after
+        {
+            background: #999;
+            height: 1px;
+        }
+    }
+}

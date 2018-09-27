@@ -18,13 +18,13 @@
         margin-bottom: 0;
     }
 
-    &__out-block
-    {
-        display: block;
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
+    // &__out-block
+    // {
+    //     display: block;
+    //     position: relative;
+    //     width: 100%;
+    //     height: 100%;
+    // }
 
     &__carousel-block
     {
@@ -32,11 +32,21 @@
         padding: 80px 60px 50px 60px;
         text-align: center;
         margin: 50px auto;
-        position: absolute;
+        position: relative;
         width: 100%;
         top: 0;
         box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
-        right: -30px;
+    }
+
+    &__background
+    {
+        background: url(../../img/case-study-img.jpg) right no-repeat;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 45px;
+        top: 0;
+        bottom: -30px;
     }
 
     &__carousel-icon
@@ -45,14 +55,14 @@
         height: 127px;
         width: 127px;
         display: block; 
-        margin: 50px auto;
+        margin: 0 auto;
     }
 
     &__carousel-separator
     {
         height: 2px;
         width: 40px;
-        margin: 30px auto;
+        margin: 23px auto;
         background: #6a6a6a;
     }
 
@@ -60,26 +70,33 @@
     {
         color: #6a6a6a;
         font: 400 18px/24px 'Source Sans Pro', sans-serif;
-        margin-top: 55px;
+        margin-top: 50px;
     }
 
     &__carousel-description
     {
         color: #999999;
         font: 400 14px/24px 'Open Sans',sans-serif;
-        margin-bottom: 50px;
+        margin-bottom: 42px;
+    }
+
+    &__carousel-indicator
+    {
+        margin: 0 auto;
+        bottom: 101px;
     }
 
     &__button
     {
-        padding: 21px 40px;
+        padding: 14px 35px;
         margin-right: 0;
-        //min-width: 150px;
         font: 400 12px/14px 'Open Sans',sans-serif;
+        margin-bottom: 66px;
     }
 
     &__block
     {
         margin-top: 98px;
+        position: relative;
     }
 }

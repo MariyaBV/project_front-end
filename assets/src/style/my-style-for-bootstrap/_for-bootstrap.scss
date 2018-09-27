@@ -1,3 +1,29 @@
+.form-control
+{
+    border-bottom: 1px solid #ced4da;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    border-color: #999;
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+
+.form-group
+{
+    margin-bottom: 23px;
+}
+
+
+// input:-webkit-autofill, 
+// textarea:-webkit-autofill, 
+// select:-webkit-autofill
+// {
+//     background-color: #fff !important;
+// }
+
+
 @media (min-width: 1200px)
 {
     .b-container

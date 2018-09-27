@@ -8,44 +8,53 @@
         margin-top: 95px;
     }
 
-    &__main-background
-    {
-        background-color: #f4f5f9;
-        height: 100%;
-        width: 100%;
-    }
+    // &__main-background
+    // {
+    //     background-color: #f4f5f9;
+    //     height: 100%;
+    //     width: 100%;
+    //     position: relative;
+    // }
 
-    &__inner-background
-    {
-        height: 30%;
-        margin-top: 0;
-        padding-top: 0;
-        width: 100%;
-        position: relative;
+    // &__inner-background
+    // {
+    //     height: 40%;
+    //     margin: 0;
+    //     padding: 0;
+    //     width: 100%;
+    //     //position: absolute;
 
-        &_grey
-        {
-            background-color: #999999;
-        }
+    //     &_grey
+    //     {
+    //         background-color: #999999;
+    //     }
 
-        &_red
-        {
-            background-color: #e74c3c;
-        }
-    }
+    //     &_red
+    //     {
+    //         background-color: #e74c3c;
+    //     }
+    // }
 
     &__block-title
     {
         color: #fff;
         font: 400 24px/28px 'Open Sans',sans-serif;
-        padding-top: 50px;
+        padding: 45px 0px;
+        background-color: #999;
+        position: relative;
+        height: 200px;
+
+        &_premium
+        {
+            background-color: #e74c3c;
+        }
     }
 
     &__circle
     {
         background: url(../../img/circle-our-pricing.png) center center no-repeat;
         position: absolute;
-        top: 50%;
+        top: 17%;;
         left: 0;
         height: 190px;
         width: 100%;
@@ -67,7 +76,7 @@
 
     &__circle-description
     {
-        font: 400 18px/24px 'Source Sans Pro', sans-serif;
+        font: 400 13px/15px 'Source Sans Pro', sans-serif;
     }
 
     &__block-description
@@ -75,27 +84,26 @@
         color: #999;
         font: 400 14px/40px 'Open Sans',sans-serif;
         text-align: center;
-        margin: 225px 0 35px 0;
+        padding: 115px 0 50px;
+        background: #f4f5f9;
     }
 
     &__button
     {
+        margin-top: 37px; 
+        margin-bottom: 0;
+        padding: 15px 28px;
+
         &_grey
         {
             background-color: #999;
             border: 2px solid #999;
-            padding: 15px 28px;
 
             &:hover
             {
                 background-color: #656565;
                 border-color: #656565;
             }
-        }
-
-        &_red
-        {
-            padding: 15px 28px; 
         }
     }
 }

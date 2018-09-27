@@ -1,0 +1,143 @@
+.b-footer
+{
+    background: #202020;
+
+
+    &__icons
+    {
+        float: left;
+        margin: 0 auto;
+    }
+
+    &__social
+    {
+        float: left;
+        margin-right: 20px;
+        transition: 0.3s;
+
+        &_facebook
+        {
+            background: url(../../img/facebook-grey.png) center no-repeat;
+            width: 10px;
+            height: 20px;
+
+            &:hover
+            {
+                box-shadow: 0px 3px 2.85px 0.15px rgba(0, 0, 0, 0.25);
+                background: url(../../img/facebook-red.png) center no-repeat;
+
+            }
+        }
+
+        &_twitter
+        {
+            background: url(../../img/twitter-grey.png) center no-repeat;
+            width: 20px;
+            height: 18px;
+
+            &:hover
+            {
+                box-shadow: 0px 3px 2.85px 0.15px rgba(0, 0, 0, 0.25);
+                background: url(../../img/twitter.png) center no-repeat;
+
+            }
+        }
+
+        &_rss
+        {
+            background: url(../../img/rss-grey.png) center no-repeat;
+            width: 21px;
+            height: 20px;
+
+            &:hover
+            {
+                box-shadow: 0px 3px 2.85px 0.15px rgba(0, 0, 0, 0.25);
+                background: url(../../img/rss-red.png) center no-repeat;
+
+            }
+        }
+
+        &_google
+        {
+            background: url(../../img/google_plus-grey.png) center no-repeat;
+            width: 21px;
+            height: 19px;
+
+            &:hover
+            {
+                box-shadow: 0px 3px 2.85px 0.15px rgba(0, 0, 0, 0.25);
+                background: url(../../img/google_plus-red.png) center no-repeat;
+
+            }
+        }
+
+        &_linkedin
+        {
+            background: url(../../img/linkedin-grey.png) center no-repeat;
+            width: 21px;
+            height: 20px;
+
+            &:hover
+            {
+                box-shadow: 0px 3px 2.85px 0.15px rgba(0, 0, 0, 0.25);
+                background: url(../../img/linkedin-red.png) center no-repeat;
+
+            }
+        }
+
+        &_skype
+        {
+            background: url(../../img/skype-grey.png) center no-repeat;
+            width: 21px;
+            height: 20px;
+
+            &:hover
+            {
+                box-shadow: 0px 3px 2.85px 0.15px rgba(0, 0, 0, 0.25);
+                background: url(../../img/skype-red.png) center no-repeat;
+
+            }
+        }
+
+        &_vimeo
+        {
+            background: url(../../img/vimeo-grey.png) center no-repeat;
+            width: 21px;
+            height: 19px;
+
+            &:hover
+            {
+                box-shadow: 0px 3px 2.85px 0.15px rgba(0, 0, 0, 0.25);
+                background: url(../../img/vimeo-red.png) center no-repeat;
+
+            }
+        }
+
+        &_tumblr
+        {
+            background: url(../../img/tumblr-grey.png) center no-repeat;
+            width: 12px;
+            height: 20px;
+
+            &:hover
+            {
+                box-shadow: 0px 3px 2.85px 0.15px rgba(0, 0, 0, 0.25);
+                background: url(../../img/tumblr-red.png) center no-repeat;
+
+            }
+        }
+    }
+
+    &__description
+    {
+        float: right;
+        margin: 0;
+        color: #999;
+        font: 600 14px/24px 'Open Sans', sans-serif;
+    }
+
+    &__block
+    {
+        margin: 35px 0;
+    }
+}

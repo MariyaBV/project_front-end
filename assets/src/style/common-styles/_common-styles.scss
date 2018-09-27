@@ -12,8 +12,8 @@
 {
     background-color: #6a6a6a;
     border-radius: 50%;
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
 }
 
 .reset-all
@@ -25,4 +25,9 @@
 .grey-line
 {
     border: 1px solid #eee;
+}
+
+.clear
+{
+    clear: both;
 }

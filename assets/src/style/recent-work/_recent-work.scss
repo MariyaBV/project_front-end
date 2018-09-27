@@ -34,6 +34,7 @@
     {
         padding: 0 9px;
         color: #999999;
+        transition: 0.3s;
 
         &:hover
         {
@@ -44,20 +45,20 @@
 
     &__circle
     {
-        margin-top: 25px;
+        margin-top: 22px;
         height: 8px;
         width: 8px;
 
         &:before,
         &:after
         {
-            background-color: #cccccc;
+            background-color: #999;
             height: 1px;
         }
 
         &:before
         {
-            margin-top: 4px;
+            margin-top: 3px;
         }
 
         &:after
@@ -67,26 +68,51 @@
         }
     }
 
-    &__item-img-link
+    &__link
     {
+        width: 100%;
+        height: 100%;
         position: absolute;
         left: 0;
         top: 0;
-        width: 100%;
-        height: 100%;
-        background: #e74c3c;
-        color: #fff;
-        opacity: 0;
-        transition: 0.6s;
-        z-index: 99;
+        z-index: 1;
 
-        &:hover
+        &:hover 
         {
             opacity: 0.8;
+            cursor: pointer;
         }
     }
 
-    &__img-link-separator
+    &__background-hover
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #e74c3c;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    &__item
+    {
+        position: relative;
+    }
+
+    &__hover-block
+    {
+        transition: 0.3s;
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        color: #fff;
+        width: 100%;
+        margin-bottom: 4%;
+    }
+
+    &__hover-separator
     {
         margin-top: 70%;
         margin-left: 10%;
@@ -97,16 +123,26 @@
         content: "";
     }
 
-    &__img-link-title,
-    &__img-link-description
+    &__hover-title,
+    &__hover-description
     {
         margin-top: 4%;
         text-align: left;
         margin-left: 10%;
     }
-
-    &__img-link-description
+ 
+    &__hover-description
     {
-        margin-top: 4%;
+        margin-top: 0;
     }
+}
+
+.b-recent-work__link:hover ~ .b-recent-work__hover-block
+{
+    opacity: 1;
+}
+
+.b-recent-work__link:hover ~ .b-recent-work__background-hover
+{
+    opacity: 0.8;
 }

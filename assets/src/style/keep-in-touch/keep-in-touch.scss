@@ -1,0 +1,51 @@
+.b-keep-in-touch
+{
+    padding: 145px 0;
+    text-align: center;
+    background: #f4f5f9;
+
+    &__block
+    {
+        margin-top: 100px;
+        padding: 97px 90px;
+        background: #fff;
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+
+    &__item
+    {
+        margin-bottom: 60px;
+    }
+
+    &__subtitle
+    {
+        color: #e74e3e;
+        font: 400 24px/28px 'Open Sans', sans-serif;
+        margin-bottom: 18px;
+    }
+
+    &__description
+    {
+        color: #999;
+        font: 400 18px/24px 'Open Sans', sans-serif;
+        margin: 0;
+    }
+
+    &__button
+    {
+        padding: 14px 25px;
+        font: 600 13px/13px 'Open Sans',sans-serif;
+        margin-bottom: 0;
+    }
+
+    &__form
+    {
+        margin: 0;
+    }
+
+    &__comment
+    {
+        height: 125px !important;
+    }
+}

@@ -19,35 +19,52 @@
 
     &__icon
     {
-        height: 40px;
-        width: 100%;
         position: absolute;
         margin: 0 auto;
-        top: 34%;
 
         &_heart
         {
             background: url(../../img/heart-light.png) center center no-repeat;
+            height: 26px;
+            width: 31px;
+            top: 40%;
+            left: 34%;
         }
 
         &_chek
         {
             background: url(../../img/chek.png) center center no-repeat;
+            height: 29px;
+            width: 29px;
+            top: 37%;
+            left: 35%;
         }
 
         &_star
         {
             background: url(../../img/star.png) center center no-repeat;
+            height: 29px;
+            width: 31px;
+            top: 36%;
+            left: 35%;
         }
 
         &_flag
         {
             background: url(../../img/flag.png) center center no-repeat;
+            height: 28px;
+            width: 22px;
+            top: 37%;
+            left: 40%;
         }
 
         &_ok
         {
             background: url(../../img/ok.png) center center no-repeat;
+            height: 31px;
+            width: 31px;
+            top: 35%;
+            left: 35%;
         }
     }
 
