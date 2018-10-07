@@ -1,13 +1,12 @@
 .b-top-block
 {
     width: 100%;// 1920px;
-    min-height: 990px;
     margin: 0 auto;
     position: relative;
     background: url(../../img/Background.jpg) center center no-repeat;
     background-size: cover; /* Современные браузеры */
 
-    &:after
+    &:before
     {
         position: absolute;
         left: 0;
@@ -15,12 +14,12 @@
         width: 50%;
         height: 0;
         content: '';
-        border-bottom: 86px solid #fff;
-        border-right: 680px solid transparent;
+        border-bottom: 125px solid #fff;
+        border-right: 960px solid transparent;
         z-index: 5;
     }
 
-    &:before
+    &:after
     {
         position: absolute;
         right: 0;
@@ -28,44 +27,84 @@
         width: 50%;
         height: 0;
         content: '';
-        border-bottom: 86px solid #fff;
-        border-left: 680px solid transparent;
+        border-bottom: 125px solid #fff;
+        border-left: 960px solid transparent;
         z-index: 5;
     }
 
     &__anchor
     {
         position: absolute;
-        left: 47.5%;
+        left: 48%;
         bottom: -4%;
-        width: 74px;
-        height: 74px;
-        background: url(../../img/anchor.png) bottom center no-repeat;
         z-index: 10;
+        width: 65px;
+        height: 65px;
+        background: #f4f5f9;
+        border: 5px solid rgba(255, 255, 255, 0.251);
+        border-radius: 50%;
+        display: table;
+    }
+
+    &__anchor-icon
+    {
+        background: url(../../img/anchor.svg) center center no-repeat;
+        width: 22px;
+        height: 31px;
+        position: relative;
+        margin: 13px auto;
+        display: table-cell;
+        vertical-align: middle;
     }
 
     &__arrow
     {
         display: block;
         position: absolute;
-        top: 435px;
+        top: 340px;
         margin: auto;
+        width: 46px;
+        height: 46px;
+        border-radius: 2px;
 
         &_left
         {
             left: 50px;
+            background: #716a65;
         }
 
         &_right
         {
             right: 50px;
+            background: #e74c3c;
+        }
+    }
+
+    &__arrow-icon
+    {
+        margin: 12px auto;
+
+        &_left
+        {
+            background: url(../../img/next-grey.svg) center center no-repeat;
+            width: 20px;
+            height: 24px;
+            transform: rotate(180deg);
+        }
+
+        &_right
+        {
+            background: url(../../img/next-white.svg) center center no-repeat;
+            width: 20px;
+            height: 24px;
         }
     }
 
     &__content
     {
         text-align: center;
-        margin-top: 320px;
+        margin-top: 220px; // 320px по макету
+        margin-bottom: 220px; //260px по макету
     }
 
     &__title
@@ -105,18 +144,6 @@
         margin-left: -10px;
 
 
-        &:after
-        {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 2px;
-            background: #f1ebe7; 
-            margin: 0 auto;  
-            margin-left: -85px;
-            margin-top: -2px;
-        }
-
         &:before
         {
             content: '';
@@ -125,57 +152,277 @@
             height: 2px;
             background: #f1ebe7; 
             margin: 0 auto;  
+            margin-left: -87px;
+            margin-top: 4px;
+        }
+
+        &:after
+        {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 2px;
+            background: #f1ebe7; 
+            margin: 0 auto;  
             margin-left: 15px;
-            margin-top: 5px;
+            margin-top: -2px;
         }
     }
 
     &__buttons-block
     {
-        color: #fff;
         margin-top: 65px;
     }
-    &__button
+}
+
+@media screen and (max-width: 1700px)
+{
+    .b-top-block
     {
-        display: inline-block;
-        vertical-align: middle;
-        border-radius: 5px;
-        font: 400 14px/14px 'Open Sans', sans-serif;
-        color: #fff;
-        display: inline-block;
-        vertical-align: middle;
-        padding: 20px 47px;
-        text-align: center;
-
-        &_light
+        &__anchor
         {
-            border: 2px solid #fff;
-            transition: 0.3s;
-            padding: 20px 67px;
+            left: 47.5%;
+            bottom: -2%;
+        }
+    }
+}
 
-            &:hover
-            {
-                text-decoration: none;
-                background-color: #fff;
-                color: #6a6a6a;
-            }
+@media screen and (max-width: 1450px)
+{
+    .b-top-block
+    {
+        &__content
+        {
+            margin-top: 180px;
+            margin-bottom: 180px;
         }
 
-        &_red
+        &__anchor
         {
-            background-color: #e74c3c; 
-            border: 2px solid #e74c3c;
-            margin-right: 30px;
-            box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
-            transition: 0.3s;
+            bottom: 0;
+        }
+    }
+}
 
-            &:hover
+@media screen and (max-width: 1250px)
+{
+    .b-top-block
+    {
+        &__content
+        {
+            margin-top: 145px;
+            margin-bottom: 145px;
+        }
+
+        &:before
+        {
+            border-bottom: 105px solid #fff;
+            border-right: 625px solid transparent;
+        }
+
+        &:after
+        {
+            border-bottom: 105px solid #fff;
+            border-left: 625px solid transparent;
+        }
+
+        &__anchor
+        {
+            left: 47.5%;
+            bottom: -3%;
+            width: 50px;
+            height: 50px;
+        }
+
+        &__anchor-icon
+        {
+            width: 20px;
+            height: 25px;
+        }
+
+        &__arrow
+        {
+            width: 35px;
+            height: 35px;
+        }
+
+        &__arrow-icon
+        {
+            margin: 6px auto;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .b-top-block
+    {
+        &__title
+        {
+            font: 700 60px/64px 'Open Sans', sans-serif;
+        }
+    }
+}
+
+@media screen and (max-width: 1090px)
+{
+    .b-top-block
+    {
+        &__anchor
+        {
+            bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 995px)
+{
+    .b-top-block
+    {
+        &__title
+        {
+            font: 700 40px/46px 'Open Sans', sans-serif;
+        }
+
+        &__subtitle
+        {
+            font: 400 20px/26px 'Open Sans', sans-serif;
+        }
+
+        &__description
+        {
+            font: 400 13px/22px 'Open Sans', sans-serif;
+        }
+
+        &__anchor
+        {
+            left: 46.5%;
+        }
+    }
+}
+
+@media screen and (max-width: 840px)
+{
+    .b-top-block
+    {
+        &__anchor
+        {
+            bottom: 2%;
+        }
+
+        &__arrow
+        {
+            &_left
             {
-                background-color: #c13f31;
-                border: 2px solid #c13f31;
-                color: #fff;
-                text-decoration: none;
+                left: 20px;
             }
+
+            &_right
+            {
+                right: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 645px)
+{
+    .b-top-block
+    {
+
+        &:before
+        {
+            border-bottom: 50px solid #fff;
+            border-right: 330px solid transparent;
+        }
+
+        &:after
+        {
+            border-bottom: 50px solid #fff;
+            border-left: 330px solid transparent;
+        }
+
+        &__anchor
+        {
+            bottom: -3%;
+            left: 45%;
+        }
+
+        &__arrow
+        {
+            top: 270px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .b-top-block
+    {
+        &__arrow
+        {
+            top: 200px;
+        }
+
+        &__circle
+        {
+            margin-top: 15px;
+        }
+
+        &__description
+        {
+            margin-top: 45px;
+        }
+
+        &__title
+        {
+            margin-top: 15px;
+        }
+
+        &__buttons-block
+        {
+            margin-top: 15px;
+        }
+
+        &:before
+        {
+            border-bottom: 35px solid #fff;
+            border-right: 250px solid transparent;
+        }
+
+        &:after
+        {
+            border-bottom: 35px solid #fff;
+            border-left: 250px solid transparent;
+        }
+
+        &__content
+        {
+            margin-top: 115px;
+            margin-bottom: 89px;
+        }
+    }
+}
+
+@media screen and (max-width: 430px)
+{
+    .b-top-block
+    {
+        &__arrow
+        {
+            top: 235px;
+        }
+    }
+}
+
+@media screen and (max-width: 340px)
+{
+    .b-top-block
+    {
+        &__anchor
+        {
+            bottom: -1%;
+            left: 43%;
         }
     }
 }

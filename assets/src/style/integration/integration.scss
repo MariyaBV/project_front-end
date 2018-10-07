@@ -12,11 +12,18 @@
         box-shadow: 0px 1px 3px 0px rgba(31, 31, 31, 0.09);
         margin-bottom: 30px;
         transition: 0.3s;
+        opacity: 1;
+        position: relative;
 
-        &:hover
+        &_background
         {
             background: #e74e3e;
-            cursor: pointer;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            position: absolute;
+            left: 0;
         }
 
         &:before
@@ -26,6 +33,16 @@
             height: 100%;
             vertical-align: middle;
         }
+    }
+
+    &__link
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
     }
 
     &__logo
@@ -72,8 +89,8 @@
         &_dummy
         {
             background: url(../../img/dummy-logo.png) no-repeat;
-            width: 190px;
-            height: 85px;
+            width: 160px;
+            height: 80px;
         }
 
         &_logo-type
@@ -86,22 +103,22 @@
         &_imaginarium
         {
             background: url(../../img/imaginarium.png) no-repeat;
-            width: 185px;
-            height: 82px;
+            width: 170px;
+            height: 70px;
         }
 
         &_random-brend
         {
             background: url(../../img/random-brend.png) no-repeat;
-            width: 155px;
-            height: 92px;
+            width: 150px;
+            height: 80px;
         }
 
         &_another-logo
         {
             background: url(../../img/another-logo.png) no-repeat;
-            width: 190px;
-            height: 82px;
+            width: 175px;
+            height: 75px;
         }
     }
 
@@ -119,6 +136,89 @@
         {
             background: #999;
             height: 1px;
+        }
+    }
+}
+
+.b-integration__link:hover ~ .b-integration__item_background
+{
+    opacity: 0.8;
+    //cursor: pointer;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .b-integration
+    {
+        padding: 65px 0;
+    }
+}
+
+@media screen and (max-width: 435px)
+{
+    .b-integration
+    {
+        &__item
+        {
+            width: 180px;
+            height: 90px;
+        }
+    }
+}
+
+@media screen and (max-width: 380px)
+{
+    .b-integration
+    {
+        &__item
+        {
+            width: 148px;
+            height: 85px;
+        }
+
+        &__logo
+        {
+            &_osha
+            {
+                background: url(../../img/osha-grey-140.png) no-repeat;
+                width: 140px;
+                height: 41px;
+            }
+
+            &_bbb-logo
+            {
+                background: url(../../img/bbb-logo-accredited-140.png) no-repeat;
+                width: 140px;
+                height: 54px;
+            }
+
+            &_dummy
+            {
+                background: url(../../img/dummy-logo-140.png) no-repeat;
+                width: 140px;
+                height: 70px;
+            }
+
+            &_imaginarium
+            {
+                background: url(../../img/imaginarium-140.png) no-repeat;
+                width: 140px;
+                height: 58px;
+            }
+
+            &_random-brend
+            {
+                background: url(../../img/random-brend-140.png) no-repeat;
+                width: 140px;
+                height: 75px;
+            }
+
+            &_another-logo
+            {
+                background: url(../../img/another-logo-140.png) no-repeat;
+                width: 140px;
+                height: 60px;
+            }
         }
     }
 }

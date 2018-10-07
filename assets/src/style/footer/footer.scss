@@ -5,139 +5,149 @@
 
     &__icons
     {
-        float: left;
         margin: 0 auto;
     }
 
     &__social
     {
         float: left;
-        margin-right: 20px;
+        margin-right: 16px;
         transition: 0.3s;
 
         &_facebook
         {
-            background: url(../../img/facebook-grey.png) center no-repeat;
-            width: 10px;
-            height: 20px;
+            background: url(../../img/facebook-grey.svg) center no-repeat;
+            width: 24px;
+            height: 24px;
 
             &:hover
             {
-                box-shadow: 0px 3px 2.85px 0.15px rgba(0, 0, 0, 0.25);
-                background: url(../../img/facebook-red.png) center no-repeat;
-
+                background: url(../../img/facebook-red.svg) center no-repeat;
             }
         }
 
         &_twitter
         {
-            background: url(../../img/twitter-grey.png) center no-repeat;
-            width: 20px;
-            height: 18px;
+            background: url(../../img/twitter-grey.svg) center no-repeat;
+            width: 24px;
+            height: 24px;
 
             &:hover
             {
-                box-shadow: 0px 3px 2.85px 0.15px rgba(0, 0, 0, 0.25);
-                background: url(../../img/twitter.png) center no-repeat;
-
+                background: url(../../img/twitter-red.svg) center no-repeat;
             }
         }
 
         &_rss
         {
-            background: url(../../img/rss-grey.png) center no-repeat;
-            width: 21px;
-            height: 20px;
+            background: url(../../img/rss-grey.svg) center no-repeat;
+            width: 24px;
+            height: 24px;
 
             &:hover
             {
-                box-shadow: 0px 3px 2.85px 0.15px rgba(0, 0, 0, 0.25);
-                background: url(../../img/rss-red.png) center no-repeat;
-
+                background: url(../../img/rss-red.svg) center no-repeat;
             }
         }
 
         &_google
         {
-            background: url(../../img/google_plus-grey.png) center no-repeat;
-            width: 21px;
-            height: 19px;
+            background: url(../../img/google-grey.svg) center no-repeat;
+            width: 24px;
+            height: 24px;
 
             &:hover
             {
-                box-shadow: 0px 3px 2.85px 0.15px rgba(0, 0, 0, 0.25);
-                background: url(../../img/google_plus-red.png) center no-repeat;
-
+                background: url(../../img/google-red.svg) center no-repeat;
             }
         }
 
         &_linkedin
         {
-            background: url(../../img/linkedin-grey.png) center no-repeat;
-            width: 21px;
-            height: 20px;
+            background: url(../../img/linkedIn-grey.svg) center no-repeat;
+            width: 22px;
+            height: 22px;
 
             &:hover
             {
-                box-shadow: 0px 3px 2.85px 0.15px rgba(0, 0, 0, 0.25);
-                background: url(../../img/linkedin-red.png) center no-repeat;
-
+                background: url(../../img/linkedIn-red.svg) center no-repeat;
             }
         }
 
         &_skype
         {
-            background: url(../../img/skype-grey.png) center no-repeat;
-            width: 21px;
-            height: 20px;
+            background: url(../../img/skype-grey.svg) center no-repeat;
+            width: 27px;
+            height: 27px;
 
             &:hover
             {
-                box-shadow: 0px 3px 2.85px 0.15px rgba(0, 0, 0, 0.25);
-                background: url(../../img/skype-red.png) center no-repeat;
-
+                background: url(../../img/skype-red.svg) center no-repeat;
             }
         }
 
         &_vimeo
         {
-            background: url(../../img/vimeo-grey.png) center no-repeat;
-            width: 21px;
-            height: 19px;
+            background: url(../../img/vimeo-grey.svg) center no-repeat;
+            width: 22px;
+            height: 22px;
 
             &:hover
             {
-                box-shadow: 0px 3px 2.85px 0.15px rgba(0, 0, 0, 0.25);
-                background: url(../../img/vimeo-red.png) center no-repeat;
-
+                background: url(../../img/vimeo-red.svg) center no-repeat;
             }
         }
 
         &_tumblr
         {
-            background: url(../../img/tumblr-grey.png) center no-repeat;
-            width: 12px;
-            height: 20px;
+            background: url(../../img/tumblr-grey.svg) center no-repeat;
+            width: 24px;
+            height: 24px;
 
             &:hover
             {
-                box-shadow: 0px 3px 2.85px 0.15px rgba(0, 0, 0, 0.25);
-                background: url(../../img/tumblr-red.png) center no-repeat;
-
+                background: url(../../img/tumblr-red.svg) center no-repeat;
             }
         }
     }
 
     &__description
     {
-        float: right;
         margin: 0;
         color: #999;
         font: 600 14px/24px 'Open Sans', sans-serif;
+        text-align: right;
     }
 
     &__block
     {
         margin: 35px 0;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .b-footer
+    {
+        &__description
+        {
+            text-align: left;
+        }
+
+        &__block
+        {
+            margin: 15px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 348px)
+{
+    .b-footer
+    {
+        &__social
+        {
+            margin-right: 5px;
+        }
     }
 }

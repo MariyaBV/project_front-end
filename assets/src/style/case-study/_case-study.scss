@@ -29,7 +29,7 @@
     &__carousel-block
     {
         background-color: #fff;
-        padding: 80px 60px 50px 60px;
+        padding: 80px 60px 155px 60px;
         text-align: center;
         margin: 50px auto;
         position: relative;
@@ -38,24 +38,26 @@
         box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
     }
 
-    &__background
-    {
-        background: url(../../img/case-study-img.jpg) right no-repeat;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 45px;
-        top: 0;
-        bottom: -30px;
-    }
-
     &__carousel-icon
     {
-        background: url(../../img/case-icon-3.png) no-repeat;
-        height: 127px;
-        width: 127px;
+        background: #e74c3c;
+        height: 90px;
+        width: 90px;
         display: block; 
         margin: 0 auto;
+        position: relative;
+        transform: rotate(45deg);
+
+        &_lamp
+        {
+            background: url(../../img/case-study-lamp.png) no-repeat;
+            position: absolute;
+            top: 30%;
+            left: 38%;
+            height: 34px;
+            width: 21px;
+            transform: rotate(-45deg);
+        }
     }
 
     &__carousel-separator
@@ -86,17 +88,103 @@
         bottom: 101px;
     }
 
-    &__button
-    {
-        padding: 14px 35px;
-        margin-right: 0;
-        font: 400 12px/14px 'Open Sans',sans-serif;
-        margin-bottom: 66px;
-    }
-
     &__block
     {
         margin-top: 98px;
         position: relative;
+
+        &_background
+        {
+            background: url(../../img/case-study-img.jpg) right no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            right: -45px;
+            top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1220px)
+{
+    .b-case-study
+    {
+        &__block
+        {
+            &_background
+            {
+                right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .b-case-study
+    {
+        padding: 65px 0;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .b-case-study
+    {
+        &__block
+        {
+            margin-top: 15px;
+
+            &_background
+            {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 525px)
+{
+    .b-case-study
+    {    
+        &__carousel-block
+        {
+            padding: 50px 40px 75px 40px;
+        }
+
+        &__carousel-indicator
+        {
+            bottom: 85px;
+        }
+    }
+}
+
+@media screen and (max-width: 388px)
+{
+    .b-case-study
+    {
+        &__title
+        {
+            font-size: 30px;
+        }
+
+        &__description
+        {
+            font-size: 13px;
+            line-height: 25px;
+            margin-top: 24px;
+        }
+
+        &__carousel-description
+        {
+            font-size: 13px;
+            line-height: 23px;
+            margin-top: 24px;
+        }
+
+        &__carousel-title
+        {
+            font-size: 15px;
+        }
     }
 }

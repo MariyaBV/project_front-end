@@ -22,7 +22,7 @@
     //     margin: 0;
     //     padding: 0;
     //     width: 100%;
-    //     //position: absolute;
+    //     position: absolute;
 
     //     &_grey
     //     {
@@ -38,7 +38,7 @@
     &__block-title
     {
         color: #fff;
-        font: 400 24px/28px 'Open Sans',sans-serif;
+        font: 500 24px/28px 'Open Sans',sans-serif;
         padding: 45px 0px;
         background-color: #999;
         position: relative;
@@ -52,13 +52,36 @@
 
     &__circle
     {
-        background: url(../../img/circle-our-pricing.png) center center no-repeat;
+        background: #fff;
         position: absolute;
-        top: 17%;;
-        left: 0;
-        height: 190px;
-        width: 100%;
+        top: 8%;
+        left: 8%;
         display: table;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+    }
+
+    &__outer-circle
+    {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        background: rgba(244, 245, 249, 0.251);
+        margin: 0 auto;
+        position: absolute;
+        top: 16%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__additional-block
+    {
+        position: relative;
+        height: 100%;
+        width: 100%;
     }
 
     &__circle-block
@@ -72,6 +95,11 @@
     &__circle-title
     {
         font: 600 36px/40px 'Source Sans Pro', sans-serif;
+
+        &_red
+        {
+            color: #e74c3c;
+        }
     }
 
     &__circle-description
@@ -86,24 +114,73 @@
         text-align: center;
         padding: 115px 0 50px;
         background: #f4f5f9;
+
+        &_outside
+        {
+            padding: 0;
+            margin: 0;
+        }
     }
 
-    &__button
+    &__list
     {
-        margin-top: 37px; 
-        margin-bottom: 0;
-        padding: 15px 28px;
+        list-style-type: none;
+        margin-bottom: 37px;
+    }
+}
 
-        &_grey
+@media screen and (max-width: 1024px)
+{
+    .b-our-pricing
+    {
+        padding: 65px 0;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px)
+{
+    .b-our-pricing
+    {
+        &__outer-circle
         {
-            background-color: #999;
-            border: 2px solid #999;
+            width: 150px;
+            height: 150px;
+        }
 
-            &:hover
-            {
-                background-color: #656565;
-                border-color: #656565;
-            }
+        &__circle
+        {
+            width: 125px;
+            height: 125px;
+        }
+
+        &__circle-title
+        {
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+}
+
+@media screen and (max-width: 330px)
+{
+    .b-our-pricing
+    {
+        &__outer-circle
+        {
+            width: 150px;
+            height: 150px;
+        }
+
+        &__circle
+        {
+            width: 125px;
+            height: 125px;
+        }
+
+        &__circle-title
+        {
+            font-size: 30px;
+            line-height: 36px;
         }
     }
 }

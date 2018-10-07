@@ -10,10 +10,8 @@
 
     &__item-img
     {
-        height: 100%;
-        width: 50%;
+        width: 100%;
         display: block;
-        float: left;
 
         &_coffe
         {
@@ -98,6 +96,13 @@
 
     &__description-left
     {
+        position: relative;
+        width: 100%; 
+        color: #fff;
+        display: block;
+        padding: 50px 50px 70px 50px;
+        text-align: left;
+
         &:before
         {
             z-index: 10;
@@ -112,6 +117,14 @@
 
     &__description-right
     {
+        position: relative;
+        width: 100%; 
+        color: #fff;
+        display: block;
+        float: left;
+        padding: 50px 50px 70px 50px;
+        text-align: left;
+
         &:before
         {
             z-index: 10;
@@ -127,13 +140,6 @@
     &__item-description
     {
         background: #e74e3e;
-        position: relative;
-        width: 50%; 
-        color: #fff;
-        display: block;
-        float: left;
-        padding: 50px 50px 70px 50px;
-        text-align: left;
     }
 }
 
@@ -141,3 +147,111 @@
 {
     left: 90px;
 }
+
+@media screen and (max-width: 1385px) and (min-width: 1025px)
+{
+    .b-our-blog
+    {
+        &__description-left,
+        &__description-right
+        {
+            padding: 45px 35px 35px 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 992px)
+{
+    .b-our-blog
+    {
+        &__description-left,
+        &__description-right
+        {
+            padding: 40px 30px 30px 30px;
+        }
+
+        &__block
+        {
+            margin-top: 70px;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 576px)
+{
+    .b-our-blog
+    {
+        &__item
+        {
+            border-bottom: 1px solid #fff;
+        }
+
+        &__block
+        {
+            margin-top: 70px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .b-our-blog
+    {
+        &__description-left,
+        &__description-right
+        {
+            padding: 40px 30px 30px 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 575px)
+{
+    .b-our-blog
+    {
+        &__item-img
+        {
+            height: 100%;
+        }
+
+        &__description-right,
+        &__description-left
+        {
+            &:before
+            {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 510px)
+{
+    .b-our-blog
+    {
+        &__description-left,
+        &__description-right
+        {
+            padding: 30px 20px 20px 30px;
+        }
+
+        &__title
+        {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &__description
+        {
+            font-size: 13px;
+            line-height: 22px; 
+            margin-bottom: 10px;
+        }
+
+        &__separator
+        {
+            margin-bottom: 10px;
+        }
+    }
+}
+

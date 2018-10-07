@@ -6,14 +6,22 @@
 
     &__block
     {
-        margin-top: 100px;
-        padding: 97px 90px;
         background: #fff;
         box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    &__all-block
+    {
+        margin-top: 100px;
         text-align: left;
     }
 
     &__item
+    {
+        padding: 97px 90px;
+    }
+
+    &__block-item
     {
         margin-bottom: 60px;
     }
@@ -32,13 +40,6 @@
         margin: 0;
     }
 
-    &__button
-    {
-        padding: 14px 25px;
-        font: 600 13px/13px 'Open Sans',sans-serif;
-        margin-bottom: 0;
-    }
-
     &__form
     {
         margin: 0;
@@ -47,5 +48,92 @@
     &__comment
     {
         height: 125px !important;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .b-keep-in-touch
+    {
+        padding: 65px 0;
+
+        &__all-block
+        {
+            margin-top: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px)
+{
+    .b-keep-in-touch
+    {
+        &__item
+        {
+            padding: 60px 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    .b-keep-in-touch
+    {
+        &__block-inner
+        {
+            background: transparent;
+            box-shadow: none;
+        }
+
+        &__block-outer
+        {
+            background: #fff;
+            box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .b-keep-in-touch
+    {
+        &__block-inner
+        {
+            background: #fff;
+            box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        &__block-outer
+        {
+            background: transparent;
+            box-shadow: none;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 530px)
+{
+    .b-keep-in-touch
+    {
+        &__item
+        {
+            padding: 60px 50px;
+        }
+
+        &__subtitle
+        {
+            font-size: 23px;
+        }
+
+        &__description
+        {
+            font-size: 17px;
+        }
+
+        &__block-item
+        {
+            margin-bottom: 30px;
+        }
     }
 }

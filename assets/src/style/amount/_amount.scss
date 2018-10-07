@@ -13,22 +13,23 @@
         background: transparent;
         border: 2px solid #fff;
         border-radius: 50%;
-        margin-bottom: 50px;
         position: relative;
+        margin: auto;
+        margin-bottom: 50px;
+        display: table;
     }
 
     &__icon
     {
-        position: absolute;
         margin: 0 auto;
+        display: table-cell;
+        vertical-align: middle;
 
         &_heart
         {
             background: url(../../img/heart-light.png) center center no-repeat;
             height: 26px;
             width: 31px;
-            top: 40%;
-            left: 34%;
         }
 
         &_chek
@@ -36,8 +37,6 @@
             background: url(../../img/chek.png) center center no-repeat;
             height: 29px;
             width: 29px;
-            top: 37%;
-            left: 35%;
         }
 
         &_star
@@ -45,8 +44,6 @@
             background: url(../../img/star.png) center center no-repeat;
             height: 29px;
             width: 31px;
-            top: 36%;
-            left: 35%;
         }
 
         &_flag
@@ -54,8 +51,6 @@
             background: url(../../img/flag.png) center center no-repeat;
             height: 28px;
             width: 22px;
-            top: 37%;
-            left: 40%;
         }
 
         &_ok
@@ -63,20 +58,6 @@
             background: url(../../img/ok.png) center center no-repeat;
             height: 31px;
             width: 31px;
-            top: 35%;
-            left: 35%;
-        }
-    }
-
-    &__item
-    {
-        margin-right: 141px;
-        display: inline-block;
-        vertical-align: middle;
-
-        &_last
-        {
-            margin: 0;
         }
     }
 
@@ -92,5 +73,25 @@
         color: #f4f5f9;
         font: 400  12px/18px 'Open Sans',sans-serif;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .b-amount
+    {
+        padding: 65px 0;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .b-amount
+    {
+        &__circle
+        {
+            width: 78px;
+            height: 78px;
+        }
     }
 }

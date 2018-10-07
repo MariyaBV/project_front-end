@@ -1,13 +1,11 @@
 .b-top-menu
 {
-    height: 132px;
     font:400 14px/16px 'Open Sans', sans-serif;
     //background-color: #3e3d41;
 
-    &__fixed-top
+    &__block
     {
-        left: auto;
-        right: auto;
+        padding: 35px 0;
     }
 
     &__nav-brand
@@ -43,7 +41,6 @@
         {
             color: #e74c3c;
             
-
             &:after
             {
                 background-color: #e74c3c;
@@ -52,4 +49,49 @@
         }
     }
     
+}
+
+// @media screen and (min-width: 1250px)
+// {
+//     .b-top-menu
+//     {    
+//         &__fixed-top
+//         {
+//             left: auto;
+//             right: auto;
+//         }
+//     }
+// }
+
+@media screen and (max-width: 1240px)
+{
+    .b-top-menu
+    {  
+        &__nav-item
+        {
+            margin-left: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .b-top-menu
+    {  
+        &__block 
+        {
+            padding: 15px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 580px)
+{
+    .b-top-menu
+    {  
+        &__block 
+        {
+            padding: 10px 0;
+        }
+    }
 }

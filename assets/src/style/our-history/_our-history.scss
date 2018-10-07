@@ -34,9 +34,39 @@
         }
     }
 
-    &__button
+    &__img
     {
-        min-width: 225px;
-        padding: 21px 41px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .b-our-history
+    {
+        padding: 65px 0;
+
+        &__img
+        {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 388px)
+{
+    .b-our-history
+    {
+        &__title
+        {
+            font-size: 30px;
+        }
+
+        &__description
+        {
+            font-size: 13px;
+            line-height: 25px;
+            margin-top: 24px;
+        }
     }
 }
