@@ -10,8 +10,7 @@
         height: 105px;
         background: #fff;
         box-shadow: 0px 1px 3px 0px rgba(31, 31, 31, 0.09);
-        margin-bottom: 30px;
-        transition: 0.3s;
+        margin: 30px auto 0;
         opacity: 1;
         position: relative;
 
@@ -24,6 +23,7 @@
             top: 0;
             position: absolute;
             left: 0;
+            transition: .3s;
         }
 
         &:before
@@ -142,19 +142,36 @@
 
 .b-integration__link:hover ~ .b-integration__item_background
 {
-    opacity: 0.8;
-    //cursor: pointer;
+    opacity: 0.5;
 }
 
 @media screen and (max-width: 1024px)
 {
     .b-integration
     {
-        padding: 65px 0;
+        padding: 90px 0;
+
+        &__all-block 
+        {
+            margin-top: 60px;
+        }
     }
 }
 
-@media screen and (max-width: 435px)
+@media screen and (max-width: 575px)
+{
+    .b-integration
+    {
+        padding: 60px 0;
+
+        &__all-block 
+        {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 470px)
 {
     .b-integration
     {
@@ -166,7 +183,7 @@
     }
 }
 
-@media screen and (max-width: 380px)
+@media screen and (max-width: 419px)
 {
     .b-integration
     {

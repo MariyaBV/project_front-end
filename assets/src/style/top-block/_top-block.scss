@@ -3,14 +3,23 @@
     width: 100%;// 1920px;
     margin: 0 auto;
     position: relative;
-    background: url(../../img/Background.jpg) center center no-repeat;
     background-size: cover; /* Современные браузеры */
+
+    &__background
+    {
+        background: #47403b;
+    }
+
+    &__background-img
+    {
+        background: url(../../img/Background.jpg) center center no-repeat;
+    }
 
     &:before
     {
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: -1px;
         width: 50%;
         height: 0;
         content: '';
@@ -23,7 +32,7 @@
     {
         position: absolute;
         right: 0;
-        bottom: 0;
+        bottom: -1px;
         width: 50%;
         height: 0;
         content: '';
@@ -83,6 +92,7 @@
     &__arrow-icon
     {
         margin: 12px auto;
+        display: block;
 
         &_left
         {
@@ -275,6 +285,23 @@
     }
 }
 
+@media screen and (max-width: 1024px)
+{
+    .b-top-block
+    {
+        &__content
+        {
+            margin-top: 105px;
+            margin-bottom: 130px;
+        }
+
+        &__arrow 
+        {
+            top: 225px;
+        }
+    }
+}
+
 @media screen and (max-width: 995px)
 {
     .b-top-block
@@ -347,11 +374,6 @@
             bottom: -3%;
             left: 45%;
         }
-
-        &__arrow
-        {
-            top: 270px;
-        }
     }
 }
 
@@ -401,16 +423,25 @@
             margin-top: 115px;
             margin-bottom: 89px;
         }
+
+        &__arrow
+        {
+            &_left,
+            &_right
+            {
+                background: none;
+            }
+        }
     }
 }
 
-@media screen and (max-width: 430px)
+@media screen and (max-width: 415px)
 {
     .b-top-block
     {
         &__arrow
         {
-            top: 235px;
+            top: 250px;
         }
     }
 }

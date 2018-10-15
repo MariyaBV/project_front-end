@@ -118,6 +118,24 @@
     }
 }
 
+@media screen and (max-width: 767px)
+{
+    .b-button
+    {
+        font-size: 12px;
+
+        &__middle
+        {
+            padding: 16px 27px;
+        }
+
+        &__bigger 
+        {
+            padding: 14px 24px;
+        }
+    }
+}
+
 @media screen and (max-width: 420px)
 {
     .b-button
@@ -135,7 +153,17 @@
     {
         &__margin
         {
-            margin-right: 0;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 347px)
+{
+    .b-button
+    {
+        &__margin
+        {
             margin-bottom: 10px;
         }
     }

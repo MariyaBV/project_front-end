@@ -181,9 +181,13 @@
 {
     .b-our-blog
     {
-        &__item
+        &__description-left,
+        &__description-right
         {
-            border-bottom: 1px solid #fff;
+            &:before
+            {
+                display: none;
+            }
         }
 
         &__block
@@ -193,7 +197,7 @@
     }
 }
 
-@media screen and (max-width: 700px)
+@media screen and (max-width: 770px)
 {
     .b-our-blog
     {
@@ -209,9 +213,26 @@
 {
     .b-our-blog
     {
+        &__block 
+        {
+            margin-top: 65px;
+        }
+        
         &__item-img
         {
-            height: 100%;
+            height: 50%;
+
+            &_coffe
+            {
+                background: url(../../img/our-blog-1-575.jpg) center center no-repeat;
+                background-size: cover;
+            }
+
+            &_car
+            {
+                background: url(../../img/our-blog-4-575.jpg) no-repeat;
+                background-size: cover;
+            }
         }
 
         &__description-right,

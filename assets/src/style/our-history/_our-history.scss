@@ -40,15 +40,68 @@
     }
 }
 
+@media screen and (min-width: 1025px)
+{
+    .b-our-history
+    {
+        &__1024
+        {
+            display: none;
+        }
+    }
+}
+
 @media screen and (max-width: 1024px)
 {
     .b-our-history
     {
-        padding: 65px 0;
+        display: none;
 
         &__img
         {
-            margin-bottom: 40px;
+            margin: 0 0 20px 20px;
+            float: right;
+            width: 50%;
+        }
+
+        &__description
+        {
+            margin-top: 20px;
+        }
+
+        &__1024
+        {
+            display: block;
+            padding: 90px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .b-our-history
+    {
+        &__title
+        {
+            font-size: 30px;
+            line-height: 37px;
+            margin-left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 575px)
+{
+    .b-our-history
+    {
+        &__1024
+        {
+            padding: 60px 0;
+        }
+
+        &__img
+        {
+            display: none;
         }
     }
 }

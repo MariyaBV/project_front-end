@@ -10,6 +10,11 @@
     width: 55px;
     height: 55px;
 
+    &:hover
+    {
+        background-color: #c13f31;
+    }
+
     &__arrow
     {
         background: url(../../img/arrow.svg) center center no-repeat;
@@ -40,24 +45,6 @@
             width: 17px;
             height: 17px;
             margin: 14px;
-        }
-    }
-}
-
-@media screen and (max-width: 550px)
-{
-    .b-anchor
-    {
-        bottom: 25px;
-        right: 25px;
-        width: 35px;
-        height: 35px;
-
-        &__arrow
-        {
-            width: 14px;
-            height: 14px;
-            margin: 10px;
         }
     }
 }

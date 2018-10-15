@@ -26,11 +26,6 @@
             transform: rotate(45deg);
         }
 
-        // &:hover .b-characteristic__icon
-        // {
-        //     transform: rotate(-45deg);
-        // }
-
         &:hover .b-characteristic__title
         {
             color: #e74c3c;
@@ -121,11 +116,55 @@
 
 }
 
+@media screen and (min-width: 1025px)
+{
+    .b-characteristic
+    {
+        &__item
+        {
+            &:hover
+            {
+                cursor: pointer;            
+            }
+
+            &:hover .b-characteristic__square
+            {
+                border-color: #e74c3c;
+                transform: rotate(45deg);
+            }
+
+            &:hover .b-characteristic__title
+            {
+                color: #e74c3c;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1024px)
 {
     .b-characteristic
     {
-        padding: 65px 0;
+        padding: 90px 0;
+
+        &__item
+        {
+            &:focus
+            {
+                cursor: pointer;            
+            }
+
+            &:focus .b-characteristic__square
+            {
+                border-color: #e74c3c;
+                transform: rotate(45deg);
+            }
+
+            &:focus .b-characteristic__title
+            {
+                color: #e74c3c;
+            }
+        }
     }
 }
 
@@ -137,6 +176,34 @@
         {
             margin-bottom: 50px;
         }
+
+        &__description-block
+        {
+            display: inline-block;
+            width: 70%;
+            vertical-align: middle;
+            max-width: 150px;
+        }
+
+        &__icon
+        {
+            display: inline-block;
+            margin-right: 50px;
+            vertical-align: middle;
+            margin-top: 50px;
+        }
+
+        &__title,
+        &__description
+        {
+            text-align: left;
+            margin: 0;
+        }
+
+        &__separator
+        {
+            height: 0;
+        }
     }
 }
 
@@ -144,10 +211,65 @@
 {
     .b-characteristic
     {
+        padding: 50px 0;
+
+        &__item
+        {
+            margin-bottom: 0;
+        }
+
         &__description
         {
             max-width: 370px;
             margin: 0 auto;
+        }
+
+        &__description-block
+        {
+            max-width: 350px;
+        }
+
+        &__icon
+        {
+            margin-left: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 468px)
+{
+    .b-characteristic
+    {
+        &__description-block
+        {
+            max-width: 250px;
+        }
+    }
+}
+
+@media screen and (max-width: 412px)
+{
+    .b-characteristic
+    {
+        &__description-block
+        {
+            max-width: 200px;
+        }
+
+        &__icon
+        {
+            margin-left: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 362px)
+{
+    .b-characteristic
+    {
+        &__description-block
+        {
+            max-width: 150px;
         }
     }
 }

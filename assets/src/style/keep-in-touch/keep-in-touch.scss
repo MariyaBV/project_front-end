@@ -55,11 +55,26 @@
 {
     .b-keep-in-touch
     {
-        padding: 65px 0;
+        padding: 90px 0;
 
         &__all-block
         {
             margin-top: 60px;
+        }
+
+        &__item 
+        {
+            padding: 60px 65px;
+        }
+
+        &__block-item 
+        {
+            margin-bottom: 45px;
+        }
+
+        &__comment 
+        {
+            height: 97px!important;
         }
     }
 }
@@ -70,7 +85,17 @@
     {
         &__item
         {
-            padding: 60px 50px;
+            padding: 45px 35px;
+        }
+
+        &__block-item 
+        {
+            margin-bottom: 35px;
+        }
+
+        &__comment 
+        {
+            height: 85px!important;
         }
     }
 }
@@ -109,6 +134,14 @@
             box-shadow: none;
             margin-top: 20px;
         }
+    }
+}
+
+@media screen and (max-width: 575px)
+{
+    .b-keep-in-touch
+    {
+        padding: 60px 0;
     }
 }
 

@@ -85,6 +85,36 @@
     }
 }
 
+@media screen and (max-width: 991px)
+{
+    .b-top-menu
+    {  
+        &__nav-item
+        {
+            margin: 0;
+
+            &:focus
+            {
+                border-color: #e74c3c;
+                color: #e74c3c;
+            }
+        }
+        
+        &__nav-link
+        {
+            &:after
+            {
+                display: none;
+            }
+
+            &:hover
+            {
+                color: #e74c3c; 
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 580px)
 {
     .b-top-menu

@@ -33,7 +33,18 @@
     {
         &__block
         {
-            padding: 65px 0;
+            padding: 90px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 575px)
+{
+    .b-started-now
+    {
+        &__block
+        {
+            padding: 60px 0;
         }
     }
 }

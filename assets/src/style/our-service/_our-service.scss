@@ -71,7 +71,7 @@
         &:before
         {
             right: -36px;
-            height: 35px;
+            height: 93%;
             display: block;
             position: absolute;
             background: #e74c3c;
@@ -101,7 +101,7 @@
     {
         &__block
         {
-            margin: 65px;
+            margin: 90px 65px 90px 30px;
         }
 
         &__item
@@ -122,12 +122,38 @@
 
         &__item
         {
-            margin-right: 90px;
+            text-align: left;
+            margin-left: 90px;
 
             &:before
             {
-                right: -95px;
+                left: -95px;
             }
+        }
+
+        &__title
+        {
+            text-align: left;
+            margin-left: 20px;
+            font-size: 30px;
+            line-height: 37px;
+
+            &:before
+            {
+                left: -15px;
+                width: 5px;
+            }
+        }
+
+        &__subtitle
+        {
+            font-size: 17px;
+            margin: 0;
+        }
+
+        &__description
+        {
+            line-height: 24px;
         }
     }
 }
