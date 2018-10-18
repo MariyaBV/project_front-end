@@ -16,16 +16,16 @@
         
         <title>Welcome to bino</title>
     </head>
-    <body class="reset-all">
+    <body class="p-0 m-0">
         <nav class="navbar fixed-top navbar-expand-lg b-top-menu b-top-menu__fixed-top" id="menu_nav_bar">
-            <div class="container b-top-menu__block">
+            <div class="container b-top-menu__block" id="block-menu">
                 <a class="navbar-brand mr-auto" href="#">
-                    <img src="img/logo.png" alt="logo"/>
+                    <img class="b-top-menu__img" src="img/logo.png" alt="logo"/>
                 </a>
-                <button class="navbar-toggler navbar-light ml-auto" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler navbar-light ml-auto" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" id="toggle-icon"></span>
                 </button> 
-                <div class="collapse navbar-collapse" id="navbar1">
+                <div class="collapse navbar-collapse b-top-menu__drop-down" id="navbar1">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active b-top-menu__nav-item">
                             <a class="nav-link b-top-menu__nav-link" href="#">HOME</a>
@@ -177,58 +177,33 @@
         <div class="grey-line"></div>
 
         <div class="b-our-history">
-            <div class="container b-container">
+            <div class="container-fluid b-container">
                 <div class="row justify-content-between">
-                    <div class="col-5"> 
+                    <div class="col-md-5 col-sm-12"> 
                         <img class="b-our-history__img" alt="monitor" src="img/Monitor.jpg"/> 
-                        <div class="clear"></div>
+                        <div class="clearfix"></div>
                     </div>
-                    <div class="col-lg-6 col-7">  
-                        <h2 class="b-our-history__title">OUR HISTORY</h2>
-                        <p class="b-our-history__description">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ip sum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unk- nown printer took a galley of type and scrambled it to make 
-                            a type specimen book.
-                        </p>
-                        <p class="b-our-history__description b-our-history__description_last">
-                            It has survived not only five centuries, but also the leap into electronic 
-                            typesetting, remaining essentially unchanged. It was popularised 
-                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
-                            passages, and more recently with desktop 
-                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
-                        <a href="#" class="b-button b-button__red b-button__middle">
-                            BROWSE OUR WORK
-                        </a>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="b-our-history__1024">
-            <div class="container b-container">
-                <div class="row justify-content-between">
-                    <div class="col-12"> 
-                        <img class="b-our-history__img" alt="monitor" src="img/Monitor.jpg"/> 
-                        <h2 class="b-our-history__title">OUR HISTORY</h2>
-                        <p class="b-our-history__description">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ip sum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unk- nown printer took a galley of type and scrambled it to make 
-                            a type specimen book.
-                        </p>
-                        <p class="b-our-history__description b-our-history__description_last">
-                            It has survived not only five centuries, but also the leap into electronic 
-                            typesetting, remaining essentially unchanged. It was popularised 
-                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
-                            passages, and more recently with desktop 
-                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
-                        <a href="#" class="b-button b-button__red b-button__middle">
-                            BROWSE OUR WORK
-                        </a>
+                    <div class="col-lg-6 col-md-7 col-sm-12">  
+                        <div class="b-our-history__block">
+                            <h2 class="b-our-history__title">OUR HISTORY</h2>
+                            <p class="b-our-history__description">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ip sum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unk- nown printer took a galley of type and scrambled it to make 
+                                a type specimen book.
+                            </p>
+                            <p class="b-our-history__description b-our-history__description_last">
+                                It has survived not only five centuries, but also the leap into electronic 
+                                typesetting, remaining essentially unchanged. It was popularised 
+                                in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
+                                passages, and more recently with desktop 
+                                publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                            <a href="#" class="b-button b-button__red b-button__middle">
+                                BROWSE OUR WORK
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -675,10 +650,10 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col b-our-team__item p-0 px-xl-3">
-                            <div class="b-our-team__worker b-our-team__worker_alice">
+                            <a href="#" class="b-our-team__worker b-our-team__worker_alice">
                                 <span class="b-our-team__photo b-our-team__photo_alice"></span>
                                 <span class="b-our-team__background-hover"></span>
-                            </div>
+                            </a>
                             <div class="b-our-team__hover-block b-our-team__hover-block_alice">
                                 <div class="b-our-team__hover-separator"></div>
                                 <h3 class="b-our-team__name">Alice Sanders</h3>
@@ -686,10 +661,10 @@
                             </div>
                         </div>
                         <div class="col b-our-team__item p-0 px-xl-3">
-                            <div class="b-our-team__worker b-our-team__worker_kazi">
+                            <a href="#" class="b-our-team__worker b-our-team__worker_kazi">
                                 <span class="b-our-team__photo b-our-team__photo_kazi"></span>
                                 <span class="b-our-team__background-hover"></span>
-                            </div>
+                            </a>
                             <div class="b-our-team__hover-block b-our-team__hover-block_kazi">
                                 <div class="b-our-team__hover-separator"></div>
                                 <h3 class="b-our-team__name">Kazi Erfan</h3>
@@ -697,10 +672,10 @@
                             </div> 
                         </div>
                         <div class="col b-our-team__item p-0 px-xl-3">
-                            <div class="b-our-team__worker b-our-team__worker_kenneth">
+                            <a href="#" class="b-our-team__worker b-our-team__worker_kenneth">
                                 <span class="b-our-team__photo b-our-team__photo_kenneth"></span>
                                 <span class="b-our-team__background-hover"></span>
-                            </div>
+                            </a>
                             <div class="b-our-team__hover-block b-our-team__hover-block_kenneth">
                                 <div class="b-our-team__hover-separator"></div>
                                 <h3 class="b-our-team__name">Kenneth Stokes</h3>
@@ -708,10 +683,10 @@
                             </div> 
                         </div>
                         <div class="col b-our-team__item p-0 px-xl-3">
-                            <div class="b-our-team__worker b-our-team__worker_sabrina">
+                            <a href="#" class="b-our-team__worker b-our-team__worker_sabrina">
                                 <span class="b-our-team__photo b-our-team__photo_sabrina"></span>
                                 <span class="b-our-team__background-hover"></span>
-                            </div>
+                            </a>
                             <div class="b-our-team__hover-block b-our-team__hover-block_sabrina">
                                 <div class="b-our-team__hover-separator"></div>
                                 <h3 class="b-our-team__name">Sabrina Wilkins</h3>
@@ -719,10 +694,10 @@
                             </div> 
                         </div>
                         <div class="col b-our-team__item p-0 px-xl-3">
-                            <div class="b-our-team__worker b-our-team__worker_oliver">
+                            <a href="#" class="b-our-team__worker b-our-team__worker_oliver">
                                 <span class="b-our-team__photo b-our-team__photo_oliver"></span>
                                 <span class="b-our-team__background-hover"></span>
-                            </div>
+                            </a>
                             <div class="b-our-team__hover-block b-our-team__hover-block_oliver">
                                 <div class="b-our-team__hover-separator"></div>
                                 <h3 class="b-our-team__name">Oliver Gordon</h3>
@@ -1068,7 +1043,7 @@
                                     <a href="#">
                                         <span class="b-footer__social b-footer__social_tumblr"></span>
                                     </a>
-                                    <div class="clear"></div>
+                                    <div class="clearfix"></div>
                                 </div>
                                 <div class="p-0 col-md-6 col-sm-12">
                                     <p class="b-footer__description">Kazi Erfan © All Rights Reserved</p>
@@ -1079,9 +1054,10 @@
                 </div>
             </div>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>var exports = {};</script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

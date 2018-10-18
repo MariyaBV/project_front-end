@@ -53,9 +53,17 @@ var gulp = require('gulp'),  // подключаем Gulp
     sass = require('gulp-sass'), // модуль для компиляции SASS (SCSS) в CSS
     autoprefixer = require('gulp-autoprefixer'), // модуль для автоматической установки автопрефиксов
     cleanCSS = require('gulp-clean-css'), // плагин для минимизации CSS
-    babel = require('gulp-babel'),
+    //babel = require('gulp-babel'),
     uglify = require('gulp-uglify'), // модуль для минимизации JavaScript
     cache = require('gulp-cache'), // модуль для кэширования
+    uglifyES6 = require('uglify-es'),
+    //composer = require('gulp-uglify/composer'),
+    //pump = require('pump'),
+    //minify = composer(uglifyES6, console),
+    // babel = require("babel-core").transform("code", {
+    //     presets: [require('babel-preset-latest-node')]
+    //   }),
+    //uglify = require('gulp-uglify-es').default,
     //imagemin = require('gulp-imagemin'), // плагин для сжатия PNG, JPEG, GIF и SVG изображений
     //jpegrecompress = require('imagemin-jpeg-recompress'), // плагин для сжатия jpeg	
     //pngquant = require('imagemin-pngquant'), // плагин для сжатия png
@@ -98,14 +106,33 @@ gulp.task('js:build', function () {
 	.pipe(plumber()) // для отслеживания ошибок
 	.pipe(rigger()) // импортируем все указанные файлы в main.js
     .pipe(sourcemaps.init()) //инициализируем sourcemap
-    .pipe(babel({
-        presets: ['@babel/env']
-    }))
+    //.pipe(babel({
+        //presents: ['es2015']
+       // presets: ['env']
+        // "presets": [
+        //     ["latest", {
+        //       "es2015": false
+        //     }]
+        // ]
+    //}))
 	.pipe(uglify()) // минимизируем js
     .pipe(sourcemaps.write('./')) //  записываем sourcemap
 	.pipe(gulp.dest(path.build.js)) // положим готовый файл
 	.pipe(webserver.reload({stream: true})); // перезагрузим сервер
 });
+
+// gulp.task('js:build', function (cb) {
+//     // the same options as described above
+//     var options = {};
+   
+//     pump([
+//         gulp.src('lib/*.js'),
+//         minify(options),
+//         gulp.dest('dist')
+//       ],
+//       cb
+//     );
+//   });
 
 // перенос шрифтов
 // gulp.task('fonts:build', function() {
@@ -145,6 +172,7 @@ gulp.task('build', [
     'html:build',
     'css:build',
     'js:build',
+    //'js:build',
     //'fonts:build',
     'image:build'
 ]);

@@ -82,6 +82,7 @@
         {
             padding: 15px 0;
         }
+        
     }
 }
 
@@ -91,6 +92,8 @@
     {  
         &__nav-item
         {
+            padding-top: 13px;
+            padding-bottom: 13px;
             margin: 0;
 
             &:focus
@@ -98,6 +101,11 @@
                 border-color: #e74c3c;
                 color: #e74c3c;
             }
+        }
+
+        &__drop-down
+        {
+            margin-top: 30px;
         }
         
         &__nav-link
@@ -122,6 +130,11 @@
         &__block 
         {
             padding: 10px 0;
+        }
+
+        &__img
+        {
+            height: 45px;
         }
     }
 }

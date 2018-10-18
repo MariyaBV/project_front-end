@@ -39,10 +39,9 @@
     {
         color: #fff;
         font: 500 24px/28px 'Open Sans',sans-serif;
-        padding: 45px 0px;
+        padding: 45px 0 110px;
         background-color: #999;
         position: relative;
-        height: 200px;
 
         &_premium
         {
@@ -176,8 +175,7 @@
 
         &__block-title 
         {
-            height: 160px;
-            padding: 30px 0;
+            padding: 45px 0 70px;
         }
     }
 }
@@ -188,7 +186,7 @@
     {
         &__block-title 
         {
-            padding: 30px 0;
+            padding: 30px 0 130px;
         }
     }
 }
