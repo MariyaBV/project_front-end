@@ -3,7 +3,7 @@
         //= template/head.html
     </head>
     <body class="p-0 m-0">
-        <nav class="navbar fixed-top navbar-expand-lg b-top-menu b-top-menu__fixed-top" id="menu_nav_bar">
+        <nav class="navbar fixed-top navbar-expand-lg b-top-menu b-top-menu__fixed-top" id="menu-nav-bar">
             <div class="container b-top-menu__block" id="block-menu">
                 <a class="navbar-brand mr-auto" href="#">
                     <img class="b-top-menu__img" src="img/logo.png" alt="logo"/>
@@ -40,7 +40,7 @@
         </nav>
 
         <div class="b-anchor">
-            <a class="b-anchor__link" href="#"></a>
+            <a class="b-anchor__link" href="#" class="scrollto" id="anchor1"></a>
             <div class="b-anchor__arrow"></div>
         </div>
 
@@ -85,9 +85,9 @@
             <div class="container b-container">
                 <div class="row">
                     <div class="col-md-3 col-sm-6">                      
-                        <div class="b-characteristic__item">
-                            <div class="b-characteristic__icon  b-characteristic__icon_glasses">
-                                <div class="b-characteristic__square b-characteristic__square_glasses"></div>
+                        <div class="b-characteristic__item" id="glasses">
+                            <div class="b-characteristic__square b-characteristic__square_glasses">
+                                <div class="b-characteristic__icon  b-characteristic__icon_glasses"></div>
                             </div>
                             <div class="b-characteristic__description-block">
                                 <p class="b-characteristic__title">
@@ -103,9 +103,9 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="b-characteristic__item">
-                            <div class="b-characteristic__icon  b-characteristic__icon_heart">
-                                <div class="b-characteristic__square"></div>
+                        <div class="b-characteristic__item" id="heart">
+                            <div class="b-characteristic__square">
+                                <div class="b-characteristic__icon  b-characteristic__icon_heart"></div>
                             </div>
                             <div class="b-characteristic__description-block">
                                 <p class="b-characteristic__title">
@@ -121,9 +121,9 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="b-characteristic__item">
-                            <div class="b-characteristic__icon  b-characteristic__icon_lamp">
-                                <div class="b-characteristic__square b-characteristic__square_lamp"></div>
+                        <div class="b-characteristic__item" id="lamp">
+                            <div class="b-characteristic__square b-characteristic__square_lamp">
+                                <div class="b-characteristic__icon  b-characteristic__icon_lamp"></div>
                             </div>
                             <div class="b-characteristic__description-block">
                                 <p class="b-characteristic__title">
@@ -139,9 +139,9 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="b-characteristic__item">
-                            <div class="b-characteristic__icon  b-characteristic__icon_comment">
-                                <div class="b-characteristic__square"></div>
+                        <div class="b-characteristic__item" id="comment">
+                            <div class="b-characteristic__square">
+                                <div class="b-characteristic__icon  b-characteristic__icon_comment"></div>
                             </div>
                             <div class="b-characteristic__description-block">
                                 <p class="b-characteristic__title">
@@ -956,20 +956,20 @@
                     </div>
                     <div class="col-md-7 b-keep-in-touch__block-outer">
                         <div class="b-keep-in-touch__item b-keep-in-touch__block-inner">
-                            <form class="b-keep-in-touch__form">
+                            <form class="b-keep-in-touch__form" id="form-send-message">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="usr" placeholder="Name"/>
+                                    <input type="text" class="form-control obligatory-field" id="usr" placeholder="Name"/>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="email" placeholder="Email"/>
+                                    <input type="email" class="form-control obligatory-field" id="email" placeholder="Email"/>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="usr" placeholder="Subject"/>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control b-keep-in-touch__comment" rows="5" id="comment" placeholder="Message"></textarea>
+                                    <textarea class="form-control b-keep-in-touch__comment obligatory-field" rows="5" id="comment" placeholder="Message"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary b-button b-button__red b-button__middle-text b-button__least">
+                                <button type="submit" class="btn btn-primary b-button b-button__red b-button__middle-text b-button__least" id="submit-form">
                                     SEND MESSAGE
                                 </button>
                             </form>

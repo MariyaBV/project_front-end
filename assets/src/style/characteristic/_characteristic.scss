@@ -37,34 +37,34 @@
         border: 1px solid #e5e5e5;
         width: 70px;
         height: 70px;
-        margin: 0 auto;
+        margin: 0 auto 27px;
         transition: all 0.3s;
-        margin-bottom: 27px;
-        position: absolute;
-        top: -8px;
-        right: -25px;
+        position: relative;
 
-        &_glasses
-        {
-            right: -22px;
-        }
+        // &_glasses
+        // {
+        //     right: -22px;
+        // }
 
-        &_lamp
-        {
-            right: -27px;
-        }
+        // &_lamp
+        // {
+        //     right: -27px;
+        // }
     }
 
     &__icon
     {
-        position: relative;
-        padding-top: 55px;
-        margin: 0 auto 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: 0.3s;
 
         &_heart
         {
             height: 19px;
             width: 22px;
+            margin-left: -11px;
+            margin-top: -9.5px;
             background: url(../../img/heart.png) center center no-repeat;
         }
 
@@ -72,6 +72,8 @@
         {
             height: 22px;
             width: 21px;
+            margin-left: -10.5px;
+            margin-top: -11px;
             background: url(../../img/comment.png) center center no-repeat;
         }
 
@@ -79,6 +81,8 @@
         {
             height: 27px;
             width: 17px;
+            margin-left: -8.5px;
+            margin-top: -13.5px;
             background: url(../../img/lamp.png) center center no-repeat;
         }
 
@@ -86,6 +90,8 @@
         {
             height: 13px;
             width: 27px;
+            margin-left: -13.5px;
+            margin-top: -6.5px;
             background: url(../../img/glasses.png) center center no-repeat;
         }
     }
@@ -133,10 +139,17 @@
                 transform: rotate(45deg);
             }
 
+            // &:hover ~ .b-characteristic__icon
+            // {
+            //     transform: rotate(0deg);
+            // }
+
             &:hover .b-characteristic__title
             {
                 color: #e74c3c;
             }
+
+            
         }
     }
 }
@@ -164,6 +177,11 @@
             {
                 color: #e74c3c;
             }
+
+            &:focus .b-characteristic__icon
+            {
+                transform: rotate(-45deg);
+            }
         }
     }
 }
@@ -185,12 +203,10 @@
             max-width: 150px;
         }
 
-        &__icon
+        &__square
         {
+            margin: 0 15px 0 0;
             display: inline-block;
-            margin-right: 50px;
-            vertical-align: middle;
-            margin-top: 50px;
         }
 
         &__title,
@@ -215,7 +231,7 @@
 
         &__item
         {
-            margin-bottom: 0;
+            margin-bottom: 40px;
         }
 
         &__description
@@ -227,16 +243,17 @@
         &__description-block
         {
             max-width: 350px;
+            vertical-align: top;
         }
 
-        &__icon
+        &__square
         {
-            margin-left: 50px;
+            margin: 0 30px;
         }
     }
 }
 
-@media screen and (max-width: 468px)
+@media screen and (max-width: 477px)
 {
     .b-characteristic
     {
@@ -247,7 +264,7 @@
     }
 }
 
-@media screen and (max-width: 412px)
+@media screen and (max-width: 414px)
 {
     .b-characteristic
     {
@@ -256,9 +273,9 @@
             max-width: 200px;
         }
 
-        &__icon
+        &__square
         {
-            margin-left: 35px;
+            margin: 0 20px;
         }
     }
 }

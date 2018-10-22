@@ -56,13 +56,10 @@ var gulp = require('gulp'),  // подключаем Gulp
     //babel = require('gulp-babel'),
     uglify = require('gulp-uglify'), // модуль для минимизации JavaScript
     cache = require('gulp-cache'), // модуль для кэширования
-    uglifyES6 = require('uglify-es'),
+    //uglifyES6 = require('uglify-es'),
     //composer = require('gulp-uglify/composer'),
     //pump = require('pump'),
     //minify = composer(uglifyES6, console),
-    // babel = require("babel-core").transform("code", {
-    //     presets: [require('babel-preset-latest-node')]
-    //   }),
     //uglify = require('gulp-uglify-es').default,
     //imagemin = require('gulp-imagemin'), // плагин для сжатия PNG, JPEG, GIF и SVG изображений
     //jpegrecompress = require('imagemin-jpeg-recompress'), // плагин для сжатия jpeg	
@@ -126,9 +123,10 @@ gulp.task('js:build', function () {
 //     var options = {};
    
 //     pump([
-//         gulp.src('lib/*.js'),
-//         minify(options),
-//         gulp.dest('dist')
+//         gulp.src(path.src.js),
+//             (rigger()),
+//             (minify(options)),
+//             (gulp.dest(path.build.js))
 //       ],
 //       cb
 //     );
