@@ -23,7 +23,7 @@
         margin-top: 55px;
         position: relative;
         margin-left: auto;
-        max-width: 750px;
+        max-width: 610px;
 
         &_web
         {
@@ -51,7 +51,7 @@
 
         &:before
         {
-            right: -117px;
+            right: -120px;
             height: 72px;
             display: block;
             position: absolute;
@@ -130,6 +130,7 @@
             &:before
             {
                 left: -95px;
+                top: 6px;
             }
         }
 

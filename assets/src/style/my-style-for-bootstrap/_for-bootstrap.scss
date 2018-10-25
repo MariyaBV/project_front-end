@@ -13,19 +13,21 @@
 
 .form-control
 {
-    border-bottom: 1px solid #ced4da;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
     border-radius: 0;
-    border-color: #999;
     padding-left: 0;
     padding-bottom: 5px;
 
     &:focus
     {
-        border-color: #999;
+        border-bottom: 1px solid #000;
         box-shadow: none;
+        border-top: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
     }
 }
 
@@ -58,7 +60,7 @@ select:-webkit-autofill:focus
 
 .navbar-toggler
 {
-    border: 3px solid #f4f5f9;
+    border: none;
     font-size: 1px;
     display: inline-block;
     position: relative;
@@ -101,6 +103,11 @@ select:-webkit-autofill:focus
     }
 }
 
+.list-inline-item:not(:last-child) 
+{
+    margin-right: 0;
+}
+
 button:focus 
 {
     outline: none;
@@ -130,34 +137,3 @@ button:focus
         text-align: center;
     }
 }
-
-
-// @media screen and (max-width: 580px)
-// {
-//     .navbar-toggler
-//     {
-//         height: 20px;
-//         width: 20px;
-//     }
-
-//     .navbar-toggler-icon
-//     {
-//         width: 21px;
-//         left: 12px;
-//         top: 4px;
-
-//         &::after,
-//         &::before
-//         {
-//             transform: translate(0,15em);
-//             width: 21px;
-//             top: 4px;
-//         }
-
-//         &::before
-//         {
-//             transform: translate(0,2em);
-//             top: 4px;
-//         }
-//     }
-// }

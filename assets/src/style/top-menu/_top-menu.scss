@@ -1,7 +1,6 @@
 .b-top-menu
 {
     font:400 14px/16px 'Open Sans', sans-serif;
-    //background-color: #3e3d41;
 
     &__block
     {
@@ -50,18 +49,6 @@
     }
     
 }
-
-// @media screen and (min-width: 1250px)
-// {
-//     .b-top-menu
-//     {    
-//         &__fixed-top
-//         {
-//             left: auto;
-//             right: auto;
-//         }
-//     }
-// }
 
 @media screen and (max-width: 1240px)
 {

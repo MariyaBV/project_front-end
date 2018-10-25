@@ -40,14 +40,6 @@
     }
 }
 
-@media screen and (min-width: 1025px)
-{
-    .b-our-history
-    {
-        
-    }
-}
-
 @media screen and (max-width: 1024px)
 {
     .b-our-history
@@ -75,7 +67,7 @@
 
         &__img
         {
-            width: 50%;
+            max-width: 335px;
             display: block;
             margin: 0 auto 40px;
         }
@@ -117,6 +109,17 @@
     }
 }
 
+@media screen and (max-width: 575px)
+{
+    .b-our-history
+    {
+        &__img
+        {
+            max-width: 300px;
+        }
+    }
+}
+
 @media screen and (max-width: 388px)
 {
     .b-our-history
@@ -131,6 +134,11 @@
             font-size: 13px;
             line-height: 25px;
             margin-top: 24px;
+        }
+
+        &__img
+        {
+            max-width: 270px;
         }
     }
 }

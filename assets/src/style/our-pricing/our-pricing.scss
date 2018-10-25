@@ -8,33 +8,6 @@
         margin-top: 95px;
     }
 
-    // &__main-background
-    // {
-    //     background-color: #f4f5f9;
-    //     height: 100%;
-    //     width: 100%;
-    //     position: relative;
-    // }
-
-    // &__inner-background
-    // {
-    //     height: 40%;
-    //     margin: 0;
-    //     padding: 0;
-    //     width: 100%;
-    //     position: absolute;
-
-    //     &_grey
-    //     {
-    //         background-color: #999999;
-    //     }
-
-    //     &_red
-    //     {
-    //         background-color: #e74c3c;
-    //     }
-    // }
-
     &__block-title
     {
         color: #fff;
@@ -74,13 +47,6 @@
         right: 0;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    &__additional-block
-    {
-        position: relative;
-        height: 100%;
-        width: 100%;
     }
 
     &__circle-block
@@ -199,7 +165,7 @@
 
         &__team
         {
-            margin-bottom: 15px;
+            margin-bottom: 35px;
         }
 
         &__list-item

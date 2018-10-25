@@ -1,6 +1,7 @@
 .bar-background
 {
     background-color: #3a3b42;
+    opacity: 0.7;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -41,7 +42,34 @@
     background-color: #3a3b42;
 }
 
-.error-form
+.btn-primary.disabled, .btn-primary:disabled 
 {
-    border: 2px solid #FF0000 !important;
+    background-color: #c13f31;
+    border: 2px solid #c13f31;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-primary.focus, .btn-primary:focus 
+{
+    box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle 
+{
+    color: #fff;
+    background-color: #c13f31;
+    border: 2px solid #c13f31;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus 
+{
+    box-shadow: none;
+}
+
+input.error,
+textarea.error 
+{
+    border: 1px solid #ff0000 !important;
+    color: #ff0000 !important;
 }

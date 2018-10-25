@@ -17,22 +17,19 @@ var path = {
         html:  'assets/build/',
         js:    'assets/build/js/',
         css:   'assets/build/css/',
-        img:   'assets/build/img/',
-        //fonts: 'assets/build/fonts/'
+        img:   'assets/build/img/'
     },
     src: {
         html:  'assets/src/*.html',
         js:    'assets/src/js/main.js',
         style: 'assets/src/style/main.scss',
-        img:   'assets/src/img/**/*.*',
-        //fonts: 'assets/src/fonts/**/*.*'
+        img:   'assets/src/img/**/*.*'
     },
     watch: {
         html:  'assets/src/**/*.html',
         js:    'assets/src/js/**/*.js',
         css:   'assets/src/style/**/*.scss',
-        img:   'assets/src/img/**/*.*',
-        //fonts: 'assets/srs/fonts/**/*.*'
+        img:   'assets/src/img/**/*.*'
     },
     clean:     './assets/build'
 };
@@ -53,14 +50,8 @@ var gulp = require('gulp'),  // подключаем Gulp
     sass = require('gulp-sass'), // модуль для компиляции SASS (SCSS) в CSS
     autoprefixer = require('gulp-autoprefixer'), // модуль для автоматической установки автопрефиксов
     cleanCSS = require('gulp-clean-css'), // плагин для минимизации CSS
-    //babel = require('gulp-babel'),
     uglify = require('gulp-uglify'), // модуль для минимизации JavaScript
     cache = require('gulp-cache'), // модуль для кэширования
-    //uglifyES6 = require('uglify-es'),
-    //composer = require('gulp-uglify/composer'),
-    //pump = require('pump'),
-    //minify = composer(uglifyES6, console),
-    //uglify = require('gulp-uglify-es').default,
     //imagemin = require('gulp-imagemin'), // плагин для сжатия PNG, JPEG, GIF и SVG изображений
     //jpegrecompress = require('imagemin-jpeg-recompress'), // плагин для сжатия jpeg	
     //pngquant = require('imagemin-pngquant'), // плагин для сжатия png
@@ -103,54 +94,15 @@ gulp.task('js:build', function () {
 	.pipe(plumber()) // для отслеживания ошибок
 	.pipe(rigger()) // импортируем все указанные файлы в main.js
     .pipe(sourcemaps.init()) //инициализируем sourcemap
-    //.pipe(babel({
-        //presents: ['es2015']
-       // presets: ['env']
-        // "presets": [
-        //     ["latest", {
-        //       "es2015": false
-        //     }]
-        // ]
-    //}))
 	.pipe(uglify()) // минимизируем js
     .pipe(sourcemaps.write('./')) //  записываем sourcemap
 	.pipe(gulp.dest(path.build.js)) // положим готовый файл
 	.pipe(webserver.reload({stream: true})); // перезагрузим сервер
 });
 
-// gulp.task('js:build', function (cb) {
-//     // the same options as described above
-//     var options = {};
-   
-//     pump([
-//         gulp.src(path.src.js),
-//             (rigger()),
-//             (minify(options)),
-//             (gulp.dest(path.build.js))
-//       ],
-//       cb
-//     );
-//   });
-
-// перенос шрифтов
-// gulp.task('fonts:build', function() {
-//     gulp.src(path.src.fonts)
-//         .pipe(gulp.dest(path.build.fonts));
-// });
-
-//обработка картинок
+//перенос картинок
 gulp.task('image:build', function () {
     gulp.src(path.src.img) // путь с исходниками картинок
-    // .pipe(cache(imagemin([ // сжатие изображений
-	// 	imagemin.gifsicle({interlaced: true}),
-	// 	jpegrecompress({
-	// 		progressive: true,
-	// 		max: 90,
-	// 		min: 80
-	// 	}),
-	// 	pngquant(),
-	// 	imagemin.svgo({plugins: [{removeViewBox: false}]})
-	// ])))
 	.pipe(gulp.dest(path.build.img)); // выгрузка готовых файлов
 });
 
@@ -170,8 +122,6 @@ gulp.task('build', [
     'html:build',
     'css:build',
     'js:build',
-    //'js:build',
-    //'fonts:build',
     'image:build'
 ]);
 
@@ -181,7 +131,6 @@ gulp.task('watch', function() {
     gulp.watch(path.watch.css, ['css:build']);
     gulp.watch(path.watch.js, ['js:build']);
     gulp.watch(path.watch.img, ['image:build']);
-    //gulp.watch(path.watch.fonts, ['fonts:build']);
 });
 
 // задача по умолчанию
