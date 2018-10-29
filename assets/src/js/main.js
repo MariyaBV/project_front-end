@@ -10,4 +10,5 @@
 //= ../../../node_modules/jquery-touchswipe/jquery.touchSwipe.min.js
 //= ../../../node_modules/jquery-validation/dist/jquery.validate.min.js
 
+//= cusel-min-2.5.js
 //= my.js

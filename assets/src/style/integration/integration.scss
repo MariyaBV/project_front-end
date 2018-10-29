@@ -24,14 +24,6 @@
             left: 0;
             transition: .3s;
         }
-
-        &:before
-        {
-            content: '';
-            display: inline-block;
-            height: 100%;
-            vertical-align: middle;
-        }
     }
 
     &__link
@@ -46,15 +38,17 @@
 
     &__logo
     {
-            vertical-align: middle;
-            margin: 0 auto;
-            display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
 
         &_osha
         {
             background: url(../../img/osha-grey.png) no-repeat;
             width: 155px;
             height: 45px;
+            margin-left: -77.5px;
+            margin-top: -22.5px;
         }
 
         &_affiliations
@@ -62,6 +56,8 @@
             background: url(../../img/affiliations.png) no-repeat;
             width: 137px;
             height: 38px;
+            margin-left: -68.5px;
+            margin-top: -19px;
         }
 
         &_nyc
@@ -69,6 +65,8 @@
             background: url(../../img/nyc-grey.png) no-repeat;
             width: 120px;
             height: 57px;
+            margin-left: -60px;
+            margin-top: -28.5px;
         }
 
         &_bbb-logo
@@ -76,6 +74,8 @@
             background: url(../../img/bbb-logo-accredited.png) no-repeat;
             width: 157px;
             height: 60px;
+            margin-left: -78.5px;
+            margin-top: -30px;
         }
 
         &_sefa
@@ -83,6 +83,8 @@
             background: url(../../img/sefa.png) no-repeat;
             width: 103px;
             height: 79px;
+            margin-left: -51.5px;
+            margin-top: -39.5px;
         }
 
         &_dummy
@@ -90,6 +92,8 @@
             background: url(../../img/dummy-logo.png) no-repeat;
             width: 160px;
             height: 80px;
+            margin-left: -80px;
+            margin-top: -40px;
         }
 
         &_logo-type
@@ -97,6 +101,8 @@
             background: url(../../img/logo-type.png) no-repeat;
             width: 101px;
             height: 58px;
+            margin-left: -50.5px;
+            margin-top: -29px;
         }
 
         &_imaginarium
@@ -104,6 +110,8 @@
             background: url(../../img/imaginarium.png) no-repeat;
             width: 170px;
             height: 70px;
+            margin-left: -85px;
+            margin-top: -35px;
         }
 
         &_random-brend
@@ -111,6 +119,8 @@
             background: url(../../img/random-brend.png) no-repeat;
             width: 150px;
             height: 80px;
+            margin-left: -75px;
+            margin-top: -40px;
         }
 
         &_another-logo
@@ -118,6 +128,8 @@
             background: url(../../img/another-logo.png) no-repeat;
             width: 175px;
             height: 75px;
+            margin-left: -87.5px;
+            margin-top: -37.5px;
         }
     }
 
@@ -199,6 +211,8 @@
                 background: url(../../img/osha-grey-140.png) no-repeat;
                 width: 140px;
                 height: 41px;
+                margin-left: -70px;
+                margin-top: -20.5px;
             }
 
             &_bbb-logo
@@ -206,6 +220,8 @@
                 background: url(../../img/bbb-logo-accredited-140.png) no-repeat;
                 width: 140px;
                 height: 54px;
+                margin-left: -70px;
+                margin-top: -27px;
             }
 
             &_dummy
@@ -213,6 +229,8 @@
                 background: url(../../img/dummy-logo-140.png) no-repeat;
                 width: 140px;
                 height: 70px;
+                margin-left: -70px;
+                margin-top: -35px;
             }
 
             &_imaginarium
@@ -220,6 +238,8 @@
                 background: url(../../img/imaginarium-140.png) no-repeat;
                 width: 140px;
                 height: 58px;
+                margin-left: -70px;
+                margin-top: -29px;
             }
 
             &_random-brend
@@ -227,6 +247,8 @@
                 background: url(../../img/random-brend-140.png) no-repeat;
                 width: 140px;
                 height: 75px;
+                margin-left: -70px;
+                margin-top: -37.5px;
             }
 
             &_another-logo
@@ -234,7 +256,20 @@
                 background: url(../../img/another-logo-140.png) no-repeat;
                 width: 140px;
                 height: 60px;
+                margin-left: -70px;
+                margin-top: -30px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 329px)
+{
+    .b-integration
+    {
+        &__item
+        {
+            width: 143px;
         }
     }
 }

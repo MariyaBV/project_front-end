@@ -16,20 +16,23 @@
         position: relative;
         margin: auto;
         margin-bottom: 50px;
-        display: table;
     }
 
     &__icon
     {
         margin: 0 auto;
-        display: table-cell;
-        vertical-align: middle;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
 
         &_heart
         {
             background: url(../../img/heart-light.png) center center no-repeat;
             height: 26px;
             width: 31px;
+            margin-left: -15.5px;
+            margin-top: -13px;
         }
 
         &_chek
@@ -37,6 +40,8 @@
             background: url(../../img/chek.png) center center no-repeat;
             height: 29px;
             width: 29px;
+            margin-left: -14.5px;
+            margin-top: -14.5px;
         }
 
         &_star
@@ -44,6 +49,8 @@
             background: url(../../img/star.png) center center no-repeat;
             height: 29px;
             width: 31px;
+            margin-left: -15.5px;
+            margin-top: -14.5px;
         }
 
         &_flag
@@ -51,6 +58,8 @@
             background: url(../../img/flag.png) center center no-repeat;
             height: 28px;
             width: 22px;
+            margin-left: -11px;
+            margin-top: -14px;
         }
 
         &_ok
@@ -58,6 +67,8 @@
             background: url(../../img/ok.png) center center no-repeat;
             height: 31px;
             width: 31px;
+            margin-left: -15.5px;
+            margin-top: -15.5px;
         }
     }
 

@@ -18,15 +18,25 @@
         margin-bottom: 0;
     }
 
+    &__carousel
+    {
+        z-index: 5;
+    }
+
     &__carousel-block
     {
         background-color: #fff;
-        padding: 80px 60px 155px 60px;
+        padding: 95px 60px 125px 60px; //80px 60px 155px 60px; 
         text-align: center;
         margin: 50px auto;
         position: relative;
         width: 100%;
         top: 0;
+    }
+
+    &__carousel-square
+    {
+        position: relative;
     }
 
     &__carousel-icon
@@ -36,18 +46,18 @@
         width: 90px;
         display: block; 
         margin: 0 auto;
-        position: relative;
-        transform: rotate(45deg);
+        transform: rotate(45deg); 
 
         &_lamp
         {
             background: url(../../img/case-study-lamp.png) no-repeat;
             position: absolute;
-            top: 30%;
-            left: 38%;
+            top: 50%;
+            left: 50%;
+            margin-left: -10.5px;
+            margin-top: -17px;
             height: 34px;
             width: 21px;
-            transform: rotate(-45deg);
         }
     }
 
@@ -63,7 +73,7 @@
     {
         color: #6a6a6a;
         font: 400 18px/24px 'Source Sans Pro', sans-serif;
-        margin-top: 50px;
+        margin-top: 70px;
     }
 
     &__carousel-description
@@ -76,7 +86,7 @@
     &__carousel-indicator
     {
         margin: 0 auto;
-        bottom: 101px;
+        bottom: 105px;
 
         &:hover
         {
@@ -88,30 +98,16 @@
     {
         margin-top: 98px;
         position: relative;
-
-        &_background
-        {
-            background: url(../../img/case-study-img.jpg) right no-repeat;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            right: -45px;
-            top: 0;
-        }
     }
-}
 
-@media screen and (max-width: 1220px)
-{
-    .b-case-study
+    &__img
     {
-        &__block
-        {
-            &_background
-            {
-                right: 0;
-            }
-        }
+        background: url(../../img/case-study-img.jpg) right no-repeat;
+        position: absolute;
+        width: 117%;
+        height: 100%;
+        right: 0;
+        top: 0;
     }
 }
 
@@ -140,11 +136,11 @@
         &__block
         {
             margin-top: 15px;
+        }
 
-            &_background
-            {
-                display: none;
-            }
+        &__img
+        {
+            display: none;
         }
     }
 }

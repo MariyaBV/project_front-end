@@ -1,5 +1,6 @@
 // Подключение нужных SCSS исходников Bootstrap 4
 @import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "cusel/cusel-min-2.5.css";
  
 // Подключение своих SCSS файлов
 @import "top-block/top-block";

@@ -1,6 +1,8 @@
 function backgroundReplacement()
 {
-     $('#top-block').addClass('b-top-block__background-img');
+    $('#top-block1').addClass('b-top-block__background-img_aerostat');
+    $('#top-block2').addClass('b-top-block__background-img_blue');
+    $('#top-block3').addClass('b-top-block__background-img_gradient');
 };
 
 function navBarMobile(){
@@ -50,6 +52,16 @@ function validateForm() {
     });
 }; 
 
+function selectMenu() {
+    /* select style */
+    var params = {
+        changedEl: "select",
+        visRows: 5,
+        scrollArrows: true
+    }
+    cuSel(params);
+};
+
 $(document).ready(function () {
     //при загрузке стр заменяет цветной фон на img
     backgroundReplacement();
@@ -73,6 +85,8 @@ $(document).ready(function () {
     swipeCorousel();
     //проверка формы
     validateForm();
+
+    selectMenu();
 });
 
 $(function navBar(menu) {

@@ -103,11 +103,6 @@ select:-webkit-autofill:focus
     }
 }
 
-.list-inline-item:not(:last-child) 
-{
-    margin-right: 0;
-}
-
 button:focus 
 {
     outline: none;
@@ -127,6 +122,11 @@ button:focus
     .form-group 
     {
         margin-bottom: 21px;
+    }
+
+    .container 
+    {
+        max-width: 765px;
     }
 }
 

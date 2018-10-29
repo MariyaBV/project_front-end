@@ -5,6 +5,36 @@
     position: relative;
     background-size: cover;
 
+    &__carousel
+    {
+        &:before
+        {
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: 50%;
+            height: 0;
+            content: '';
+            border-bottom: 125px solid #fff;
+            border-right: 960px solid transparent;
+            z-index: 5;
+        }
+
+        &:after
+        {
+            position: absolute;
+            right: 0;
+            bottom: -1px;
+            width: 50%;
+            height: 0;
+            content: '';
+            border-bottom: 125px solid #fff;
+            border-left: 960px solid transparent;
+            z-index: 5;
+        }
+
+    }
+
     &__background
     {
         background: #47403b;
@@ -12,33 +42,20 @@
 
     &__background-img
     {
-        background: url(../../img/Background.jpg) center center no-repeat;
-    }
+        &_aerostat
+        {
+            background: url(../../img/background-aerostat.jpg) center center no-repeat;
+        }
+        
+        &_blue
+        {
+            background: url(../../img/background-blue.jpg) center center no-repeat;
+        }
 
-    &:before
-    {
-        position: absolute;
-        left: 0;
-        bottom: -1px;
-        width: 50%;
-        height: 0;
-        content: '';
-        border-bottom: 125px solid #fff;
-        border-right: 960px solid transparent;
-        z-index: 5;
-    }
-
-    &:after
-    {
-        position: absolute;
-        right: 0;
-        bottom: -1px;
-        width: 50%;
-        height: 0;
-        content: '';
-        border-bottom: 125px solid #fff;
-        border-left: 960px solid transparent;
-        z-index: 5;
+        &_gradient
+        {
+            background: url(../../img/background-gradient.jpg) center center no-repeat;
+        }
     }
 
     &__anchor
@@ -70,16 +87,17 @@
     {
         display: block;
         position: absolute;
-        top: 340px;
+        top: -150px;
         margin: auto;
         width: 46px;
         height: 46px;
         border-radius: 2px;
+        opacity: 1;
 
         &:hover,
         &:focus
         {
-            opacity: 0.8;
+            background-color: #c13f31;    
         }
 
         &_left
@@ -119,8 +137,8 @@
     &__content
     {
         text-align: center;
-        margin-top: 220px; // 320px по макету
-        margin-bottom: 220px; //260px по макету
+        margin-top: 220px;
+        margin-bottom: 220px; 
     }
 
     &__title
@@ -220,16 +238,19 @@
             margin-bottom: 145px;
         }
 
-        &:before
+        &__carousel
         {
-            border-bottom: 105px solid #fff;
-            border-right: 625px solid transparent;
-        }
-
-        &:after
-        {
-            border-bottom: 105px solid #fff;
-            border-left: 625px solid transparent;
+            &:before
+            {
+                border-bottom: 105px solid #fff;
+                border-right: 625px solid transparent;
+            }
+    
+            &:after
+            {
+                border-bottom: 105px solid #fff;
+                border-left: 625px solid transparent;
+            }
         }
 
         &__anchor
@@ -290,11 +311,6 @@
             margin-top: 105px;
             margin-bottom: 130px;
         }
-
-        &__arrow 
-        {
-            top: 225px;
-        }
     }
 }
 
@@ -352,17 +368,20 @@
 {
     .b-top-block
     {
-
-        &:before
+        &__carousel
         {
-            border-bottom: 50px solid #fff;
-            border-right: 330px solid transparent;
-        }
 
-        &:after
-        {
-            border-bottom: 50px solid #fff;
-            border-left: 330px solid transparent;
+            &:before
+            {
+                border-bottom: 50px solid #fff;
+                border-right: 330px solid transparent;
+            }
+
+            &:after
+            {
+                border-bottom: 50px solid #fff;
+                border-left: 330px solid transparent;
+            }
         }
 
         &__anchor
@@ -377,10 +396,8 @@
 {
     .b-top-block
     {
-        &__arrow
+        &__arrow-icon
         {
-            top: 200px;
-
             &_left
             {
                 &:focus,
@@ -425,16 +442,19 @@
             margin-top: 15px;
         }
 
-        &:before
+        &__carousel
         {
-            border-bottom: 35px solid #fff;
-            border-right: 250px solid transparent;
-        }
-
-        &:after
-        {
-            border-bottom: 35px solid #fff;
-            border-left: 250px solid transparent;
+            &:before
+            {
+                border-bottom: 35px solid #fff;
+                border-right: 250px solid transparent;
+            }
+    
+            &:after
+            {
+                border-bottom: 35px solid #fff;
+                border-left: 250px solid transparent;
+            }
         }
 
         &__content
@@ -445,9 +465,16 @@
 
         &__arrow
         {
+            top: -65px;
+
             &_left,
             &_right
             {
+                &:hover,
+                &:focus
+                {
+                    background: none;
+                }
                 background: none;
             }
         }
@@ -460,7 +487,30 @@
     {
         &__arrow
         {
-            top: 250px;
+            top: -25px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 404px)
+{
+    .b-top-block
+    {
+        &__arrow
+        {
+            top: -45px;
+        }
+    }
+}
+
+@media screen and (max-width: 347px)
+{
+    .b-top-block
+    {
+        &__arrow
+        {
+            top: -100px;
         }
     }
 }
@@ -473,6 +523,17 @@
         {
             bottom: -1%;
             left: 43%;
+        }
+    }
+}
+
+@media screen and (max-width: 336px)
+{
+    .b-top-block
+    {
+        &__arrow
+        {
+            top: -120px;
         }
     }
 }

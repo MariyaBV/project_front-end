@@ -17,6 +17,11 @@
         margin-bottom: 0;
     }
 
+    &__list-inline-item
+    {
+        margin-right: 0 !important;
+    }
+
     &__img
     {
         width: 100%;
@@ -47,11 +52,11 @@
         color: #999999;
         transition: 0.3s;
 
-        &:hover
-        {
-            color: #e74c3c;
-            text-decoration: none;
-        }
+        // &:focus
+        // {
+        //     color: #e74c3c;
+        //     text-decoration: none;
+        // }
     }
 
     &__circle
@@ -120,6 +125,11 @@
     {
         margin-top: 0;
     }
+
+    &__drop-down-list
+    {
+        display: none;
+    }
 }
 
 .b-recent-work__link:hover ~ .b-recent-work__hover-block
@@ -167,17 +177,28 @@
     }
 }
 
-@media screen and (max-width: 991px) and (min-width: 740px)
+@media screen and (max-width: 995px)
 {
     .b-recent-work
     {
-        &__list
+        &__list-item
         {
-            max-width: 632px;
-            margin: 0 auto;
+            font-size: 13px;
         }
     }
 }
+
+// @media screen and (max-width: 991px) and (min-width: 740px)
+// {
+//     .b-recent-work
+//     {
+//         &__list
+//         {
+//             max-width: 589px;
+            
+//         }
+//     }
+// }
 
 @media screen and (max-width: 575px)
 {
@@ -202,13 +223,46 @@
     }
 }
 
-@media screen and (max-width: 995px)
+@media screen and (max-width: 489px)
 {
     .b-recent-work
     {
-        &__list-item
+        &__menu
         {
-            font-size: 13px;
+            display: none;
+        }
+
+        &__drop-down-list
+        {
+            display: block;
+        }
+
+        &__list
+        {
+            width: 100%;
+            border: 1px solid  #999;
+            border-radius: 3px;
+            color: #999;
+            padding: 5px 20px;
+            font: 400 20px/22px 'Source Sans Pro',sans-serif;
+
+            &:focus
+            {
+                outline: none !important;
+            }
+        }
+
+        &__list-option
+        {
+            text-align: center;
+            text-align-last: center;
+            margin: 0 auto;
+
+            &:hover,
+            &:focus
+            {
+                background-color: #e74c3c !important;
+            }
         }
     }
 }
@@ -217,11 +271,7 @@
 {
     .b-recent-work
     {
-        &__list
-        {
-            max-width: 316px;
-            margin: 0 auto;
-        }
+        
     }
 }
 

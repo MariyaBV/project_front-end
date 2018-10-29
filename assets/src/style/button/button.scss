@@ -53,6 +53,7 @@
         border: 2px solid #fff;
         transition: 0.3s;
         padding: 20px 67px;
+        vertical-align: top;
 
         &:hover
         {
@@ -158,13 +159,14 @@
     }
 }
 
-@media screen and (max-width: 347px)
+@media screen and (max-width: 369px)
 {
     .b-button
     {
         &__margin
         {
             margin-bottom: 10px;
+            margin-right: 0;
         }
     }
 }
