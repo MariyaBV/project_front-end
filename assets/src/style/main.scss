@@ -1,6 +1,5 @@
 // Подключение нужных SCSS исходников Bootstrap 4
 @import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-@import "cusel/cusel-min-2.5.css";
  
 // Подключение своих SCSS файлов
 @import "top-block/top-block";
@@ -21,10 +20,10 @@
 @import "button/button.scss";
 @import "anchor/anchor.scss";
 @import "grey-line/grey-line.scss";
-//@import "fonts/fonts";
 @import "characteristic/characteristic";
 @import "our-history/our-history";
 @import "footer/footer.scss";
+@import "const/const.scss";
 //font-family: 'Open Sans', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800');
 //font-family: 'Source Sans Pro', sans-serif;

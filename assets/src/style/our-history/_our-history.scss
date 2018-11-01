@@ -1,11 +1,13 @@
+@import "const/const.scss";
+
 .b-our-history
 {
     padding: 140px 0 150px;
     
     &__title
     {
-        font: 600 36px/40px 'Source Sans Pro', sans-serif;
-        color: #6a6a6a;
+        font: 600 36px/40px $mainFont;
+        color: $grey;
         margin-left: 35px;
 
         &:before
@@ -13,7 +15,7 @@
             height: 35px;
             display: block;
             position: absolute;
-            background: #e74c3c;
+            background: $mainRed;
             content: '';
             width: 5px;
             top: 1px;
@@ -25,8 +27,8 @@
     &__description
     {
         margin-top: 37px;
-        color: #999;
-        font: 400 14px/29px 'Source Sans Pro', sans-serif;
+        color: $lightGrey;
+        font: 400 14px/29px $mainFont;
 
         &_last
         {

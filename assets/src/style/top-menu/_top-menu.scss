@@ -1,6 +1,8 @@
+@import "const/const.scss";
+
 .b-top-menu
 {
-    font:400 14px/16px 'Open Sans', sans-serif;
+    font:400 14px/16px $moreFont;
 
     &__block
     {
@@ -19,14 +21,14 @@
 
     &__nav-link
     {
-        color: #f4f5f9;
+        color: $lightText;
         position: relative;
-        transition: all 0.3s ease;
+        transition: $transition;
         
 
         &:after
         {
-            transition: all 0.3s ease;
+            transition: $transition;
             position: absolute;
             content: '';
             display: block;
@@ -38,16 +40,67 @@
 
         &:hover
         {
-            color: #e74c3c;
+            color: $mainRed;
             
             &:after
             {
-                background-color: #e74c3c;
-                //transition: all 0.3s ease;
+                background-color: $mainRed;
             } 
         }
     }
     
+    &__navbar-toggler
+    {
+        border: none;
+        font-size: 1px;
+        display: inline-block;
+        position: relative;
+        height: 30px;
+        width: 29px;
+        box-sizing: content-box;
+        transition: $transition;
+    }
+
+    &__navbar-toggler-icon
+    {
+        width: 30px;
+        height: 2px;
+        background-color: $white;
+        border-radius: 3em;
+        transition: transform .3s;
+
+        &::before,
+        &::after
+        {
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: $white;
+            border-radius: 3em;
+            content: "";
+            position: absolute;
+            left: 12px;
+            top: 18px;
+            transition: transform .3s;
+            transform: translate(0,10em);
+        }
+
+        &::after
+        {
+            transform: translate(0,-10em);
+        }
+    }
+}
+
+@media screen and (max-width: 1450px)
+{
+    .b-top-menu
+    {
+        &__block
+        {
+            padding: 20px 0;
+        }
+    }
 }
 
 @media screen and (max-width: 1240px)
@@ -85,8 +138,8 @@
 
             &:focus
             {
-                border-color: #e74c3c;
-                color: #e74c3c;
+                border-color: $mainRed;
+                color: $mainRed;
             }
         }
 
@@ -104,8 +157,13 @@
 
             &:hover
             {
-                color: #e74c3c; 
+                color: $mainRed; 
             }
+        }
+
+        &__navbar-nav
+        {
+            text-align: center;
         }
     }
 }

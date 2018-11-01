@@ -1,28 +1,30 @@
+@import "const/const.scss";
+
 .b-integration
 {
     text-align: center;
     padding: 142px 0 112px;
-    background: #f4f5f9;
+    background: $lightText;
 
     &__item
     {
         width: 205px;
         height: 105px;
-        background: #fff;
+        background: $white;
         box-shadow: 0px 1px 3px 0px rgba(31, 31, 31, 0.09);
         margin: 30px auto 0;
         position: relative;
 
         &_background
         {
-            background: #e74e3e;
+            background: $mainRed;
             opacity: 0;
             width: 100%;
             height: 100%;
             top: 0;
             position: absolute;
             left: 0;
-            transition: .3s;
+            transition: $transition;
         }
     }
 
@@ -145,7 +147,7 @@
         &:before,
         &:after
         {
-            background: #999;
+            background: $lightGrey;
             height: 1px;
         }
     }
@@ -156,16 +158,46 @@
     opacity: 0.5;
 }
 
+@media screen and (max-width: 1450px)
+{
+    .b-integration
+    {
+        &__all-block 
+        {
+            margin-top: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px)
+{
+    .b-integration
+    {
+        &__item
+        {
+            &_last-right
+            {
+                margin-left: 18px;
+            }
+
+            &_last-left
+            {
+                margin-right: 18px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1024px)
 {
     .b-integration
     {
         padding: 90px 0;
 
-        &__all-block 
-        {
-            margin-top: 60px;
-        }
+        // &__all-block 
+        // {
+        //     margin-top: 60px;
+        // }
     }
 }
 

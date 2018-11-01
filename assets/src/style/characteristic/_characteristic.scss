@@ -1,3 +1,5 @@
+@import "const/const.scss";
+
 .b-characteristic
 {
     padding: 125px 0 106px;
@@ -5,35 +7,35 @@
     &__square-item
     {
         position: relative;
-        margin: 0 auto;
+        //margin: 0 auto;
     }
 
     &__item
     {
         &:hover
         {
-            cursor: pointer;            
+            cursor: pointer;
         }
 
         &:hover .b-characteristic__square
         {
-            border-color: #e74c3c;
+            border-color: $mainRed;
             transform: rotate(45deg);
         }
 
         &:hover .b-characteristic__title
         {
-            color: #e74c3c;
+            color: $mainRed;
         }
     }
 
     &__square
     {
-        border: 1px solid #e5e5e5;
+        border: 1px solid $moreLightGrey;
         width: 70px;
         height: 70px;
         margin: 0 auto 27px;
-        transition: all 0.3s;
+        transition: $transition;
     }
 
     &__icon
@@ -41,7 +43,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transition: 0.3s;
+        transition: $transition;
 
         &_heart
         {
@@ -79,28 +81,28 @@
             background: url(../../img/glasses.png) center center no-repeat;
         }
     }
-    
+
 
     &__separator
     {
         height: 2px;
         width: 40px;
         margin: 12px auto;
-        background: #888888;
+        background: $moreDarkGrey;
     }
 
     &__title
     {
         text-align: center;
-        font: 700 18px/24px 'Open Sans', sans-serif;
-        color: #6a6a6a;
+        font: 700 18px/24px $moreFont;
+        color: $grey;
     }
 
     &__description
     {
         text-align: center;
-        font: 400 12px/20px 'Source Sans Pro', sans-serif;
-        color: #999;
+        font: 400 12px/20px $mainFont;
+        color: $lightGrey;
     }
 
 }
@@ -113,19 +115,19 @@
         {
             &:hover
             {
-                cursor: pointer;            
+                cursor: pointer;
             }
 
             &:hover .b-characteristic__square
             {
-                border-color: #e74c3c;
+                border-color: $mainRed;
                 transform: rotate(45deg);
             }
 
             &:hover .b-characteristic__title
             {
-                color: #e74c3c;
-            }  
+                color: $mainRed;
+            }
         }
     }
 }
@@ -140,18 +142,18 @@
         {
             &:focus
             {
-                cursor: pointer;            
+                cursor: pointer;
             }
 
             &:focus .b-characteristic__square
             {
-                border-color: #e74c3c;
+                border-color: $mainRed;
                 transform: rotate(45deg);
             }
 
             &:focus .b-characteristic__title
             {
-                color: #e74c3c;
+                color: $mainRed;
             }
 
             &:focus .b-characteristic__icon
@@ -161,7 +163,8 @@
         }
     }
 }
-@media screen and (max-width: 767px) 
+
+@media screen and (max-width: 767px)
 {
     .b-characteristic
     {
@@ -193,13 +196,7 @@
                 left: 26px;
             }
         }
-    }
-}
 
-@media screen and (max-width: 767px)
-{
-    .b-characteristic
-    {
         &__item
         {
             margin-bottom: 50px;
@@ -212,16 +209,18 @@
 
         &__description-block
         {
-            display: inline-block;
-            vertical-align: middle;
-            max-width: 170px;
+            margin-left: 97px;
         }
 
         &__square-item
         {
-            display: inline-block;
-            vertical-align: top;
             margin-right: 25px;;
+        }
+
+        &__square
+        {
+            float: left;
+            margin: 0;
         }
 
         &__title,
@@ -238,25 +237,14 @@
     }
 }
 
-@media screen and (max-width: 636px)
+@media screen and (max-width: 614px) and (min-width: 576px)
 {
     .b-characteristic
     {
-        &__description-block
-        {
-            max-width: 150px;
-        }
-    }
-}
-
-@media screen and (max-width: 597px) and (min-width: 576px)
-{
-    .b-characteristic
-    {
-        &__description-block
-        {
-            max-width: 138px;
-        }
+        // &__description-block
+        // {
+        //     max-width: 138px;
+        // }
 
         &__title
         {
@@ -282,17 +270,22 @@
             }
         }
 
-        &__description
+        &__description-block 
         {
-            max-width: 370px;
-            margin: 0 auto;
+            margin-left: 140px;
         }
 
-        &__description-block
-        {
-            max-width: 350px;
-            vertical-align: top;
-        }
+        // &__description
+        // {
+        //     max-width: 370px;
+        //     margin: 0 auto;
+        // }
+
+        // &__description-block
+        // {
+        //     max-width: 350px;
+        //     vertical-align: top;
+        // }
 
         &__square-item
         {
@@ -301,40 +294,23 @@
     }
 }
 
-@media screen and (max-width: 514px)
-{
-    .b-characteristic
-    {
-        &__description-block
-        {
-            max-width: 250px;
-        }
-    }
-}
-
 @media screen and (max-width: 414px)
 {
     .b-characteristic
     {
-        &__description-block
+        // &__description-block
+        // {
+        //     max-width: 200px;
+        // }
+
+        &__description-block 
         {
-            max-width: 200px;
+            margin-left: 125px;
         }
 
         &__square-item
         {
             margin: 0 20px;
-        }
-    }
-}
-
-@media screen and (max-width: 362px)
-{
-    .b-characteristic
-    {
-        &__description-block
-        {
-            max-width: 150px;
         }
     }
 }

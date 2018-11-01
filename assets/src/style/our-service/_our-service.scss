@@ -1,6 +1,8 @@
+@import "const/const.scss";
+
 .b-our-service
 {
-    background-color: #202020;
+    background-color: $footerBackground;
     width: 100%;
     text-align: right;
 
@@ -65,10 +67,10 @@
 
     &__title
     {
-        color: #f4f5f9;
+        color: $lightText;
         position: relative;
         margin-right: 30px;
-        font: 600 36px/40px 'Source Sans Pro', sans-serif;
+        font: 600 36px/40px $mainFont;
 
         &:before
         {
@@ -76,7 +78,7 @@
             height: 93%;
             display: block;
             position: absolute;
-            background: #e74c3c;
+            background: $mainRed;
             content: '';
             width: 7px;
             top: 1px;
@@ -86,14 +88,26 @@
 
     &__subtitle
     {
-        color: #e74c3c;
-        font: 600 18px/29px 'Open Sans', sans-serif;
+        color: $mainRed;
+        font: 600 18px/29px $moreFont;
     }
 
     &__description
     {
-        font: 400 14px/28px 'Source Sans Pro', sans-serif;
-        color: #999999; 
+        font: 400 14px/28px $mainFont;
+        color: $lightGrey; 
+    }
+}
+
+@media screen and (max-width: 1450px)
+{
+    .b-our-service
+    {
+        &__block
+        {
+            margin-top: 110px;
+            margin-bottom: 110px;
+        }
     }
 }
 
@@ -179,6 +193,7 @@
         &__title
         {
             font-size: 30px;
+            margin-left: 0;
         }
 
         &__description
@@ -186,6 +201,11 @@
             font-size: 13px;
             line-height: 25px;
             margin-top: 10px;
+        }
+
+        &__item 
+        {
+            margin-left: 80px;
         }
     }
 }
@@ -196,7 +216,18 @@
     {
         &__block
         {
-            margin: 65px 0;
+            margin: 65px 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 324px)
+{
+    .b-our-service
+    {
+        &__title
+        {
+            font-size: 29px;
         }
     }
 }

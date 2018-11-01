@@ -1,13 +1,15 @@
+@import "const/const.scss";
+
 .b-started-now
 {
     background: url(../../img/footer-background.jpg) center center no-repeat;
     background-size: cover;
     text-align: center;
-    color: #fff;
+    color: $white;
 
     &__title
     {
-        font: 400 36px/40px 'Open Sans', sans-serif;
+        font: 400 36px/40px $moreFont;
 
         &_fat
         {
@@ -17,7 +19,7 @@
 
     &__description
     {
-        font: 400 18px/24px 'Open Sans', sans-serif;
+        font: 400 18px/24px $moreFont;
         margin-bottom: 70px;
     }
 
@@ -38,13 +40,18 @@
     }
 }
 
-@media screen and (max-width: 575px)
+@media screen and (max-width: 767px)
 {
     .b-started-now
     {
         &__block
         {
             padding: 60px 0;
+        }
+
+        &__description 
+        {
+            margin-bottom: 45px;
         }
     }
 }

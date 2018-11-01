@@ -1,6 +1,8 @@
+@import "const/const.scss";
+
 .b-footer
 {
-    background: #202020;
+    background: $footerBackground;
 
 
     &__icons
@@ -12,7 +14,7 @@
     {
         float: left;
         margin-right: 16px;
-        transition: 0.3s;
+        transition: $transition;
 
         &_facebook
         {
@@ -114,7 +116,7 @@
     &__description
     {
         margin: 0;
-        color: #999;
+        color: $lightGrey;
         font: 600 14px/24px 'Open Sans', sans-serif;
         text-align: right;
     }

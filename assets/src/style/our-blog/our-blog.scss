@@ -1,7 +1,9 @@
+@import "const/const.scss";
+
 .b-our-blog
 {
     text-align: center;
-    background: #f4f5f9;
+    background: $lightText;
 
     &__block
     {
@@ -46,13 +48,13 @@
 
     &__description
     {
-        font: 400 14px/25px 'Open Sans', sans-serif;
+        font: 400 14px/25px $moreFont;
         margin: 0 0 30px 0;
     }
 
     &__title
     {
-        font: 600 24px/28px 'Source Sans Pro', sans-serif;
+        font: 600 24px/28px $mainFont;
         margin: 0;
     }
 
@@ -72,34 +74,34 @@
 
     &__link-block
     {
-        font: 400 italic 14px/24px 'Open Sans', sans-serif;
-        color: #fff;
+        font: 400 italic 14px/24px $moreFont;
+        color: $white;
         text-decoration: none;
         position: relative;
 
         &:hover
         {
-            color: #fff;
+            color: $white;
             text-decoration: none;
         }
     }
 
     &__arrow
     {
-        color: #fff;
+        color: $white;
         display: block;
         position: absolute;
         top: 0;
         left: 80px;
-        transition: all 0.3s ease;
+        transition: $transition;
     }
 
     &__description-left
     {
-        position: relative;
+        //position: relative;
         width: 100%; 
-        color: #fff;
-        display: block;
+        color: $white;
+        //display: block;
         padding: 50px 50px 70px 50px;
         text-align: left;
 
@@ -111,7 +113,7 @@
             left: -75px;
             top: 37%;
             border: 49px solid transparent;
-            border-right: 41px solid #e74e3e;
+            border-right: 41px solid $mainRed;
         }
     }
 
@@ -119,7 +121,7 @@
     {
         position: relative;
         width: 100%; 
-        color: #fff;
+        color: $white;
         display: block;
         float: left;
         padding: 50px 50px 70px 50px;
@@ -133,19 +135,30 @@
             right: -75px; 
             top:  37%;
             border: 49px solid transparent;
-            border-left: 41px solid #e74e3e;
+            border-left: 41px solid $mainRed;
         }
     }
 
     &__item-description
     {
-        background: #e74e3e;
+        background: $mainRed;
     }
 }
 
 .b-our-blog__link:hover ~ .b-our-blog__arrow
 {
     left: 90px;
+}
+
+@media screen and (max-width: 1450px)
+{
+    .b-our-blog
+    {
+        &__block 
+        {
+            margin-top: 55px;
+        }
+    }
 }
 
 @media screen and (max-width: 1385px) and (min-width: 1025px)
@@ -170,10 +183,10 @@
             padding: 40px 30px 30px 30px;
         }
 
-        &__block
-        {
-            margin-top: 70px;
-        }
+        // &__block
+        // {
+        //     margin-top: 70px;
+        // }
     }
 }
 

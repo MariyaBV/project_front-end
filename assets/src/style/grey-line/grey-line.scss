@@ -1,4 +1,6 @@
+@import "const/const.scss";
+
 .b-grey-line
 {
-    border: 1px solid #eee;
+    border: 1px solid $greyLine;
 }

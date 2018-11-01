@@ -1,3 +1,5 @@
+@import 'const/const.scss';
+
 .b-recent-work
 {
     margin-top: 130px;
@@ -5,15 +7,15 @@
 
     &__title
     {
-        font: 600 36px/40px 'Source Sans Pro', sans-serif;
-        color: #6a6a6a;
+        font: 600 36px/40px $mainFont;
+        color: $grey;
         margin-bottom: 16px;
     }
 
     &__description
     {
-        color: #999999;
-        font: 400 14px/18px 'Source Sans Pro', sans-serif;
+        color: $lightGrey;
+        font: 400 14px/18px $mainFont;
         margin-bottom: 0;
     }
 
@@ -33,9 +35,9 @@
             position: absolute;
             left: 0;
             top: 0;
-            background: #e74c3c;
+            background: $mainRed;
             opacity: 0;
-            transition: 0.3s;
+            transition: $transition;
         }
     }
 
@@ -43,20 +45,21 @@
     {
         margin-top: 95px;
         margin-bottom: 46px;
-        color: #999999;
+        color: $lightGrey;
     }
 
     &__list-item
     {
         padding: 0px 14px;
-        color: #999999;
-        transition: 0.3s;
+        color: $lightGrey;
+        transition: $transition;
 
-        // &:focus
-        // {
-        //     color: #e74c3c;
-        //     text-decoration: none;
-        // }
+        &:focus,
+        &:hover
+        {
+            color: $mainRed;
+            text-decoration: none;
+        }
     }
 
     &__circle
@@ -68,7 +71,7 @@
         &:before,
         &:after
         {
-            background-color: #999;
+            background-color: $lightGrey;
             height: 1px;
         }
     }
@@ -96,12 +99,12 @@
 
     &__hover-block
     {
-        transition: 0.3s;
+        transition: $transition;
         opacity: 0;
         position: absolute;
         bottom: 0;
-        color: #fff;
-        display: inline-block;
+        color: $white;
+        //display: inline-block;
         left: 10%;
     }
 
@@ -109,7 +112,7 @@
     {
         height: 4px;
         width: 44px;
-        background: #fff;
+        background: $white;
         display: block;
         content: "";
     }
@@ -117,13 +120,14 @@
     &__hover-title,
     &__hover-description
     {
-        margin-top: 4%;
+        margin-top: 20px;
         text-align: left;
     }
  
     &__hover-description
     {
         margin-top: 0;
+        margin-bottom: 45px;
     }
 
     &__drop-down-list
@@ -142,6 +146,27 @@
     opacity: 0.8;
 }
 
+@media screen and (max-width: 1450px)
+{
+    .b-recent-work
+    {
+        &__menu 
+        {
+            margin-top: 55px;
+        }
+
+        &__hover-description
+        {
+            margin-bottom: 25px;
+        }
+
+        &__hover-title
+        {
+            margin-top: 10px;
+        }
+    }
+}
+
 @media screen and (max-width: 1024px)
 {
     .b-recent-work
@@ -156,7 +181,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 767px)
+@media screen and (max-width: 1024px) and (min-width: 768px)
 {
     .b-recent-work
     {
@@ -185,20 +210,25 @@
         {
             font-size: 13px;
         }
+
+        &__hover-description 
+        {
+            margin-bottom: 20px;
+        }
     }
 }
 
-// @media screen and (max-width: 991px) and (min-width: 740px)
-// {
-//     .b-recent-work
-//     {
-//         &__list
-//         {
-//             max-width: 589px;
-            
-//         }
-//     }
-// }
+@media screen and (max-width: 767px)
+{
+    .b-recent-work
+    {
+        &__menu 
+        {
+            margin-top: 35px;
+            margin-bottom: 35px;
+        }
+    }
+}
 
 @media screen and (max-width: 575px)
 {
@@ -240,11 +270,11 @@
         &__list
         {
             width: 100%;
-            border: 1px solid  #999;
+            border: 1px solid  $lightGrey;
             border-radius: 3px;
-            color: #999;
+            color: $lightGrey;
             padding: 5px 20px;
-            font: 400 20px/22px 'Source Sans Pro',sans-serif;
+            font: 400 20px/22px $mainFont;
 
             &:focus
             {
@@ -261,17 +291,9 @@
             &:hover,
             &:focus
             {
-                background-color: #e74c3c !important;
+                background-color: $mainRed !important;
             }
         }
-    }
-}
-
-@media screen and (max-width: 399px)
-{
-    .b-recent-work
-    {
-        
     }
 }
 

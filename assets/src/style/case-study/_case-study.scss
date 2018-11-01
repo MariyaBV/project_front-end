@@ -1,21 +1,23 @@
+@import "const/const.scss";
+
 .b-case-study
 {
-    background-color: #f4f5f9;
+    background-color: $lightText;
     text-align: center;
     padding: 145px 0;
 
     &__title
     {
         margin-bottom: 18px;
-        color: #6a6a6a;
-        font: 600 36px/40px 'Source Sans Pro', sans-serif;
+        color: $grey;
+        font: 600 36px/40px $mainFont;
     }
 
     &__description
     {
-        color: #6a6a6a;
-        font: 400 14px/24px 'Open Sans',sans-serif;
-        margin-bottom: 0;
+        color: $grey;
+        font: 400 14px/24px $moreFont;
+        margin-bottom: 0; 
     }
 
     &__carousel
@@ -25,11 +27,11 @@
 
     &__carousel-block
     {
-        background-color: #fff;
+        background-color: $white;
         padding: 95px 60px 125px 60px; //80px 60px 155px 60px; 
         text-align: center;
         margin: 50px auto;
-        position: relative;
+        //position: relative;
         width: 100%;
         top: 0;
     }
@@ -41,7 +43,7 @@
 
     &__carousel-icon
     {
-        background: #e74c3c;
+        background: $mainRed;
         height: 90px;
         width: 90px;
         display: block; 
@@ -66,20 +68,20 @@
         height: 2px;
         width: 40px;
         margin: 23px auto;
-        background: #6a6a6a;
+        background: $grey;
     }
 
     &__carousel-title
     {
-        color: #6a6a6a;
-        font: 400 18px/24px 'Source Sans Pro', sans-serif;
+        color: $grey;
+        font: 400 18px/24px $mainFont;
         margin-top: 70px;
     }
 
     &__carousel-description
     {
-        color: #999999;
-        font: 400 14px/24px 'Open Sans',sans-serif;
+        color: $lightGrey;
+        font: 400 14px/24px $moreFont;
         margin-bottom: 42px;
     }
 
@@ -102,12 +104,47 @@
 
     &__img
     {
-        background: url(../../img/case-study-img.jpg) right no-repeat;
         position: absolute;
-        width: 117%;
+        width: 585px;
         height: 100%;
         right: 0;
         top: 0;
+
+        &_computer
+        {
+            background: url(../../img/case-study-img.jpg) right no-repeat;
+        }
+
+        &_map-case
+        {
+            background: url(../../img/case-study-img2.jpg) right no-repeat;
+        }
+
+        &_aerostat
+        {
+            background: url(../../img/case-study-img3.jpg) right no-repeat;
+        }
+    }
+}
+
+@media screen and (max-width: 1450px)
+{
+    .b-case-study
+    {
+        &__block 
+        {
+            margin-top: 55px;
+        }
+
+        &__carousel-block 
+        {
+            padding: 80px 60px 100px 60px;
+        }
+
+        &__carousel-indicator 
+        {
+            bottom: 95px;
+        }
     }
 }
 
@@ -117,14 +154,19 @@
     {
         padding: 90px 0;
 
-        &__block 
+        &__carousel-title 
         {
-            margin-top: 60px;
+            margin-top: 55px;
         }
 
         &__carousel-block 
         {
-            padding: 80px 60px 100px 60px;
+            padding: 70px 60px 80px 60px;
+        }
+
+        &__carousel-indicator 
+        {
+            bottom: 85px;
         }
     }
 }
@@ -141,6 +183,16 @@
         &__img
         {
             display: none;
+        }
+
+        &__carousel-block 
+        {
+            margin: 30px auto;
+        }
+
+        &__carousel-indicator 
+        {
+            bottom: 65px;
         }
     }
 }
@@ -162,9 +214,19 @@
             padding: 50px 40px 75px 40px;
         }
 
-        &__carousel-indicator
+        &__carousel-title 
         {
-            bottom: 85px;
+            margin-top: 45px;
+        }
+
+        &__carousel-separator 
+        {
+            margin: 20px auto;
+        }
+
+        &__carousel-description 
+        {
+            margin-bottom: 37px;
         }
     }
 }

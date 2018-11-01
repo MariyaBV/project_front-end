@@ -1,3 +1,5 @@
+@import "const/const.scss";
+
 .b-our-pricing
 {
     padding: 148px 0 140px 0;
@@ -10,21 +12,21 @@
 
     &__block-title
     {
-        color: #fff;
-        font: 500 24px/28px 'Open Sans',sans-serif;
+        color: $white;
+        font: 500 24px/28px $moreFont;
         padding: 45px 0 110px;
-        background-color: #999;
-        position: relative;
+        background-color: $lightGrey;
+        //position: relative;
 
         &_premium
         {
-            background-color: #e74c3c;
+            background-color: $mainRed;
         }
     }
 
     &__circle
     {
-        background: #fff;
+        background: $white;
         position: absolute;
         top: 8%;
         left: 8%;
@@ -39,7 +41,7 @@
         width: 190px;
         height: 190px;
         border-radius: 50%;
-        background: rgba(244, 245, 249, 0.251);
+        background: $circleBackground;
         margin: 0 auto;
         position: absolute;
         top: 16%;
@@ -53,32 +55,32 @@
     {
         display: table-cell;
         vertical-align: middle;
-        color: #999;
+        color: $lightGrey;
         text-align: center;
     }
 
     &__circle-title
     {
-        font: 600 36px/40px 'Source Sans Pro', sans-serif;
+        font: 600 36px/40px $mainFont;
 
         &_red
         {
-            color: #e74c3c;
+            color: $mainRed;
         }
     }
 
     &__circle-description
     {
-        font: 400 13px/15px 'Source Sans Pro', sans-serif;
+        font: 400 13px/15px $mainFont;
     }
 
     &__block-description
     {
-        color: #999;
-        font: 400 14px/40px 'Open Sans',sans-serif;
+        color: $lightGrey;
+        font: 400 14px/40px $moreFont;
         text-align: center;
         padding: 115px 0 50px;
-        background: #f4f5f9;
+        background: $lightText;
 
         &_outside
         {
@@ -94,20 +96,31 @@
     }
 }
 
+@media screen and (max-width: 1450px)
+{
+    .b-our-pricing
+    {
+        &__block 
+        {
+            margin-top: 55px;
+        }
+    }
+}
+
 @media screen and (max-width: 1024px)
 {
     .b-our-pricing
     {
         padding: 90px 0;
 
-        &__block 
+        &__block-title 
         {
-            margin-top: 65px;
+            padding-top: 35px;
         }
 
         &__block-description 
         {
-            padding: 75px 0 35px;
+            padding: 95px 0 35px;
         }
 
         &__list 
@@ -141,7 +154,7 @@
 
         &__block-title 
         {
-            padding: 45px 0 70px;
+            padding: 30px 0 70px;
         }
     }
 }
@@ -152,7 +165,12 @@
     {
         &__block-title 
         {
-            padding: 30px 0 130px;
+            padding: 35px 0 125px;
+        }
+
+        &__block-description 
+        {
+            padding-top: 80px;
         }
     }
 }
@@ -175,7 +193,7 @@
     }
 }
 
-@media screen and (max-width: 330px)
+@media screen and (max-width: 350px)
 {
     .b-our-pricing
     {

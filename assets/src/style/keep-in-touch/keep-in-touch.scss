@@ -1,13 +1,15 @@
+@import "const/const.scss";
+
 .b-keep-in-touch
 {
     padding: 145px 0;
     text-align: center;
-    background: #f4f5f9;
+    background: $lightText;
 
     &__block
     {
-        background: #fff;
-        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+        background: $white;
+        box-shadow: 0px 3px 5px 0px $boxShadowLight;
     }
 
     &__all-block
@@ -28,16 +30,21 @@
 
     &__subtitle
     {
-        color: #e74e3e;
-        font: 400 24px/28px 'Open Sans', sans-serif;
+        color: $mainRed;
+        font: 400 24px/28px $moreFont;
         margin-bottom: 18px;
     }
 
     &__description
     {
-        color: #999;
-        font: 400 18px/24px 'Open Sans', sans-serif;
+        color: $lightGrey;
+        font: 400 18px/24px $moreFont;
         margin: 0;
+    }
+
+    &__form-group
+    {
+        margin-bottom: 23px;
     }
 
     &__form
@@ -45,9 +52,41 @@
         margin: 0;
     }
 
+    &__form-control
+    {
+        border-bottom: 1px solid $lightGrey;
+        border-radius: 0;
+        padding-left: 0;
+        padding-bottom: 5px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+
+        &:focus,
+        &:hover
+        {
+            border-bottom: 1px solid $darkGrey;
+            box-shadow: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+    }
+
     &__comment
     {
         height: 125px !important;
+    }
+}
+
+@media screen and (max-width: 1450px)
+{
+    .b-keep-in-touch
+    {
+        &__all-block 
+        {
+            margin-top: 60px;
+        }
     }
 }
 
@@ -57,10 +96,10 @@
     {
         padding: 90px 0;
 
-        &__all-block
-        {
-            margin-top: 60px;
-        }
+        // &__all-block
+        // {
+        //     margin-top: 60px;
+        // }
 
         &__item 
         {
@@ -88,6 +127,11 @@
             padding: 45px 35px;
         }
 
+        &__form-group 
+        {
+            margin-bottom: 21px;
+        }
+
         &__block-item 
         {
             margin-bottom: 35px;
@@ -106,8 +150,8 @@
     {
         &__block-outer
         {
-            background: #fff;
-            box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+            background: $white;
+            box-shadow: 0px 3px 5px 0px $boxShadowLight;
         }
     }
 }
@@ -118,8 +162,8 @@
     {
         &__block-inner
         {
-            background: #fff;
-            box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+            background: $white;
+            box-shadow: 0px 3px 5px 0px $boxShadowLight;
         }
 
         &__block-outer

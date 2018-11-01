@@ -1,3 +1,5 @@
+@import "const/const.scss";
+
 .b-top-block
 {
     width: 100%;// 1920px;
@@ -15,7 +17,7 @@
             width: 50%;
             height: 0;
             content: '';
-            border-bottom: 125px solid #fff;
+            border-bottom: 125px solid $white;
             border-right: 960px solid transparent;
             z-index: 5;
         }
@@ -28,7 +30,7 @@
             width: 50%;
             height: 0;
             content: '';
-            border-bottom: 125px solid #fff;
+            border-bottom: 125px solid $white;
             border-left: 960px solid transparent;
             z-index: 5;
         }
@@ -37,7 +39,7 @@
 
     &__background
     {
-        background: #47403b;
+        background: $topBackground;
     }
 
     &__background-img
@@ -47,14 +49,14 @@
             background: url(../../img/background-aerostat.jpg) center center no-repeat;
         }
         
-        &_blue
+        &_brown
         {
-            background: url(../../img/background-blue.jpg) center center no-repeat;
+            background: url(../../img/background-brown.jpg) center center no-repeat;
         }
 
-        &_gradient
+        &_green
         {
-            background: url(../../img/background-gradient.jpg) center center no-repeat;
+            background: url(../../img/background-green.jpg) center center no-repeat;
         }
     }
 
@@ -66,8 +68,8 @@
         z-index: 10;
         width: 65px;
         height: 65px;
-        background: #f4f5f9;
-        border: 5px solid rgba(255, 255, 255, 0.251);
+        background: $lightText;
+        border: 5px solid $greyBorder;
         border-radius: 50%;
         display: table;
     }
@@ -93,44 +95,44 @@
         height: 46px;
         border-radius: 2px;
         opacity: 1;
+        transition: $transition;
 
         &:hover,
         &:focus
         {
-            background-color: #c13f31;    
+            background-color: $lightRed;    
         }
 
         &_left
         {
             left: 50px;
-            background: #e74c3c;
+            background: $mainRed;
         }
 
         &_right
         {
             right: 50px;
-            background: #e74c3c;
+            background: $mainRed;
         }
     }
 
     &__arrow-icon
     {
-        margin: 12px auto;
+        margin: 14px auto;
         display: block;
 
         &_left
         {
-            background: url(../../img/next-white.svg) center center no-repeat;
+            background: url(../../img/prev-white.svg) center center no-repeat;
             width: 20px;
-            height: 24px;
-            transform: rotate(180deg);
+            height: 20px;
         }
 
         &_right
         {
             background: url(../../img/next-white.svg) center center no-repeat;
             width: 20px;
-            height: 24px;
+            height: 20px;
         }
     }
 
@@ -143,23 +145,23 @@
 
     &__title
     {
-        font: 700 72px/76px 'Open Sans', sans-serif;
-        color: #f4f5f9;
+        font: 700 72px/76px $moreFont;
+        color: $lightText;
         margin-top: 35px;
         margin-bottom: 0;
-        position: relative;
+        //position: relative;
     }
 
     &__subtitle
     {
-        font: 400 24px/26px 'Open Sans', sans-serif;
-        color: #f4f5f9;
+        font: 400 24px/26px $moreFont;
+        color: $lightText;
     }
 
     &__description
     {
-        font: 400 14px/24px 'Open Sans', sans-serif;
-        color: #f4f5f9;
+        font: 400 14px/24px $moreFont;
+        color: $lightText;
         margin-top: 80px;
     }
 
@@ -168,7 +170,7 @@
         width: 10px;
         height: 10px;
         margin: 0 auto;
-        background: #e74c3c;
+        background: $mainRed;
         border-radius: 50%;
         margin-top: 31px;
         position: relative;
@@ -177,19 +179,18 @@
         &:after
         {
             content: '';
-            display: block;
+            //display: block;
             width: 80px;
             height: 2px;
-            background: #f1ebe7; 
-            margin: 0 auto;  
-            margin-left: -87px;
-            margin-top: 4px;
+            background: $circleLine;   
+            left: -87px;
+            top: 4px;
             position: absolute;
         }
 
         &:after
         {
-            margin-left: 15px;
+            left: 15px;
         }
     }
 
@@ -217,13 +218,23 @@
     {
         &__content
         {
-            margin-top: 180px;
-            margin-bottom: 180px;
+            margin-top: 145px;
+            margin-bottom: 145px;
         }
 
         &__anchor
         {
             bottom: 0;
+        }
+
+        &__description
+        {
+            margin-top: 50px;
+        }
+
+        &__buttons-block 
+        {
+            margin-top: 55px;
         }
     }
 }
@@ -232,23 +243,17 @@
 {
     .b-top-block
     {
-        &__content
-        {
-            margin-top: 145px;
-            margin-bottom: 145px;
-        }
-
         &__carousel
         {
             &:before
             {
-                border-bottom: 105px solid #fff;
+                border-bottom: 105px solid $white;
                 border-right: 625px solid transparent;
             }
     
             &:after
             {
-                border-bottom: 105px solid #fff;
+                border-bottom: 105px solid $white;
                 border-left: 625px solid transparent;
             }
         }
@@ -275,7 +280,8 @@
 
         &__arrow-icon
         {
-            margin: 6px auto;
+            margin: 8px auto;
+            transition: $transition;
         }
     }
 }
@@ -286,7 +292,7 @@
     {
         &__title
         {
-            font: 700 60px/64px 'Open Sans', sans-serif;
+            font: 700 60px/64px $moreFont;
         }
     }
 }
@@ -320,17 +326,17 @@
     {
         &__title
         {
-            font: 700 40px/46px 'Open Sans', sans-serif;
+            font: 700 40px/46px $moreFont;
         }
 
         &__subtitle
         {
-            font: 400 20px/26px 'Open Sans', sans-serif;
+            font: 400 20px/26px $moreFont;
         }
 
         &__description
         {
-            font: 400 13px/22px 'Open Sans', sans-serif;
+            font: 400 13px/22px $moreFont;
         }
 
         &__anchor
@@ -373,13 +379,13 @@
 
             &:before
             {
-                border-bottom: 50px solid #fff;
+                border-bottom: 50px solid $white;
                 border-right: 330px solid transparent;
             }
 
             &:after
             {
-                border-bottom: 50px solid #fff;
+                border-bottom: 50px solid $white;
                 border-left: 330px solid transparent;
             }
         }
@@ -403,10 +409,9 @@
                 &:focus,
                 &:hover
                 {
-                    background: url(../../img/next-red.svg) center center no-repeat;
-                    transform: rotate(180deg);
+                    background: url(../../img/prev-red.svg) center center no-repeat;
                     width: 20px;
-                    height: 24px;
+                    height: 20px;
                 }
             }
 
@@ -417,7 +422,7 @@
                 {
                     background: url(../../img/next-red.svg) center center no-repeat;
                     width: 20px;
-                    height: 24px;
+                    height: 20px;
                 }
             }
         }
@@ -429,7 +434,7 @@
 
         &__description
         {
-            margin-top: 45px;
+            margin-top: 35px;
         }
 
         &__title
@@ -446,13 +451,13 @@
         {
             &:before
             {
-                border-bottom: 35px solid #fff;
+                border-bottom: 35px solid $white;
                 border-right: 250px solid transparent;
             }
     
             &:after
             {
-                border-bottom: 35px solid #fff;
+                border-bottom: 35px solid $white;
                 border-left: 250px solid transparent;
             }
         }
@@ -465,7 +470,7 @@
 
         &__arrow
         {
-            top: -65px;
+            top: -55px;
 
             &_left,
             &_right
@@ -481,7 +486,7 @@
     }
 }
 
-@media screen and (max-width: 415px)
+@media screen and (max-width: 432px)
 {
     .b-top-block
     {
@@ -493,29 +498,29 @@
 }
 
 
-@media screen and (max-width: 404px)
+@media screen and (max-width: 364px)
 {
     .b-top-block
     {
         &__arrow
         {
-            top: -45px;
+            top: -95px;
         }
     }
 }
 
-@media screen and (max-width: 347px)
+@media screen and (max-width: 353px)
 {
     .b-top-block
     {
         &__arrow
         {
-            top: -100px;
+            top: -115px;
         }
     }
 }
 
-@media screen and (max-width: 340px)
+@media screen and (max-width: 334px)
 {
     .b-top-block
     {
@@ -524,16 +529,10 @@
             bottom: -1%;
             left: 43%;
         }
-    }
-}
 
-@media screen and (max-width: 336px)
-{
-    .b-top-block
-    {
         &__arrow
         {
-            top: -120px;
+            top: -95px;
         }
     }
 }

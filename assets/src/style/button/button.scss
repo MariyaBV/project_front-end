@@ -1,11 +1,18 @@
+@import "const/const.scss";
+
 .b-button
 {
-    font: 400 14px/14px 'Open Sans', sans-serif;
-    color: #fff;
+    font: 400 14px/14px $moreFont;
+    color: $white;
     text-align: center;
     border-radius: 3px;
     display: inline-block;
     vertical-align: middle;
+
+    &:active:focus
+    {
+        box-shadow: none;
+    }
 
     &__bigger
     {
@@ -14,7 +21,7 @@
 
     &__big
     {
-        padding: 21px 44px;
+        padding: 20px 46px;
     }
 
     &__middle
@@ -25,12 +32,12 @@
     &__little-text
     {
         padding: 14px 35px;
-        font: 400 12px/14px 'Open Sans',sans-serif;
+        font: 400 12px/14px $moreFont;
     }
 
     &__middle-text
     {
-        font: 600 13px/13px 'Open Sans',sans-serif;
+        font: 600 13px/13px $moreFont;
     }
 
     &__small
@@ -50,16 +57,16 @@
 
     &__light
     {
-        border: 2px solid #fff;
-        transition: 0.3s;
+        border: 2px solid $white;
+        transition: $transition;
         padding: 20px 67px;
         vertical-align: top;
 
         &:hover
         {
             text-decoration: none;
-            background-color: #fff;
-            color: #6a6a6a;
+            background-color: $white;
+            color: $grey;
         }
     }
 
@@ -70,32 +77,32 @@
 
     &__red
     {
-        background-color: #e74c3c; 
-        border: 2px solid #e74c3c;
-        box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
-        transition: 0.3s;
+        background-color: $mainRed; 
+        border: 2px solid $mainRed;
+        box-shadow: 0px 2px 4.75px 0.25px $boxShadowDark;
+        transition: $transition;
 
         &:hover
         {
-            background-color: #c13f31;
-            border: 2px solid #c13f31;
-            color: #fff;
+            background-color: $lightRed;
+            border: 2px solid $lightRed;
+            color: $white;
             text-decoration: none;
         }
     }
 
     &__grey
     {
-        background-color: #999;
-        border: 2px solid #999;
-        box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
-        transition: 0.3s;
+        background-color: $lightGrey;
+        border: 2px solid $lightGrey;
+        box-shadow: 0px 2px 4.75px 0.25px $boxShadowDark;
+        transition: $transition;
 
         &:hover
         {
-            background-color: #656565;
-            border-color: #656565;
-            color: #fff;
+            background-color: $darkGrey;
+            border-color: $darkGrey;
+            color: $white;
             text-decoration: none;
         }
     }
@@ -124,6 +131,7 @@
     .b-button
     {
         font-size: 12px;
+        line-height: 12px;
 
         &__middle
         {
