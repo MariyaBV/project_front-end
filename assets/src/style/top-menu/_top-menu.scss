@@ -59,6 +59,11 @@
         width: 29px;
         box-sizing: content-box;
         transition: $transition;
+
+        &:focus
+        {
+            outline: none;
+        }
     }
 
     &__navbar-toggler-icon

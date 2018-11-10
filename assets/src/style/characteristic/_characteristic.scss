@@ -7,11 +7,14 @@
     &__square-item
     {
         position: relative;
-        //margin: 0 auto;
+        margin: 0 auto 27px;
+        display: inline-block;
     }
 
     &__item
     {
+        text-align: center;
+
         &:hover
         {
             cursor: pointer;
@@ -34,7 +37,6 @@
         border: 1px solid $moreLightGrey;
         width: 70px;
         height: 70px;
-        margin: 0 auto 27px;
         transition: $transition;
     }
 
@@ -93,14 +95,12 @@
 
     &__title
     {
-        text-align: center;
         font: 700 18px/24px $moreFont;
         color: $grey;
     }
 
     &__description
     {
-        text-align: center;
         font: 400 12px/20px $mainFont;
         color: $lightGrey;
     }
@@ -214,7 +214,8 @@
 
         &__square-item
         {
-            margin-right: 25px;;
+            margin-right: 25px;
+            display: block;
         }
 
         &__square
@@ -241,11 +242,6 @@
 {
     .b-characteristic
     {
-        // &__description-block
-        // {
-        //     max-width: 138px;
-        // }
-
         &__title
         {
             font-size: 16px;
@@ -275,21 +271,10 @@
             margin-left: 140px;
         }
 
-        // &__description
-        // {
-        //     max-width: 370px;
-        //     margin: 0 auto;
-        // }
-
-        // &__description-block
-        // {
-        //     max-width: 350px;
-        //     vertical-align: top;
-        // }
-
         &__square-item
         {
             margin: 0 30px;
+            display: block;
         }
     }
 }
@@ -298,11 +283,6 @@
 {
     .b-characteristic
     {
-        // &__description-block
-        // {
-        //     max-width: 200px;
-        // }
-
         &__description-block 
         {
             margin-left: 125px;

@@ -47,34 +47,58 @@
     overflow: hidden;
 }
 
-.btn-primary 
-{
-    background-color: $lightRed;
-    border: 2px solid $lightRed;
-    color: $white;
-    text-decoration: none;
-}
-
-.btn-primary:focus 
-{
-    box-shadow: none !important;
-}
-
-.btn-primary:active
-{
-    color: $white !important;
-    background-color: $lightRed !important;
-    border: 2px solid $lightRed !important;
-}
-
-.btn-primary:active:focus
-{
-    box-shadow: none !important;
-}
-
 input.error,
 textarea.error 
 {
-    border-bottom: 1px solid $darkRed !important;
-    color: $darkRed !important;
+    border-bottom: 1px solid $mainRed !important;
+    color: $mainRed !important;
+}
+
+.selectboxit-container .selectboxit
+{
+    width: 100%;
+    background-color: $white;
+    border-radius: 3px;
+}
+
+.selectboxit-container .selectboxit-options
+{
+    min-width: 91%;
+    border-radius: 3px;
+}
+
+.ui-widget
+{
+    color: $lightGrey;
+    font: 400 20px/22px $mainFont;
+    border: 1px solid $lightGrey;
+
+    &:focus,
+    &:hover
+    {
+        color: $darkGrey;
+        border: 1px solid $darkGrey;
+    }
+}
+
+.selectboxit-text
+{
+    float: unset;
+}
+
+.ui-widget-content .ui-state-focus
+{
+    border: none;
+}
+
+.selectboxit-option-first
+{
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.selectboxit-option-last
+{
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
 }

@@ -37,6 +37,11 @@
 
     }
 
+    &__carousel-indicator
+    {
+        display: none;
+    }
+
     &__background
     {
         background: $topBackground;
@@ -63,7 +68,8 @@
     &__anchor
     {
         position: absolute;
-        left: 48%;
+        left: 50%;
+        margin-left: -32.5px;
         bottom: -4%;
         z-index: 10;
         width: 65px;
@@ -149,7 +155,6 @@
         color: $lightText;
         margin-top: 35px;
         margin-bottom: 0;
-        //position: relative;
     }
 
     &__subtitle
@@ -169,10 +174,9 @@
     {
         width: 10px;
         height: 10px;
-        margin: 0 auto;
+        margin: 31px auto 0;
         background: $mainRed;
         border-radius: 50%;
-        margin-top: 31px;
         position: relative;
 
         &:before,
@@ -206,7 +210,6 @@
     {
         &__anchor
         {
-            left: 47.5%;
             bottom: -2%;
         }
     }
@@ -260,8 +263,8 @@
 
         &__anchor
         {
-            left: 47.5%;
-            bottom: -3%;
+            left: 50%;
+            margin-left: -25px;
             width: 50px;
             height: 50px;
         }
@@ -338,11 +341,6 @@
         {
             font: 400 13px/22px $moreFont;
         }
-
-        &__anchor
-        {
-            left: 46.5%;
-        }
     }
 }
 
@@ -393,7 +391,6 @@
         &__anchor
         {
             bottom: -3%;
-            left: 45%;
         }
     }
 }
@@ -402,29 +399,26 @@
 {
     .b-top-block
     {
-        &__arrow-icon
+        &__arrow-icon,
+        &__arrow
         {
-            &_left
-            {
-                &:focus,
-                &:hover
-                {
-                    background: url(../../img/prev-red.svg) center center no-repeat;
-                    width: 20px;
-                    height: 20px;
-                }
-            }
+            display: none;
+        }
 
-            &_right
-            {
-                &:focus,
-                &:hover
-                {
-                    background: url(../../img/next-red.svg) center center no-repeat;
-                    width: 20px;
-                    height: 20px;
-                }
-            }
+        &__carousel-indicator
+        {
+            display: inline-flex;
+            bottom: 40px;
+        }
+
+        &__carousel-indicator li
+        {
+            background: $white !important;
+        }
+
+        &__carousel-indicator .active
+        {
+            background: $mainRed !important;
         }
 
         &__circle
@@ -434,7 +428,7 @@
 
         &__description
         {
-            margin-top: 35px;
+            margin-top: 20px;
         }
 
         &__title
@@ -464,58 +458,8 @@
 
         &__content
         {
-            margin-top: 115px;
+            margin-top: 100px;
             margin-bottom: 89px;
-        }
-
-        &__arrow
-        {
-            top: -55px;
-
-            &_left,
-            &_right
-            {
-                &:hover,
-                &:focus
-                {
-                    background: none;
-                }
-                background: none;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 432px)
-{
-    .b-top-block
-    {
-        &__arrow
-        {
-            top: -25px;
-        }
-    }
-}
-
-
-@media screen and (max-width: 364px)
-{
-    .b-top-block
-    {
-        &__arrow
-        {
-            top: -95px;
-        }
-    }
-}
-
-@media screen and (max-width: 353px)
-{
-    .b-top-block
-    {
-        &__arrow
-        {
-            top: -115px;
         }
     }
 }
@@ -527,12 +471,6 @@
         &__anchor
         {
             bottom: -1%;
-            left: 43%;
-        }
-
-        &__arrow
-        {
-            top: -95px;
         }
     }
 }

@@ -77,7 +77,7 @@
     &__block-description
     {
         color: $lightGrey;
-        font: 400 14px/40px $moreFont;
+        font: 400 14px/20px $moreFont;
         text-align: center;
         padding: 115px 0 50px;
         background: $lightText;
@@ -93,6 +93,11 @@
     {
         list-style-type: none;
         margin-bottom: 37px;
+    }
+
+    &__list-item
+    {
+        margin-bottom: 21px;
     }
 }
 
@@ -188,12 +193,12 @@
 
         &__list-item
         {
-            line-height: 28px;
+            margin-bottom: 10px;
         }
     }
 }
 
-@media screen and (max-width: 350px)
+@media screen and (max-width: 420px)
 {
     .b-our-pricing
     {
@@ -201,6 +206,11 @@
         {
             width: 150px;
             height: 150px;
+        }
+
+        &__block-description 
+        {
+            padding-top: 70px;
         }
 
         &__circle
@@ -218,6 +228,7 @@
         &__block-title 
         {
             height: 150px;
+            padding: 25px 0 125px;
         }
     }
 }

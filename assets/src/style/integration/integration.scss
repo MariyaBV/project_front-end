@@ -193,11 +193,6 @@
     .b-integration
     {
         padding: 90px 0;
-
-        // &__all-block 
-        // {
-        //     margin-top: 60px;
-        // }
     }
 }
 
@@ -230,6 +225,12 @@
 {
     .b-integration
     {
+
+        &__all-block 
+        {
+            margin-top: 0;
+        }
+
         &__item
         {
             width: 148px;

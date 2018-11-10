@@ -98,10 +98,8 @@
 
     &__description-left
     {
-        //position: relative;
         width: 100%; 
         color: $white;
-        //display: block;
         padding: 50px 50px 70px 50px;
         text-align: left;
 
@@ -182,11 +180,6 @@
         {
             padding: 40px 30px 30px 30px;
         }
-
-        // &__block
-        // {
-        //     margin-top: 70px;
-        // }
     }
 }
 
@@ -289,3 +282,13 @@
     }
 }
 
+@media screen and (max-width: 450px)
+{
+    .b-our-blog
+    {
+        &__item-img 
+        {
+            height: 30%;
+        }
+    }
+}

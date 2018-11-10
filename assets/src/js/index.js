@@ -27,11 +27,14 @@ $(document).ready(function () {
     });
 
     //пролистывание touch карусели
-    SwipeCorousel();
+    SwipeCorousel('#myCarousel');
+    SwipeCorousel('#topCarousel');
     //проверка формы
     ValidateForm();
     //меняет картинки case-study
     CarouselAndBackground();
+    //меняем выпадающее меню select
+    SelectMenu();
 });
 
 $(function NavBar(menu) {
@@ -92,15 +95,23 @@ function NavBarMobile(){
     })
 };
 
-function SwipeCorousel() {
-    $("#myCarousel").swipe({
+function SwipeCorousel(id) {
+    $(id).swipe({
         swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData){
-            $('#myCarousel').carousel('next');
+            $(id).carousel('next');
         },
         swipeRight:function(event, direction, distance, duration, fingerCount, fingerData){
-            $('#myCarousel').carousel('prev');
+            $(id).carousel('prev');
         }
     });
+}
+
+function SelectMenu() {
+    $("#selectMenu").selectBoxIt({
+        theme: "jqueryui",
+        autoWidth: false, 
+        copyClasses: "container"
+      });
 }
 
 function ValidateForm() {

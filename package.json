@@ -34,8 +34,10 @@
     "jquery-touchswipe": "^1.6.19",
     "jquery-validation": "^1.18.0",
     "jquery.event.swipe": "^0.5.4",
+    "jqueryui": "^1.11.1",
     "npm": "^6.4.1",
     "popper.js": "^1.12.9",
+    "selectboxit": "^3.8.2",
     "to": "^0.2.9",
     "update": "^0.7.4"
   }

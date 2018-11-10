@@ -6,7 +6,7 @@
     background-size: cover;
     margin: 0 auto;
     position: relative;
-    padding: 160px 0 120px 0;
+    padding: 150px 0 120px 0;
 
     &__circle
     {
@@ -17,12 +17,16 @@
         border-radius: 50%;
         position: relative;
         margin: auto;
-        margin-bottom: 50px;
+        margin-bottom: 45px;
+    }
+
+    &__item
+    {
+        text-align: center;
     }
 
     &__icon
     {
-        //margin: 0 auto;
         display: block;
         position: absolute;
         top: 50%;
@@ -77,8 +81,9 @@
     &__number
     {
         color: $lightText;
-        font: 400  30px/34px $moreFont;
+        font: 600  27px/34px $moreFont;
         text-align: center;
+        margin-bottom: 10px;
     }
 
     &__description
@@ -119,6 +124,14 @@
             width: 78px;
             height: 78px;
         }
+
+        &__all-block
+        {
+            display: flex;
+            justify-content: space-around;
+            text-align: justify;
+            padding: 0;
+        }
     }
 }
 
@@ -126,7 +139,7 @@
 {
     .b-amount
     { 
-        padding: 60px 0;
+        padding: 50px 0;
     }
 }
 
@@ -134,63 +147,83 @@
 {
     .b-amount
     { 
+        &__circle
+        {
+            width: 65px;
+            height: 65px;
+        }
+    }
+}
+
+@media screen and (max-width: 504px)
+{
+    .b-amount
+    { 
         &__item
         {
-            float: left;
-            margin-left: 90px;
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: middle;
         }
 
         &__circle
         {
-            float: left;
-            position: absolute;
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 0;
         }
 
         &__description
         {
             text-align: left;
             margin: 0;
-            min-height: 36px;
         }
 
         &__number
         {
             text-align: left;
-            margin-bottom: 8px; 
+            margin-bottom: 3px; 
         }
 
         &__block
         {
             margin: 20px 0;
-            min-width: 250px;
+            min-width: 200px;
         }
     }
 }
 
-@media screen and (max-width: 516px)
-{
-    .b-amount
-    { 
-        &__block
-        {
-            min-width: auto;
-        }
-    }
-}
-
-@media screen and (max-width: 393px)
+@media screen and (max-width: 487px)
 {
     .b-amount
     { 
         &__block
         {
             min-width: 250px;
-            margin-bottom: 0;
+            margin: 10px 0 10px 25px;
         }
 
-        &__item 
+        &__item
         {
-            margin-left: 115px;
+            margin-left: 20px;
+        }
+
+        &__circle
+        {
+            width: 78px;
+            height: 78px;
+        }
+    }
+}
+
+@media screen and (max-width: 411px)
+{
+    .b-amount
+    { 
+        &__circle
+        {
+            width: 65px;
+            height: 65px;
         }
     }
 }

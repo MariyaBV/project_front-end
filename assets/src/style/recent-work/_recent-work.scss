@@ -104,7 +104,6 @@
         position: absolute;
         bottom: 0;
         color: $white;
-        //display: inline-block;
         left: 10%;
     }
 
@@ -270,11 +269,9 @@
         &__list
         {
             width: 100%;
-            border: 1px solid  $lightGrey;
+            //border: 1px solid  $lightGrey;
             border-radius: 3px;
-            color: $lightGrey;
             padding: 5px 20px;
-            font: 400 20px/22px $mainFont;
 
             &:focus
             {

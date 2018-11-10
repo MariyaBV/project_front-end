@@ -1,5 +1,7 @@
 // Подключение нужных SCSS исходников Bootstrap 4
 @import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../../../node_modules/selectboxit/src/stylesheets/jquery.selectBoxIt.css";
+@import "../../../node_modules/selectboxit/demos/css/jquery-ui-1.9.1.custom.css";
  
 // Подключение своих SCSS файлов
 @import "top-block/top-block";
@@ -19,7 +21,6 @@
 @import "started-now/started-now.scss";
 @import "button/button.scss";
 @import "anchor/anchor.scss";
-@import "grey-line/grey-line.scss";
 @import "characteristic/characteristic";
 @import "our-history/our-history";
 @import "footer/footer.scss";
