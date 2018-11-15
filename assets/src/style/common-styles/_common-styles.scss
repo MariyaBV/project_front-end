@@ -8,3 +8,11 @@
 {
     border: 1px solid $greyLine;
 }
+
+@media screen and (max-width: 1024px)
+{
+    .grey-line
+    {
+        margin: 0;
+    }
+}

@@ -506,6 +506,24 @@
     }
 }
 
+@media screen and (max-width: 420px)
+{
+    .b-our-team
+    {
+        &__proffesion
+        {
+           font-size: 12px;
+           line-height: 15px; 
+        }
+
+        &__name
+        {
+            font-size: 15px;
+            line-height: 22px;  
+        }
+    }
+}
+
 @media screen and (max-width: 388px)
 {
     .b-our-team
@@ -527,18 +545,6 @@
 {
     .b-our-team
     {
-        &__proffesion
-        {
-           font-size: 12px;
-           line-height: 15px; 
-        }
-
-        &__name
-        {
-            font-size: 15px;
-            line-height: 22px;  
-        }
-
         &__photo
         {
             height: 44px;

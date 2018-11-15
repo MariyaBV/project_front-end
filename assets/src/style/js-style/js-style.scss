@@ -3,7 +3,7 @@
 .js-bar-background
 {
     background-color: $navBackground;
-    opacity: 0.7;
+    opacity: 0.85;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -63,7 +63,7 @@ textarea.error
 
 .selectboxit-container .selectboxit-options
 {
-    min-width: 91%;
+    min-width: 91.5%;
     border-radius: 3px;
 }
 
@@ -101,4 +101,55 @@ textarea.error
 {
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
+}
+
+.selectboxit .selectboxit-option-icon-container 
+{
+    margin-left: 0;
+}
+
+.selectboxit-container .selectboxit-options a, 
+.selectboxit-container span 
+{
+    margin: auto;
+}
+
+@media screen and (max-width: 465px)
+{
+    .selectboxit-container .selectboxit-options
+    {
+        min-width: 91%;
+    }
+}
+
+@media screen and (max-width: 428px)
+{
+    .selectboxit-container .selectboxit-options
+    {
+        min-width: 90%;
+    }
+}
+
+@media screen and (max-width: 390px)
+{
+    .selectboxit-container .selectboxit-options
+    {
+        min-width: 89%;
+    }
+}
+
+@media screen and (max-width: 360px)
+{
+    .selectboxit-container .selectboxit-options
+    {
+        min-width: 88%;
+    }
+}
+
+@media screen and (max-width: 330px)
+{
+    .selectboxit-container .selectboxit-options
+    {
+        min-width: 87%;
+    }
 }

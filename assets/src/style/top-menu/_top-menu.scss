@@ -3,10 +3,12 @@
 .b-top-menu
 {
     font:400 14px/16px $moreFont;
+    transition: $transition;
 
     &__block
     {
         padding: 35px 0;
+        transition: $transition;
     }
 
     &__nav-brand
@@ -169,6 +171,29 @@
         &__navbar-nav
         {
             text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px)
+{
+    .b-top-menu
+    {
+        &__block
+        {
+            max-width: 900px;
+        }
+    }
+}
+
+
+@media (max-width: 767px) and (min-width: 576px)
+{
+    .b-top-menu
+    {
+        &__block
+        {
+            max-width: 700px;
         }
     }
 }

@@ -183,6 +183,14 @@
     }
 }
 
+@media screen and (max-width: 1024px)
+{
+    .b-our-blog
+    {
+        padding-top: 35px;
+    }
+}
+
 @media screen and (max-width: 991px) and (min-width: 576px)
 {
     .b-our-blog
@@ -221,7 +229,7 @@
     {
         &__block 
         {
-            margin-top: 65px;
+            margin-top: 40px;
         }
         
         &__item-img

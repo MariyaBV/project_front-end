@@ -88,7 +88,6 @@
     &__carousel-indicator
     {
         bottom: 105px;
-        left: -40%;
         margin: 0;
 
         &:hover
@@ -108,8 +107,9 @@
         position: absolute;
         width: 585px;
         height: 100%;
-        right: -60px;
+        right: 0;
         top: 0;
+        transition: $transition;
 
         &_computer
         {
@@ -150,17 +150,6 @@
     }
 }
 
-@media screen and (max-width: 1199px)
-{
-    .b-case-study
-    {
-        &__carousel-indicator 
-        {
-            left: -29%;
-        }
-    }
-}
-
 @media screen and (max-width: 1066px)
 {
     .b-case-study
@@ -168,16 +157,6 @@
         &__carousel-block 
         {
             width: 545px;
-        }
-
-        &__img
-        {
-            right: 0;
-        }
-        
-        &__carousel-indicator 
-        {
-            left: -41%;
         }
     }
 }
@@ -205,17 +184,6 @@
     }
 }
 
-@media screen and (max-width: 991px)
-{
-    .b-case-study
-    {
-        &__carousel-indicator
-        {
-            left: -26%;
-        }
-    }
-}
-
 @media screen and (max-width: 767px)
 {
     .b-case-study
@@ -239,7 +207,6 @@
         &__carousel-indicator 
         {
             bottom: 65px;
-            left: 0;
         }
     }
 }

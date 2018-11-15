@@ -368,34 +368,7 @@
     }
 }
 
-@media screen and (max-width: 645px)
-{
-    .b-top-block
-    {
-        &__carousel
-        {
-
-            &:before
-            {
-                border-bottom: 50px solid $white;
-                border-right: 330px solid transparent;
-            }
-
-            &:after
-            {
-                border-bottom: 50px solid $white;
-                border-left: 330px solid transparent;
-            }
-        }
-
-        &__anchor
-        {
-            bottom: -3%;
-        }
-    }
-}
-
-@media screen and (max-width: 500px)
+@media screen and (max-width: 640px)
 {
     .b-top-block
     {
@@ -408,7 +381,7 @@
         &__carousel-indicator
         {
             display: inline-flex;
-            bottom: 40px;
+            bottom: 50px;
         }
 
         &__carousel-indicator li
@@ -446,23 +419,45 @@
             &:before
             {
                 border-bottom: 35px solid $white;
-                border-right: 250px solid transparent;
+                border-right: 310px solid transparent;
             }
     
             &:after
             {
                 border-bottom: 35px solid $white;
-                border-left: 250px solid transparent;
+                border-left: 310px solid transparent;
             }
         }
 
         &__content
         {
-            margin-top: 100px;
-            margin-bottom: 89px;
+            margin-top: 120px;
+        }
+
+        &__anchor
+        {
+            bottom: -4%;
         }
     }
 }
+
+@media screen and (max-width: 369px)
+{
+    .b-top-block
+    {
+        &__buttons-block
+        {
+            max-width: 317px;
+        }
+
+        &__content
+        {
+            margin-top: 90px;
+            margin-bottom: 105px;
+        }
+    }
+}
+
 
 @media screen and (max-width: 334px)
 {
@@ -470,7 +465,22 @@
     {
         &__anchor
         {
-            bottom: -1%;
+            bottom: -3%;
+        }
+
+        &__carousel
+        {
+            &:before
+            {
+                border-bottom: 25px solid $white;
+                border-right: 230px solid transparent;
+            }
+    
+            &:after
+            {
+                border-bottom: 25px solid $white;
+                border-left: 230px solid transparent;
+            }
         }
     }
 }

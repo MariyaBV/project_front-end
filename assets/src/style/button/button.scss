@@ -7,7 +7,6 @@
     text-align: center;
     border-radius: 3px;
     display: inline-block;
-    vertical-align: middle;
 
     &:active:focus
     {
@@ -71,7 +70,6 @@
         border: 2px solid $white;
         transition: $transition;
         padding: 20px 67px;
-        vertical-align: top;
 
         &:hover
         {
@@ -174,6 +172,7 @@
         &__margin
         {
             margin-bottom: 10px;
+            margin-right: 0;
         }
     }
 }
